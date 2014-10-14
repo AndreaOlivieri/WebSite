@@ -1,0 +1,34 @@
+<li>
+  <a class='north' href="{{socialCtrl.google.href}}" 
+     ng-attr-title="{{socialCtrl.google.title.trans}}">
+    <img ng-src="{{socialCtrl.google.src}}" alt="" />
+  </a>
+</li>
+
+<li>
+  <a class='north' href="{{socialCtrl.facebook.href}}" 
+     ng-attr-title="{{socialCtrl.facebook.title.trans}}">
+    <img ng-src="{{socialCtrl.facebook.src}}" alt="" />
+  </a>
+</li>
+
+<li>
+  <a class='north' href="{{socialCtrl.twitter.href}}" 
+     ng-attr-title="{{socialCtrl.twitter.title.trans}}">
+    <img ng-src="{{socialCtrl.twitter.src}}" alt="" />
+  </a>
+</li>
+
+<li>
+  <a class='north' href="{{socialCtrl.linkedin.href}}" 
+     ng-attr-title="{{socialCtrl.linkedin.title.trans}}">
+    <img ng-src="{{socialCtrl.linkedin.src}}" alt="" />
+  </a>
+</li>
+
+
+<script>
+  (function () {
+    $('.north').tipsy({gravity: 'n'});
+  })();
+</script>

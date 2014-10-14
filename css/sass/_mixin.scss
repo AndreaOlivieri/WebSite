@@ -1,0 +1,5 @@
+@mixin respondTo($query, $type: max-width) {
+  @media screen and ($type: $query) {
+    @content;
+  }
+}
