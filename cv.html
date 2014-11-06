@@ -43,6 +43,13 @@
     ga('send', 'pageview');
   </script>
 
+  
+  <script>
+    (function () {
+      $('.north').tipsy({gravity: 'n'});
+    })();
+  </script>
+
 </head>
 
 
@@ -52,7 +59,7 @@
   <div id="wrapper">
     <!-- Begin Screen -->
     <div id="screen">
-      <div class="entry">
+      <div class="entry myself">
         <!-- Begin Image -->
         <img class="portrait" src="img/profile.jpg" alt="Andrea Olivieri" />
         <!-- End Image -->
@@ -95,7 +102,33 @@
               </a>
             </li>
 
-            <social></social>
+            <li>
+              <a class='north' href="{{icon.google.href}}" 
+                 ng-attr-title="{{icon.google.title.trans}}">
+                <img ng-src="{{icon.google.src}}" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a class='north' href="{{icon.facebook.href}}" 
+                 ng-attr-title="{{icon.facebook.title.trans}}">
+                <img ng-src="{{icon.facebook.src}}" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a class='north' href="{{icon.twitter.href}}" 
+                 ng-attr-title="{{icon.twitter.title.trans}}">
+                <img ng-src="{{icon.twitter.src}}" alt="" />
+              </a>
+            </li>
+
+            <li>
+              <a class='north' href="{{icon.linkedin.href}}" 
+                 ng-attr-title="{{icon.linkedin.title.trans}}">
+                <img ng-src="{{icon.linkedin.src}}" alt="" />
+              </a>
+            </li>
 
             
           </ul>

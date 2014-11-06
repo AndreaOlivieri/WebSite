@@ -90,7 +90,7 @@ var englishLanguage = function(){
   languagesReference : new Translation("Common European Framework of Reference for Languages (CEFR)"),
 
   tCertificates : new Translation("Certificates"),
-  ecdlDes       : new Translation("I attained it at 12/05/2009 in I.T.I.S. G.Armellini with 7 exams' overcoming : Basic Concepts of ICT, Using the Computer and Managing Files, Word Processing, Spreadsheets, Using Databases, Presentations, Web Browsing and Communication"),
+  ecdlDes       : new Translation("I attained it at 12/05/2009 in I.T.I.S. G.Armellini with 7 exams' overcoming: Basic Concepts of ICT, Using the Computer and Managing Files, Word Processing, Spreadsheets, Using Databases, Presentations, Web Browsing and Communication"),
 
 
 		tWebSite    : new Translation("Website"),

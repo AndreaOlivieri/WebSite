@@ -299,3 +299,7 @@ big {
 .works {
 	display:none;
 }
+
+img.flag {
+	display:none;
+}

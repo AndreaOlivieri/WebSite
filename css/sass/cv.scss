@@ -55,20 +55,23 @@ blockquote, q {
 
 body {
 	font-family       : "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size         : 14px;
-	line-height       : 17px;
+	font-size         : 0.9em; 
+	line-height       : 1.2em; 
 	color             : #000;
-	background-color  : #e1e0db;
-	background-image  : url(../img/cv-bg.jpg);
-	background-repeat : no-repeat;
-
-	@include respondTo($widthTablet) {
-		background : none;
+	background-color  : #ffffff;
+	background 		  : none;
+	
+	@include respondTo($widthPhone) {
+		font-size   : 1em; 
+		line-height : 1.3em; 
 	}
 
-	@include respondTo($widthSmallPhone) {
-		font-size   : 12px;
-		line-height : 15px;
+	@include respondTo($widthDesktop) {
+		background-color  : #e1e0db;
+		background-image  : url(../img/cv-bg.jpg);
+		background-repeat : no-repeat;
+		background-size   : auto 100%;
+		padding-bottom    : 50px;
 	}
 }
 
@@ -91,30 +94,31 @@ a:hover {
 /* ----------------------------------------- */
 
 #wrapper {
-	width: 1250px;
-	height: 1700px;
-	margin-top:10px;
-	margin-bottom:20px;	
-	background-image:url(../img/background.png);
-	background-repeat: no-repeat;
-	padding-top: 164px;
-	padding-left: 166px;
-	margin: 0 auto 0 auto;	
+	height: auto;
+	background : none;
+	margin: 0;
+	padding: 1%;	
+
+	@include respondTo($widthPhone) {
+		text-align:left;
+	}
 
 	@include respondTo($widthTablet) {
-		background-size: 100% 100%;
 		width: auto; 
-		height: auto;
-		margin: 0;
+		height: 1395px;
+		background-image:url(../img/background.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		margin: 0 auto 0 auto;	
 		padding: 10% 10% 12% 10%;	
 	}
 
-	@include respondTo($widthSmallPhone) {
-		background : none;
-		width: auto; 
-		height: auto;
-		margin: 0;
-		padding: 0;	
+	@include respondTo($widthDesktop) {
+		width: 1250px;
+		height: 1700px;
+		background-size: auto auto;
+		padding: 164px 0 0 164px;
+		margin: 0 auto 0 auto;	
 	}
 }
 
@@ -122,33 +126,24 @@ a:hover {
 /* ----------------------------------------- */
 
 #screen {
-	width:1045px;	
-	height:1440px;	
-	background-color: #ffffff;
-	display:block;
-	overflow: hidden;
-	padding :20px;
+	width: auto;
+	height: auto;
+	margin: 0;	
+	padding: 0;	
 
-	@include respondTo($widthTablet) {
+	@include respondTo($widthPhone) {
+		width: auto;
+		height: inherit;
 		overflow: auto;
-		width: auto;
-		height: 1350px; 
+		background-color: #ffffff;	 
+		padding: 0.5em;
 	}
 
-	@include respondTo($widthPhablet) {
-		height: 1000px; 	
-	}
-
-	@include respondTo($widthNormalPhone) {
-		height: 780px; 	
-	}
-
-	@include respondTo($widthSmallPhone) {
-		overflow: none;
-		width: auto;
-		height: auto; 
-		margin: 5px;
-		padding: 0;	
+	@include respondTo($widthDesktop) {
+		width: 1060px;
+		height: 1440px;	
+		display: block;
+		padding: 1em; 
 	}
 }
 
@@ -157,58 +152,102 @@ a:hover {
 
 .entry {
 	display        : block;
-	margin-bottom  : 15px;
+	margin-bottom  : 1.5em;
 	clear          : both;
 }
 
-h1  {
-	width         : 400px;
-	font-size     : 42px;
-	color         : #467CE2;
-	margin-bottom : 3px;
-	clear         : both;
+.entry.myself {
+	text-align:center;
 
-	@include respondTo($widthSmallPhone) {
-		font-size: 40px;
+	@include respondTo($widthTablet){
+		text-align:left;
 	}
 }
 
-h1 span {
-	font-size     : 23px;
-	display       : block;
-	color         : #1b4491;
-	margin-top    : 15px;
-	margin-bottom : 15px;
-	text-align    : center;
+
+img.portrait {
+	width: 80%;
+	max-width: 343px;
+	margin-right: 1em;
+	display: inline;
+
+	@include respondTo($widthTablet){
+		float: left;
+		width: 320px;
+	}
+}
+
+
+h1 {
+	font-size     : 3.5em;
+	color         : $colorName;
+	clear         : both;
+	line-height   : 0.9em;
+
+	span {
+		font-size : 0.7em;
+		display   : block;
+		color     : $colorTitle;
+		margin    : 0.5em 0 0.5em 0;
+
+		@include respondTo($widthTablet){
+			margin     : 0.1em 0 0.1em 0;
+			text-align : center;
+		}
+	}	
 }
 
 h2 {
-	width         : 180px;
-	height        : 23px;
+	width         : 17.2%;
 	text-align    : right;
 	float         : left;
 	padding       : 0;
 	margin        : 0;
 	clear         : both;
-	font-size     : 22px;
-	color         : #1b4491;
+	font-size     : 2em; 
+	color         : $colorTitle;
 	margin-bottom : -12px;
 	text-transform: uppercase;
+	line-height   : 1em;
 
-	@include respondTo($widthSmallPhone) {
+	/*
+	@include respondTo($widthPhone) {
 		width: auto;
-	}	
+	}
+
+	*/	
+}
+
+h3 {
+	padding    : 0;
+	clear      : both;
+	color      : #7b90b5;
+	font-size  : 1.5em;
+
+	@include respondTo($widthPhone) {
+		width      : 17.2%;// 180px;
+		text-align : right;
+		float      : left;
+		font-size  : 1em;
+	}
+}
+
+em {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	color:#777777;
+	display: block;
+	padding-top: 0.1em; //3px;
 }
 
 p {
-	margin-left : 250px;
+	margin-left: 22%;//250px;
+	height: 100%;
+	font-size: 1.5em;
+	line-height: 1.2em;
 
 	@include respondTo($widthTablet) {
-		margin-left: 200px;
-	}
-
-	@include respondTo($widthSmallPhone) {
-		margin-left: 140px;
+		font-size: 1em;
 	}
 }
 
@@ -224,60 +263,6 @@ div.content {
 	overflow    : hidden;
 	display     : block;
 	padding-top : 23px;
-}
-
-h3 {
-	width      : 180px;
-	text-align : right;
-	float      : left;
-	padding    : 0;
-	clear      : both;
-	font-size  : 14px;
-	color      : #7b90b5;
-
-	@include respondTo($widthSmallPhone) {
-
-		width: 125px;	
-	}
-}
-
-h4 {
-	width:180px;
-	text-align: right;
-	float:left;
-	padding:0;
-	clear:both;
-	font-size: 11px;
-	color:#7b90b5;
-}
-
-h5 {
-	width:180px;
-	text-align: right;
-	float:left;
-	padding:0;
-	clear:both;
-	font-size: 10px;
-	color:#7b90b5;
-}
-
-h6 {
-	width:180px;
-	text-align: right;
-	float:left;
-	padding:0;
-	clear:both;
-	font-size: 9px;
-	color:#7b90b5;
-}
-
-em {
-	font-family: Georgia, "Times New Roman", serif;
-	font-style: italic;
-	color:#777777;
-	font-size:12px;
-	display: block;
-	padding-top:3px;
 }
 
 
@@ -337,92 +322,56 @@ ul.unordered li {
 }
 
 ul.info {
-	margin-left     : 250px;
+	margin:0 0 0 22%; //250px;
 	list-style-type : none; 
 	display         : table;
 
-	@include respondTo($widthTablet) {
-		margin-left: 200px;
+	/*
+	@include respondTo($widthDesktop) {
+	//	margin-left: 200px;
 	}
 
-	@include respondTo($widthSmallPhone) {
-		margin-left: 140px;
+	@include respondTo($widthPhone) {
+	//	margin-left: 140px;
 	}
+	*/
 }
 
 ul.info li {
-	margin              : 0;
-	padding             : 0;
-	float               : left;
-	background-position : 0.5em;
-	margin-top          : 12px;
-	
+	height  : 100%;
+	margin  : 1% 0 0 0;
+	padding : 0;
+	float   : left;
 }
 
 ul.skills {
-	margin:0;
+	margin:0 0 0 22%; //250px;
 	padding:0;
-	margin-left:250px;
-	margin-top:-6px;
 	list-style-type: none;
 
-	@include respondTo($widthTablet) {
-		margin-left: 200px;
+	@include respondTo($widthDesktop) {
+		//margin-left: 200px;
 	}
 
-	@include respondTo($widthSmallPhone) {
-		margin-left: 140px;
+	@include respondTo($widthPhone) {
+		//margin-left: 140px;
 	}
 }
 
 ul.skills li {
-	margin:0;
+	height: 100%;
+	margin: 0 2.2% 1% 0;
 	padding:0;
+	width: 42%; //150px;
 	float:left;
-	width:120px;
-	background-image:url(../img/bullet.gif);
-	background-repeat: no-repeat;
-	padding-left:10px;
-	background-position: 0 .5em;
-}
+	list-style: disc;
+	@include respondTo($widthPhone) {
+		width: 20%;
+	}
 
-ul.works {
-	margin:0;
-	padding:0;
-	margin-left:250px;
-	list-style-type: none;
-}
-
-ul.works li {
-	margin:0;
-	padding:0;
-	float:left;
-}
-
-ul.works li img {
-	padding:4px;
-	background-color:#fff;
-	width:95px;
-	height:95px;
-	border:1px solid #bdc7da;
-	margin-right:20px;
-	margin-bottom:16px;
-}
-
-ul.works li img:hover {
-	border:1px solid #1b4491;
-	cursor: pointer;
-}
-
-img.portrait {
-	width: 220px;
-	height: 220px;
-	margin-right: 20px;
-	float: left;
-
-	@include respondTo ($widthBigPhone){
-		margin-left: 80px;
-	}	
+	@include respondTo($widthDesktop) {
+		width: 18%;
+	}
 }
 
 
@@ -430,55 +379,63 @@ img.portrait {
 /* ----------------------------------------- */
 
 .self {
-	width:400px;
-	float:left;
-	padding-top:11px;
-	margin-bottom:15px;
-}
+	margin:0 0 2em 0;
 
-.self ul {
-	padding-top: 10px;
-}
+	@include respondTo($widthTablet){	
+		float:left;
+	}
 
-.self ul li {
-	height:25px;
-	display:block;
-	margin-top:-2px;
-}
-
-.self ul li img{
-	margin-right: 5px;
-	width:18px;
-	height:16px;
+	ul {
+		padding: 10px 0 0 2%;
+		text-align: left;
+	
+		li {
+			display:block;
+			line-height: 2em;
+			font-size: 1em;
+		
+			img{
+				height : 1.2em;
+				width  : auto;
+				margin-right: 0.7em;
+				vertical-align: middle;
+			}
+		}
+	}
 }
 
 /* SOCIAL ICONS */
 /* ----------------------------------------- */
 
 .social {
-	float:right;
-	margin:10px 30px 0 0;
+	
+
+	@include respondTo($widthTablet) { 
+		float: right;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			float   : left;
+			margin  : 0 0 0 1em;
+			padding : 0;	
+
+			img{
+				width  : 1.7em;
+				height : 1.7em;
+			}
+		}
+	}
 }
 
-.social ul {
-	list-style: none;
-}
-
-.social ul li {
-	float:left;
-	width:21px;
-	height:24px;
-	margin:0;
-	padding:0;
-	margin-left:6px;
-}
-
-/* FLAG ICONS */
+/* ICONS */
 /* ----------------------------------------- */
 
 img.flag {
-	width:70px;
-	height:70px;
+	width:5em;
+	height:5em;
 	float: right;
 }
 
@@ -525,7 +482,7 @@ img.flag:hover {
 #cboxMiddleRight{width:25px; background:url(../img/border2.png) -25px 0 repeat-y;}
 #cboxContent{background:#fff;}
 #cboxLoadedContent{margin-bottom:20px;}
-#cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#1b4491;}
+#cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:$colorTitle;}
 #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#000;}
 #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
 #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
@@ -566,17 +523,18 @@ img.flag:hover {
 /* ----------------------------------------- */
 
 table {
-	width: 795px;
-	margin-left:250px;
+	width: 78%;
+	margin: 2.7em 0 0 auto;
 	border-collapse: collapse;
-	border:1px solid #999;
+	border: 0.1em solid #999;
 
-	@include respondTo($widthTablet) {
-		margin: 22px 0 0 auto;
+
+	@include respondTo(485px) {
+		margin-top: 0;
 	}
 
-	@include respondTo($widthPhablet) {
-		width: auto;
+	@include respondTo($widthDesktop) {
+		margin-left: 22%;
 	}
 }
 
@@ -585,12 +543,13 @@ table tr {
 }
 
 table td {
-	padding: 5px;
+	padding: 2px;
 	border-right:1px dashed #999;
 	text-align: center;
+	
 
-	@include respondTo ($widthSmallPhone) {
-		padding: 2px;
+	@include respondTo ($widthPhone) {
+		padding: 5px;
 	}
 }
 
@@ -655,7 +614,7 @@ fieldset, legend {
 }
 
 h1.warn {
-	color:#1b4491;
+	color:$colorTitle;
 	font-size:18px;
 	margin-top:30px;
 	padding:50px;
@@ -676,7 +635,7 @@ label {
 	height:28px;
 	margin-bottom:10px;
 	clear:both;
-	color:#1b4491;
+	color:$colorTitle;
 }
 
 input {
