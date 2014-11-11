@@ -132,12 +132,7 @@
         </div>
         <!-- End Social -->
       </div>
-      <!-- Begin 1st Row -->
-      <div class="entry">
-        {{cv.introCV.trans}}
-      </div>
-      <!-- End 1st Row -->
-      <!-- Begin 2nd Row -->
+      <!-- EDUCATION -->
       <div class="entry">
         <h2>{{cv.education.title.trans}}</h2>
         <div class="content" ng-repeat="edu in cv.education.records">
@@ -149,8 +144,7 @@
           </p>
         </div>
       </div>
-      <!-- End 2nd Row -->
-      <!-- Begin 3rd Row -->
+      <!-- EXPERIENCES -->
       <div class="entry">
         <h2>{{cv.experiences.title.trans}}</h2>
         <div class="content" ng-repeat="exp in cv.experiences.records">
@@ -162,8 +156,7 @@
           </ul>
         </div>
       </div>
-      <!-- End 3rd Row -->
-      <!-- Begin 4th Row -->
+      <!-- SKILLS -->
       <div class="entry">
         <h2>{{cv.skills.title.trans}}</h2>
         <div class="content" ng-repeat="ski in cv.skills.records">
@@ -171,8 +164,7 @@
           <p class="skills">{{ski.skills}}</p>
         </div>
       </div>
-      <!-- End 4th Row -->
-      <!-- Begin 5th Row -->
+      <!-- LANGUAGES -->
       <div class="entry">
         <h2>{{cv.languages.title.trans}}</h2>
         <div class="content">
@@ -223,11 +215,10 @@
           </table>
           <div class="rif">
             {{cv.languages.otherLanguages.languagesReference.trans}}
-          </div> 
+          </div>
         </div>
       </div>
-      <!-- End 5th Row -->
-      <!-- Begin 6th Row -->
+      <!-- CERTIFICATES -->
       <div class="entry">
         <h2>{{cv.certificates.title.trans}}</h2>
         <div class="content" ng-repeat="cert in cv.certificates.records">
@@ -235,8 +226,7 @@
           <p>{{cert.description.trans}}</p>
         </div>
       </div>
-      <!-- End 6th Row -->
-      <!-- Begin 7th Row -->
+      <!-- WEBSITE -->
       <div class="entry">
         <h2>{{cv.website.title.trans}}</h2>
         <p ng-controller="aboutMeController as aboutMe">
@@ -245,7 +235,6 @@
           {{cv.website.records[1].trans}}
         </p>
       </div>
-      <!-- End 7th Row -->
       <div class="clear"></div>
     </div>
     <!-- End Screen -->
@@ -254,5 +243,4 @@
   <!-- End Wrapper -->
 
 </body>
-
 </html>

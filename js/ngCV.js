@@ -6,8 +6,6 @@
 
 		lan = languageService.getLanguage();
 
-		this.introCV = lan["introCV"];
-
 		this.education  = new Entry(lan["tEducation"],
 			[ new Education(lan["tSep2013"],   lan["tToday"], lan["masterDegree"], lan["university"],      "http://www.uniroma3.it/", lan["universityAddress"], ""),
 			  new Education(lan["tSep2010"], lan["tJul2013"],  lan["firstDegree"], lan["university"],      "http://www.uniroma3.it/", lan["universityAddress"], new EQF("6")),

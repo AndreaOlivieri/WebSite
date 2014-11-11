@@ -346,7 +346,7 @@ img.flag {
   width: 5em;
   height: 5em;
   float: right; }
-  @media (min-width: 1418px) {
+  @media (min-width: 1200px) {
     img.flag {
       margin-bottom: 1em; } }
 

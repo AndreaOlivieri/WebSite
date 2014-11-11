@@ -438,7 +438,7 @@ img.flag {
 	height:5em;
 	float: right;
 
-	@include respondTo($widthDesktop) {
+	@include respondTo($widthTablet) {
 		margin-bottom: 1em;
 	}
 }
