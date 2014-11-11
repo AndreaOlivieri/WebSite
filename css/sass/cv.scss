@@ -25,9 +25,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 :focus {
 	outline: 0;
 }
-body {
-	line-height: 1;
-}
 /* tables still need 'cellspacing="0"' in the markup */
 table {
 	border-collapse: separate;
@@ -64,6 +61,10 @@ body {
 	@include respondTo($widthPhone) {
 		font-size   : 1em;
 		line-height : 1.3em;
+	}
+
+	@include respondTo($widthTablet) {
+		background-color  : #B2E7F9;
 	}
 
 	@include respondTo($widthDesktop) {
@@ -244,7 +245,7 @@ em {
 p {
 	margin-left: 22%;//250px;
 	height: 100%;
-	font-size: 1.5em;
+	font-size: 1em;
 	line-height: 1.2em;
 
 	@include respondTo($widthTablet) {
