@@ -43,7 +43,6 @@
     ga('send', 'pageview');
   </script>
 
-  
   <script>
     (function () {
       $('.north').tipsy({gravity: 'n'});
@@ -51,8 +50,6 @@
   </script>
 
 </head>
-
-
 
 <body>
   <!-- Begin Wrapper -->
@@ -81,7 +78,7 @@
         <!-- Begin Social -->
         <div class="social" ng-controller="iconController as icon">
           <ul>
-            <!-- 
+            <!--
             <li>
               <a class='north' href="#" title="Download .pdf">
                 <img src="img/icn-save.jpg" alt="Download the pdf version" />
@@ -89,48 +86,48 @@
             </li>
             -->
             <li>
-              <a class='north' href="javascript:window.print()" 
+              <a class='north' href="javascript:window.print()"
                  ng-attr-title="{{icon.print.title.trans}}">
                 <img ng-src="{{icon.print.src}}" alt="" />
               </a>
             </li>
 
             <li>
-              <a class='north' id="contact" href="{{icon.contact.href}}" 
+              <a class='north' id="contact" href="{{icon.contact.href}}"
                  ng-attr-title="{{icon.contact.title.trans}}">
                 <img ng-src="{{icon.contact.src}}" alt="" />
               </a>
             </li>
 
             <li>
-              <a class='north' href="{{icon.google.href}}" 
+              <a class='north' href="{{icon.google.href}}"
                  ng-attr-title="{{icon.google.title.trans}}">
                 <img ng-src="{{icon.google.src}}" alt="" />
               </a>
             </li>
 
             <li>
-              <a class='north' href="{{icon.facebook.href}}" 
+              <a class='north' href="{{icon.facebook.href}}"
                  ng-attr-title="{{icon.facebook.title.trans}}">
                 <img ng-src="{{icon.facebook.src}}" alt="" />
               </a>
             </li>
 
             <li>
-              <a class='north' href="{{icon.twitter.href}}" 
+              <a class='north' href="{{icon.twitter.href}}"
                  ng-attr-title="{{icon.twitter.title.trans}}">
                 <img ng-src="{{icon.twitter.src}}" alt="" />
               </a>
             </li>
 
             <li>
-              <a class='north' href="{{icon.linkedin.href}}" 
+              <a class='north' href="{{icon.linkedin.href}}"
                  ng-attr-title="{{icon.linkedin.title.trans}}">
                 <img ng-src="{{icon.linkedin.src}}" alt="" />
               </a>
             </li>
 
-            
+
           </ul>
         </div>
         <!-- End Social -->
@@ -171,9 +168,7 @@
         <h2>{{cv.skills.title.trans}}</h2>
         <div class="content" ng-repeat="ski in cv.skills.records">
           <h3>{{ski.title.trans}}</h3>
-          <ul class="skills" ng-repeat="skill in ski.skills">
-            <li>{{skill}}</li>
-          </ul>
+          <p class="skills">{{ski.skills}}</p>
         </div>
       </div>
       <!-- End 4th Row -->
@@ -188,17 +183,17 @@
           <h3>{{cv.languages.otherLanguages.title.trans}}</h3>
           <table>
             <tr>
-              <td class="column title"> 
+              <td class="column title">
                 {{cv.languages.otherLanguages.tLanguage.trans}}
               </td>
-              <td class="column title" colspan="2"> 
-                {{cv.languages.otherLanguages.tUnderstanding.trans}} 
+              <td class="column title" colspan="2">
+                {{cv.languages.otherLanguages.tUnderstanding.trans}}
               </td>
-              <td class="column title" colspan="2"> 
-                {{cv.languages.otherLanguages.tSpeaking.trans}}  
+              <td class="column title" colspan="2">
+                {{cv.languages.otherLanguages.tSpeaking.trans}}
               </td>
-              <td class="column title"> 
-                {{cv.languages.otherLanguages.tWriting.trans}}  
+              <td class="column title">
+                {{cv.languages.otherLanguages.tWriting.trans}}
               </td>
             </tr>
             <tr>
@@ -251,13 +246,13 @@
         </p>
       </div>
       <!-- End 7th Row -->
-      <div class="clear"></div> 
+      <div class="clear"></div>
     </div>
     <!-- End Screen -->
   </div>
   <div id="message"><a href="#top" id="top-link">Go to Top</a></div>
   <!-- End Wrapper -->
-  
+
 </body>
 
 </html>

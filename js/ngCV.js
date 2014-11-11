@@ -8,25 +8,25 @@
 
 		this.introCV = lan["introCV"];
 
-		this.education  = new Entry(lan["tEducation"], 
+		this.education  = new Entry(lan["tEducation"],
 			[ new Education(lan["tSep2013"],   lan["tToday"], lan["masterDegree"], lan["university"],      "http://www.uniroma3.it/", lan["universityAddress"], ""),
 			  new Education(lan["tSep2010"], lan["tJul2013"],  lan["firstDegree"], lan["university"],      "http://www.uniroma3.it/", lan["universityAddress"], new EQF("6")),
 			  new Education(lan["tSep2005"], lan["tJun2010"],      lan["diploma"], lan["highSchool"], "http://www.itisarmellini.it/", lan["highSchoolAddress"], new EQF("4"))
 			]);
 
-		this.experiences = new Entry(lan["tExperiences"], 
+		this.experiences = new Entry(lan["tExperiences"],
 			[ new Experience(lan["tSep2013"], lan["tSep2014"],     "H.S.C. s.r.l.",      "http://www.hsc.it/",  lan["hscAddress"], lan["tInformaticProgrammer"],  lan["hscLearned"]),
 			  new Experience(lan["tApr2013"], lan["tJul2013"], "I.S.T.C. - C.N.R.", "http://www.istc.cnr.it/", lan["istcAddress"],            lan["tDeveloper"], lan["istcLearned"])
 			]);
-		
-		this.skills     = new Entry(lan["tSkills"], 
-			[ new Skill( lan["tProgrammingLanguages"], ["Java", "Javascript", "Delphi", "PL/SQL", "C#"]),
-			  new Skill(           lan["tOverTheWeb"], ["HTML/CSS", "JQuery", "AngularJS"]),
-			  new Skill(   lan["tSoftwareKnowledges"], ["Eclipse", "Sublime Text", "RAD Studio", "Delphi 7", "PLSQL Developer", "StarTeam", "Photoshop", "Microsoft Office"]),
-			  new Skill(     lan["tOperatingSystems"], ["Windows", "Mac OS", "Android"])
+
+		this.skills     = new Entry(lan["tSkills"],
+			[ new Skill( lan["tProgrammingLanguages"], "Java, Delphi, PL/SQL, C#"),
+			  new Skill(           lan["tOverTheWeb"], "HTML/CSS, Javascript, JQuery, AngularJS"),
+			  new Skill(   lan["tSoftwareKnowledges"], "Eclipse, Sublime Text, RAD Studio, Delphi 7, PLSQL Developer, StarTeam, Photoshop, Microsoft Office"),
+			  new Skill(     lan["tOperatingSystems"], "Windows, Mac OS, Android")
 			]);
 
-		this.languages  = new EntryLanguages(lan["tLanguages"], 
+		this.languages  = new EntryLanguages(lan["tLanguages"],
 			 new MotherTongue(lan["tItalian"]),
 			 new OtherLanguages( lan["tOtherLanguages"],
 				 [
@@ -34,12 +34,12 @@
 				 ])
 			 );
 
-		this.certificates  = new Entry(lan["tCertificates"], 
+		this.certificates  = new Entry(lan["tCertificates"],
 			[
-				new Certificate("ECDL Core", lan["ecdlDes"]) 
+				new Certificate("ECDL Core", lan["ecdlDes"])
 			]);
 
-		this.website    = new Entry(lan["tWebSite"], 
+		this.website    = new Entry(lan["tWebSite"],
 			[ lan["webSiteDes0"],
 			  lan["webSiteDes1"]
 			]);
@@ -94,16 +94,16 @@
 
 	var OtherLanguages = function(title, records){
 		this.title              = title;
-		this.tLanguage          = lan["tLanguage"]; 
-		this.tUnderstanding 	= lan["tUnderstanding"]; 
-		this.tSpeaking 			= lan["tSpeaking"]; 
+		this.tLanguage          = lan["tLanguage"];
+		this.tUnderstanding 	= lan["tUnderstanding"];
+		this.tSpeaking 			= lan["tSpeaking"];
 		this.tWriting  			= lan["tWriting"];
-        this.tListening 		= lan["tListening"]; 
-        this.tReading   		= lan["tReading"]; 
-        this.tSpokenInteraction = lan["tSpokenInteraction"]; 
+        this.tListening 		= lan["tListening"];
+        this.tReading   		= lan["tReading"];
+        this.tSpokenInteraction = lan["tSpokenInteraction"];
         this.tSpokenProduction 	= lan["tSpokenProduction"];
         this.languagesReference = lan["languagesReference"];
-		this.records 			= records;	
+		this.records 			= records;
 	};
 
 	var Language = function(name, listening, reading, spokenInteraction, spokenProduction, writing){

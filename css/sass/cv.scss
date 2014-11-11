@@ -55,15 +55,15 @@ blockquote, q {
 
 body {
 	font-family       : "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size         : 0.9em; 
-	line-height       : 1.2em; 
+	font-size         : 0.9em;
+	line-height       : 1.2em;
 	color             : #000;
 	background-color  : #ffffff;
-	background 		  : none;
-	
+	background        : none;
+
 	@include respondTo($widthPhone) {
-		font-size   : 1em; 
-		line-height : 1.3em; 
+		font-size   : 1em;
+		line-height : 1.3em;
 	}
 
 	@include respondTo($widthDesktop) {
@@ -97,20 +97,20 @@ a:hover {
 	height: auto;
 	background : none;
 	margin: 0;
-	padding: 1%;	
+	padding: 1%;
 
 	@include respondTo($widthPhone) {
 		text-align:left;
 	}
 
 	@include respondTo($widthTablet) {
-		width: auto; 
+		width: auto;
 		height: 1395px;
 		background-image:url(../img/background.png);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		margin: 0 auto 0 auto;	
-		padding: 10% 10% 12% 10%;	
+		margin: 0 auto 0 auto;
+		padding: 10% 10% 12% 10%;
 	}
 
 	@include respondTo($widthDesktop) {
@@ -118,7 +118,7 @@ a:hover {
 		height: 1700px;
 		background-size: auto auto;
 		padding: 164px 0 0 164px;
-		margin: 0 auto 0 auto;	
+		margin: 0 auto 0 auto;
 	}
 }
 
@@ -128,22 +128,23 @@ a:hover {
 #screen {
 	width: auto;
 	height: auto;
-	margin: 0;	
-	padding: 0;	
+	margin: 0;
+	padding: 0;
 
 	@include respondTo($widthPhone) {
 		width: auto;
 		height: inherit;
 		overflow: auto;
-		background-color: #ffffff;	 
+		background-color: #ffffff;
 		padding: 0.5em;
 	}
 
 	@include respondTo($widthDesktop) {
 		width: 1060px;
-		height: 1440px;	
+		height: 1440px;
 		display: block;
-		padding: 1em; 
+		padding: 1em;
+		overflow: hidden;
 	}
 }
 
@@ -152,7 +153,7 @@ a:hover {
 
 .entry {
 	display        : block;
-	margin-bottom  : 1.5em;
+	margin-bottom  : 1em;
 	clear          : both;
 }
 
@@ -173,13 +174,13 @@ img.portrait {
 
 	@include respondTo($widthTablet){
 		float: left;
-		width: 320px;
+		width: 280px;
 	}
 }
 
 
 h1 {
-	font-size     : 3.5em;
+	font-size     : 3.2em;
 	color         : $colorName;
 	clear         : both;
 	line-height   : 0.9em;
@@ -194,7 +195,7 @@ h1 {
 			margin     : 0.1em 0 0.1em 0;
 			text-align : center;
 		}
-	}	
+	}
 }
 
 h2 {
@@ -204,7 +205,7 @@ h2 {
 	padding       : 0;
 	margin        : 0;
 	clear         : both;
-	font-size     : 2em; 
+	font-size     : 2em;
 	color         : $colorTitle;
 	margin-bottom : -12px;
 	text-transform: uppercase;
@@ -215,7 +216,7 @@ h2 {
 		width: auto;
 	}
 
-	*/	
+	*/
 }
 
 h3 {
@@ -271,7 +272,7 @@ ol {
 	width:500px;
 	margin-left:40px;
 	list-style: decimal;
-	
+
 }
 
 ol li {
@@ -284,7 +285,6 @@ dl {
 	/*float:right;*/
 	width:500px;
 	margin-left:40px;
-	
 }
 
 dt {
@@ -305,7 +305,6 @@ ul.unordered {
 	/*float:right;*/
 	width:500px;
 	margin-left:40px;
-	
 }
 
 ul.unordered li {
@@ -323,7 +322,7 @@ ul.unordered li {
 
 ul.info {
 	margin:0 0 0 22%; //250px;
-	list-style-type : none; 
+	list-style-type : none;
 	display         : table;
 
 	/*
@@ -364,13 +363,14 @@ ul.skills li {
 	padding:0;
 	width: 42%; //150px;
 	float:left;
-	list-style: disc;
+
 	@include respondTo($widthPhone) {
 		width: 20%;
 	}
 
 	@include respondTo($widthDesktop) {
 		width: 18%;
+		//list-style: disc;
 	}
 }
 
@@ -379,21 +379,21 @@ ul.skills li {
 /* ----------------------------------------- */
 
 .self {
-	margin:0 0 2em 0;
+	margin:0 0 1em 0;
 
-	@include respondTo($widthTablet){	
+	@include respondTo($widthTablet){
 		float:left;
 	}
 
 	ul {
 		padding: 10px 0 0 2%;
 		text-align: left;
-	
+
 		li {
 			display:block;
 			line-height: 2em;
 			font-size: 1em;
-		
+
 			img{
 				height : 1.2em;
 				width  : auto;
@@ -408,9 +408,8 @@ ul.skills li {
 /* ----------------------------------------- */
 
 .social {
-	
 
-	@include respondTo($widthTablet) { 
+	@include respondTo($widthTablet) {
 		float: right;
 	}
 
@@ -420,7 +419,7 @@ ul.skills li {
 		li {
 			float   : left;
 			margin  : 0 0 0 1em;
-			padding : 0;	
+			padding : 0;
 
 			img{
 				width  : 1.7em;
@@ -437,6 +436,10 @@ img.flag {
 	width:5em;
 	height:5em;
 	float: right;
+
+	@include respondTo($widthDesktop) {
+		margin-bottom: 1em;
+	}
 }
 
 img.flag:hover {
@@ -518,7 +521,7 @@ img.flag:hover {
 #message a {
 	color: #fff;
 }
-	
+
 /* ELEMENTS */
 /* ----------------------------------------- */
 
@@ -546,7 +549,6 @@ table td {
 	padding: 2px;
 	border-right:1px dashed #999;
 	text-align: center;
-	
 
 	@include respondTo ($widthPhone) {
 		padding: 5px;
@@ -558,7 +560,7 @@ table td.column{
 }
 
 table td.title{
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	font-weight: bold;
 }
 
@@ -690,7 +692,7 @@ textarea:focus {
 	display: block;
 	clear: both;
 	width:90px;
-	height: 33px; 
+	height: 33px;
 	border:none;
 	float:left;
 	margin-left: 80px;

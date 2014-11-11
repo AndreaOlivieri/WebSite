@@ -86,7 +86,7 @@ a:hover {
   @media (min-width: 768px) {
     #wrapper {
       text-align: left; } }
-  @media (min-width: 1207px) {
+  @media (min-width: 1200px) {
     #wrapper {
       width: auto;
       height: 1395px;
@@ -122,18 +122,19 @@ a:hover {
       width: 1060px;
       height: 1440px;
       display: block;
-      padding: 1em; } }
+      padding: 1em;
+      overflow: hidden; } }
 
 /* ENTRIES */
 /* ----------------------------------------- */
 .entry {
   display: block;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   clear: both; }
 
 .entry.myself {
   text-align: center; }
-  @media (min-width: 1207px) {
+  @media (min-width: 1200px) {
     .entry.myself {
       text-align: left; } }
 
@@ -142,13 +143,13 @@ img.portrait {
   max-width: 343px;
   margin-right: 1em;
   display: inline; }
-  @media (min-width: 1207px) {
+  @media (min-width: 1200px) {
     img.portrait {
       float: left;
-      width: 320px; } }
+      width: 280px; } }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.2em;
   color: #467CE2;
   clear: both;
   line-height: 0.9em; }
@@ -157,7 +158,7 @@ h1 {
     display: block;
     color: #1b4491;
     margin: 0.5em 0 0.5em 0; }
-    @media (min-width: 1207px) {
+    @media (min-width: 1200px) {
       h1 span {
         margin: 0.1em 0 0.1em 0;
         text-align: center; } }
@@ -205,7 +206,7 @@ p {
   height: 100%;
   font-size: 1.5em;
   line-height: 1.2em; }
-  @media (min-width: 1207px) {
+  @media (min-width: 1200px) {
     p {
       font-size: 1em; } }
 
@@ -296,8 +297,7 @@ ul.skills li {
   margin: 0 2.2% 1% 0;
   padding: 0;
   width: 42%;
-  float: left;
-  list-style: disc; }
+  float: left; }
   @media (min-width: 768px) {
     ul.skills li {
       width: 20%; } }
@@ -308,8 +308,8 @@ ul.skills li {
 /* SELF INFORMATION */
 /* ----------------------------------------- */
 .self {
-  margin: 0 0 2em 0; }
-  @media (min-width: 1207px) {
+  margin: 0 0 1em 0; }
+  @media (min-width: 1200px) {
     .self {
       float: left; } }
   .self ul {
@@ -327,7 +327,7 @@ ul.skills li {
 
 /* SOCIAL ICONS */
 /* ----------------------------------------- */
-@media (min-width: 1207px) {
+@media (min-width: 1200px) {
   .social {
     float: right; } }
 .social ul {
@@ -346,6 +346,9 @@ img.flag {
   width: 5em;
   height: 5em;
   float: right; }
+  @media (min-width: 1418px) {
+    img.flag {
+      margin-bottom: 1em; } }
 
 img.flag:hover {
   cursor: pointer; }
