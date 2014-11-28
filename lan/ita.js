@@ -95,8 +95,9 @@ var italianLanguage = function(){
 		tWebSite    : new Translation("Sito Web"),
 		webSiteDes0 : new Translation("Puoi trovare maggiori informazioni su di me visitando il mio sito web alla pagina: "),
 		webSiteDes1 : new Translation("Il sito è stato sviluppato utilizzando HTML, CSS, Javascript, PHP, AngularJS, JQuery e Bootstrap."),
-	
-		tClose : new Translation("Chiudi")
+
+		tClose : new Translation("Chiudi"),
+		privacy: new Translation("Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base art. 13 del D. Lgs. 196/2003.")
 	}
 }
 

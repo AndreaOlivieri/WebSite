@@ -96,8 +96,9 @@ var englishLanguage = function(){
 		tWebSite    : new Translation("Website"),
 		webSiteDes0 : new Translation("For detailed information about me, please visit my website: "),
 		webSiteDes1 : new Translation("The website has been developed with HTML, CSS, Javascript, PHP, AngularJS, JQuery and Bootstrap."),
-	
-		tClose : new Translation("Close")
+
+		tClose : new Translation("Close"),
+		privacy: new Translation("")
 	}
 };
 

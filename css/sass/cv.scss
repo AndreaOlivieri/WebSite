@@ -117,7 +117,7 @@ a:hover {
 	@include respondTo($widthDesktop) {
 		width: 1250px;
 		height: 1700px;
-		background-size: auto auto;
+		//background-size: auto auto;
 		padding: 164px 0 0 164px;
 		margin: 0 auto 0 auto;
 	}
@@ -141,8 +141,8 @@ a:hover {
 	}
 
 	@include respondTo($widthDesktop) {
-		width: 1060px;
-		height: 1440px;
+		width: 1067px;
+		height: 1500px;
 		display: block;
 		padding: 1em;
 		overflow: hidden;
@@ -358,23 +358,9 @@ ul.skills {
 	}
 }
 
-ul.skills li {
-	height: 100%;
-	margin: 0 2.2% 1% 0;
-	padding:0;
-	width: 42%; //150px;
-	float:left;
-
-	@include respondTo($widthPhone) {
-		width: 20%;
-	}
-
-	@include respondTo($widthDesktop) {
-		width: 18%;
-		//list-style: disc;
-	}
+.privacy{
+	display: none;
 }
-
 
 /* SELF INFORMATION */
 /* ----------------------------------------- */
@@ -422,6 +408,15 @@ ul.skills li {
 			margin  : 0 0 0 1em;
 			padding : 0;
 
+			#print,
+			#contact{
+				display: none;
+
+				@include respondTo($widthTablet) {
+					display: inherit;
+				}
+			}
+
 			img{
 				width  : 1.7em;
 				height : 1.7em;
@@ -439,6 +434,7 @@ img.flag {
 	float: right;
 
 	@include respondTo($widthTablet) {
+		margin-left: 1em;
 		margin-bottom: 1em;
 	}
 }
@@ -499,7 +495,6 @@ img.flag:hover {
 /* ----------------------------------------- */
 
 #message {
-	display: block;
 	display: none;
 	z-index: 999;
 	opacity: .8;

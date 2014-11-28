@@ -78,15 +78,9 @@
         <!-- Begin Social -->
         <div class="social" ng-controller="iconController as icon">
           <ul>
-            <!--
+
             <li>
-              <a class='north' href="#" title="Download .pdf">
-                <img src="img/icn-save.jpg" alt="Download the pdf version" />
-              </a>
-            </li>
-            -->
-            <li>
-              <a class='north' href="javascript:window.print()"
+              <a class='north' id="print" href="javascript:window.print()"
                  ng-attr-title="{{icon.print.title.trans}}">
                 <img ng-src="{{icon.print.src}}" alt="" />
               </a>
@@ -126,7 +120,6 @@
                 <img ng-src="{{icon.linkedin.src}}" alt="" />
               </a>
             </li>
-
 
           </ul>
         </div>
@@ -234,6 +227,10 @@
           <a ng-href="http://{{aboutMe.website}}">{{aboutMe.website}}</a><br>
           {{cv.website.records[1].trans}}
         </p>
+      </div>
+      <!-- PRIVACY -->
+      <div class="privacy">
+        {{cv.privacy.trans}}
       </div>
       <div class="clear"></div>
     </div>

@@ -40,7 +40,7 @@
 	var Icon = function(name, href, title, src){
 		this.name  = name;
 		this.href  = href;
-		this.title = title; 
+		this.title = title;
 		this.src   = src;
 	};
 

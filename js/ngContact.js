@@ -14,13 +14,13 @@
 	            data    : $.param(this.email),  //param method from jQuery
 	            headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
 	        }).success(function(data){
-	        
+
 	            if (data) { //success comes from the return json object
 	               console.log("email sent");
 	            } else {
 	               console.log("email didn't send");
 	            }
-	            
+
 	        });
 
 	        this.email = new Email();

@@ -99,7 +99,6 @@ a:hover {
     #wrapper {
       width: 1250px;
       height: 1700px;
-      background-size: auto auto;
       padding: 164px 0 0 164px;
       margin: 0 auto 0 auto; } }
 
@@ -119,8 +118,8 @@ a:hover {
       padding: 0.5em; } }
   @media (min-width: 1418px) {
     #screen {
-      width: 1060px;
-      height: 1440px;
+      width: 1067px;
+      height: 1500px;
       display: block;
       padding: 1em;
       overflow: hidden; } }
@@ -292,18 +291,8 @@ ul.skills {
   padding: 0;
   list-style-type: none; }
 
-ul.skills li {
-  height: 100%;
-  margin: 0 2.2% 1% 0;
-  padding: 0;
-  width: 42%;
-  float: left; }
-  @media (min-width: 768px) {
-    ul.skills li {
-      width: 20%; } }
-  @media (min-width: 1418px) {
-    ul.skills li {
-      width: 18%; } }
+.privacy {
+  display: none; }
 
 /* SELF INFORMATION */
 /* ----------------------------------------- */
@@ -336,6 +325,13 @@ ul.skills li {
     float: left;
     margin: 0 0 0 1em;
     padding: 0; }
+    .social ul li #print,
+    .social ul li #contact {
+      display: none; }
+      @media (min-width: 1200px) {
+        .social ul li #print,
+        .social ul li #contact {
+          display: inherit; } }
     .social ul li img {
       width: 1.7em;
       height: 1.7em; }
@@ -348,6 +344,7 @@ img.flag {
   float: right; }
   @media (min-width: 1200px) {
     img.flag {
+      margin-left: 1em;
       margin-bottom: 1em; } }
 
 img.flag:hover {
@@ -518,7 +515,6 @@ img.flag:hover {
 /* GO TO TOP */
 /* ----------------------------------------- */
 #message {
-  display: block;
   display: none;
   z-index: 999;
   opacity: .8;

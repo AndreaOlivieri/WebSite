@@ -42,6 +42,8 @@
 			  lan["webSiteDes1"]
 			]);
 
+		this.privacy = lan["privacy"];
+
 	}]);
 
 	var Entry = function(title, records){
@@ -93,24 +95,24 @@
 	var OtherLanguages = function(title, records){
 		this.title              = title;
 		this.tLanguage          = lan["tLanguage"];
-		this.tUnderstanding 	= lan["tUnderstanding"];
-		this.tSpeaking 			= lan["tSpeaking"];
-		this.tWriting  			= lan["tWriting"];
-        this.tListening 		= lan["tListening"];
-        this.tReading   		= lan["tReading"];
-        this.tSpokenInteraction = lan["tSpokenInteraction"];
-        this.tSpokenProduction 	= lan["tSpokenProduction"];
-        this.languagesReference = lan["languagesReference"];
-		this.records 			= records;
+		this.tUnderstanding			= lan["tUnderstanding"];
+		this.tSpeaking 					= lan["tSpeaking"];
+		this.tWriting  					= lan["tWriting"];
+		this.tListening 				= lan["tListening"];
+		this.tReading   				= lan["tReading"];
+		this.tSpokenInteraction = lan["tSpokenInteraction"];
+		this.tSpokenProduction 	= lan["tSpokenProduction"];
+		this.languagesReference = lan["languagesReference"];
+		this.records 						= records;
 	};
 
 	var Language = function(name, listening, reading, spokenInteraction, spokenProduction, writing){
 		this.name              = name;
 		this.listening         = listening;
-		this.reading 		   = reading;
+		this.reading  				 = reading;
 		this.spokenInteraction = spokenInteraction;
 		this.spokenProduction  = spokenProduction;
-		this.writing 		   = writing;
+		this.writing 					 = writing;
 	};
 
 	var Certificate = function(name, description){

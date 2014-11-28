@@ -10,26 +10,29 @@ $(function () {
 	$window.scroll(function () {
 		window.clearTimeout(scroll_timer);
 		scroll_timer = window.setTimeout(function () {
-			if($window.scrollTop() <= top) 
+			if($window.scrollTop() <= top)
 			{
 				displayed = false;
 				$message.fadeOut(500);
 			}
-			else if(displayed == false) 
+			else if(displayed == false && $(window).width()>1200)
 			{
+				console.log($( window ).width());
 				displayed = true;
-				$message.stop(true, true).fadeIn(500).click(function () { $message.fadeOut(500); });
+				$message.stop(true, true).fadeIn(500).click(function () {
+					$message.fadeOut(500);
+				});
 			}
 		}, 100);
 	});
-	$('#top-link').click(function(e) { 
+	$('#top-link').click(function(e) {
 		e.preventDefault();
-		$.scrollTo(0,300); 
+		$.scrollTo(0,300);
 	   });
 });
-		
-		
-		
+
+
+
 //Tipsy
 /*
 $(document).ready(function() {
@@ -40,7 +43,6 @@ $(document).ready(function() {
 */
 
 //Contact Form Box
-  
 $(document).ready(function(){
 
 	$("a[rel='gallery']").colorbox();
