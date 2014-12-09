@@ -1,12 +1,10 @@
-
+@import '_variables';
 /* LAYOUT */
 /* ----------------------------------------- */
 
 body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	background-color: white;
-	font-size:13px;
-	line-height: 17pt;
+	font-size: $pvFontSize;
 }
 
 .clear {
@@ -23,22 +21,23 @@ a, a:hover, a:visited, a:active {
 
 #wrapper {
 	width: 1045px;
-	height: 1440px;
+	height: auto;
 	background: none;
-	margin:0px;
-	padding: 0px;
+	margin: 0px;
+	padding: 0px 15px 0px 15px;
 }
 
 /* SCREEN BACKGROUND */
 /* ----------------------------------------- */
 
 #screen {
-	width:1045px;	
-	height:1440px;	
-	background-color: #ffffff;
+	width: inherit;
+	height: inherit;
+	background: none;
 	display:block;
 	overflow: hidden;
-	padding :20px;
+	margin: 0px;
+	padding: 0px;
 }
 
 /* ENTRIES */
@@ -52,8 +51,8 @@ a, a:hover, a:visited, a:active {
 }
 
 h1 {
-	width         : 400px;
-	font-size     : 42px;
+	width         : 500px;
+	font-size     : ($pvFontSize * 3);
 	color         : #1b4491;
 	margin-bottom : 3px;
 	clear         : both;
@@ -61,7 +60,7 @@ h1 {
 
 
 h1 span {
-	font-size     : 23px;
+	font-size     : ($pvFontSize * 2.5);
 	display       : block;
 	color         : #1b4491;
 	margin-top    : 15px;
@@ -70,22 +69,21 @@ h1 span {
 }
 
 h2 {
-	width         : 180px;
+	width         : ($pvWidthTitle - 20);
 	height        : 23px;
 	text-align    : right;
 	float         : left;
 	padding       : 0;
-	margin        : 0;
+	margin        : 0 0 10px 0;
 	clear         : both;
-	font-size     : 22px;
+	font-size     : ($pvFontSize * 2.5);
 	color         : #1b4491;
-	margin-bottom : -12px;
 	text-transform: uppercase;	
 }
 
 
 p {
-	margin-left:250px;
+	margin-left: $pvWidthTitle;
 }
 
 div.content {
@@ -110,28 +108,27 @@ ul.list li {
 	padding-top:32px;
 }
 
-
 h3 {
-	width:180px;
-	text-align: right;
-	float:left;
-	padding:0;
-	clear:both;
-	font-size: 13px;
-	color:black;
+	padding    : 0;
+	clear      : both;
+	color      : #7b90b5;
+	font-size  : $pvFontSize;
+	width      : ($pvWidthTitle - 30);
+	text-align : right;
+	float      : left;
 }
 
 em {
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
 	color:#999;
-	font-size:12px;
+	font-size: $pvFontSize;
 	display: block;
 	padding-top:0;
 }
 
 ul.info {
-	margin-left:250px;
+	margin-left:$pvWidthTitle;
 	background: none;
 	list-style: square;
 	
@@ -151,17 +148,25 @@ ul.info li {
 ul.skills {
 	margin:0;
 	padding:0;
-	margin-left:250px;
+	margin-left:$pvWidthTitle;
 	margin-top:-6px;
 	background: none;
 	list-style: circle;
 }
-
+/*
 img.portrait {
 	width: 220px;
 	height: 220px;
 	margin-left: 50px;
 	float: left;	
+}
+*/
+img.portrait {
+	width: 250px;
+	max-width: 343px;
+	margin-right: 1em;
+	display: inline;
+	float: left;
 }
 
 .privacy{
@@ -175,36 +180,33 @@ img.portrait {
 /* ----------------------------------------- */
 
 .self {
-	width:400px;
-	float:left;
-	padding-top:11px;
-	margin-left:38px;
-	margin-bottom:15px;
-}
+	margin: 0;
+	float: left;
 
-.self ul {
-	padding-top: 10px;
-}
+	ul {
+		padding: 10px 0 0 2%;
+		text-align: left;
 
-.self ul li {
-	height:25px;
-	display:block;
-	margin-top:-2px;
-}
+		li {
+			display: block;
+			line-height: 25px;
 
-.self ul li img{
-	margin-right: 5px;
-	width:18px;
-	height:16px;
+			img{
+				height: $pvFontSize;
+				width: auto;
+				margin-right: 0.7em;
+				vertical-align: middle;
+			}
+		}
+	}
 }
-
 
 /* ELEMENTS */
 /* ----------------------------------------- */
 
 table {
 	width: 795px;
-	margin-left:250px;
+	margin-left:$pvWidthTitle;
 	border-collapse: collapse;
 	border:1px solid #999;
 }
@@ -271,7 +273,7 @@ small {
 }
 
 big {
-	font-size:1.2em;
+	font-size:120%;
 }
 
 /* GO TO TOP */

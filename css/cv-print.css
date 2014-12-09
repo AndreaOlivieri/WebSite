@@ -2,9 +2,7 @@
 /* ----------------------------------------- */
 body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  background-color: white;
-  font-size: 13px;
-  line-height: 17pt; }
+  font-size: 15px; }
 
 .clear {
   clear: both; }
@@ -17,20 +15,21 @@ a, a:hover, a:visited, a:active {
 /* ----------------------------------------- */
 #wrapper {
   width: 1045px;
-  height: 1440px;
+  height: auto;
   background: none;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px 15px 0px 15px; }
 
 /* SCREEN BACKGROUND */
 /* ----------------------------------------- */
 #screen {
-  width: 1045px;
-  height: 1440px;
-  background-color: #ffffff;
+  width: inherit;
+  height: inherit;
+  background: none;
   display: block;
   overflow: hidden;
-  padding: 20px; }
+  margin: 0px;
+  padding: 0px; }
 
 /* ENTRIES */
 /* ----------------------------------------- */
@@ -41,14 +40,14 @@ a, a:hover, a:visited, a:active {
   clear: both; }
 
 h1 {
-  width: 400px;
-  font-size: 42px;
+  width: 500px;
+  font-size: 45px;
   color: #1b4491;
   margin-bottom: 3px;
   clear: both; }
 
 h1 span {
-  font-size: 23px;
+  font-size: 37.5px;
   display: block;
   color: #1b4491;
   margin-top: 15px;
@@ -56,16 +55,15 @@ h1 span {
   text-align: center; }
 
 h2 {
-  width: 180px;
+  width: 230px;
   height: 23px;
   text-align: right;
   float: left;
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
   clear: both;
-  font-size: 22px;
+  font-size: 37.5px;
   color: #1b4491;
-  margin-bottom: -12px;
   text-transform: uppercase; }
 
 p {
@@ -91,19 +89,19 @@ ul.list li {
   padding-top: 32px; }
 
 h3 {
-  width: 180px;
-  text-align: right;
-  float: left;
   padding: 0;
   clear: both;
-  font-size: 13px;
-  color: black; }
+  color: #7b90b5;
+  font-size: 15px;
+  width: 220px;
+  text-align: right;
+  float: left; }
 
 em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   color: #999;
-  font-size: 12px;
+  font-size: 15px;
   display: block;
   padding-top: 0; }
 
@@ -130,10 +128,19 @@ ul.skills {
   background: none;
   list-style: circle; }
 
+/*
 img.portrait {
-  width: 220px;
-  height: 220px;
-  margin-left: 50px;
+	width: 220px;
+	height: 220px;
+	margin-left: 50px;
+	float: left;	
+}
+*/
+img.portrait {
+  width: 250px;
+  max-width: 343px;
+  margin-right: 1em;
+  display: inline;
   float: left; }
 
 .privacy {
@@ -145,24 +152,19 @@ img.portrait {
 /* SELF INFORMATION */
 /* ----------------------------------------- */
 .self {
-  width: 400px;
-  float: left;
-  padding-top: 11px;
-  margin-left: 38px;
-  margin-bottom: 15px; }
-
-.self ul {
-  padding-top: 10px; }
-
-.self ul li {
-  height: 25px;
-  display: block;
-  margin-top: -2px; }
-
-.self ul li img {
-  margin-right: 5px;
-  width: 18px;
-  height: 16px; }
+  margin: 0;
+  float: left; }
+  .self ul {
+    padding: 10px 0 0 2%;
+    text-align: left; }
+    .self ul li {
+      display: block;
+      line-height: 25px; }
+      .self ul li img {
+        height: 15px;
+        width: auto;
+        margin-right: 0.7em;
+        vertical-align: middle; }
 
 /* ELEMENTS */
 /* ----------------------------------------- */
@@ -222,7 +224,7 @@ small {
   font-size: 70%; }
 
 big {
-  font-size: 1.2em; }
+  font-size: 120%; }
 
 /* GO TO TOP */
 /* ----------------------------------------- */

@@ -18,9 +18,9 @@
 			]);
 
 		this.skills     = new Entry(lan["tSkills"],
-			[ new Skill( lan["tProgrammingLanguages"], "Java, Delphi, PL/SQL, C#"),
-			  new Skill(           lan["tOverTheWeb"], "HTML/CSS, Javascript, JQuery, AngularJS"),
-			  new Skill(   lan["tSoftwareKnowledges"], "Eclipse, Sublime Text, RAD Studio, Delphi 7, PLSQL Developer, StarTeam, Photoshop, Microsoft Office"),
+			[ new Skill( lan["tProgrammingLanguages"], "Java, C#, Delphi, PL/SQL"),
+			  new Skill(           lan["tOverTheWeb"], "HTML, CSS, SASS, Javascript, JQuery, AngularJS"),
+			  new Skill(   lan["tSoftwareKnowledges"], "Sublime Text, Eclipse, RAD Studio, Delphi 7, PLSQL Developer, Android SDK, Git, GitHub, Borland StarTeam, Photoshop, Microsoft Office"),
 			  new Skill(     lan["tOperatingSystems"], "Windows, Mac OS, Android")
 			]);
 
