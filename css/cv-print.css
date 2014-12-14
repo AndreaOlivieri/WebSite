@@ -2,27 +2,16 @@
 /* ----------------------------------------- */
 body {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 15px; }
+  font-size: 13px; }
 
-.clear {
-  clear: both; }
-
-a, a:hover, a:visited, a:active {
-  color: black;
-  text-decoration: none; }
-
-/* iPAD BACKGROUND */
-/* ----------------------------------------- */
-#wrapper {
+div.container {
   width: 1045px;
   height: auto;
   background: none;
   margin: 0px;
-  padding: 0px 15px 0px 15px; }
+  padding: 0px 20px 0px 20px; }
 
-/* SCREEN BACKGROUND */
-/* ----------------------------------------- */
-#screen {
+div.box {
   width: inherit;
   height: inherit;
   background: none;
@@ -39,34 +28,39 @@ a, a:hover, a:visited, a:active {
   margin-bottom: 5px;
   clear: both; }
 
-h1 {
-  width: 500px;
-  font-size: 45px;
+h1.name {
+  width: 600px;
+  font-size: 39px;
   color: #1b4491;
   margin-bottom: 3px;
   clear: both; }
+  h1.name span {
+    font-size: 32.5px;
+    display: block;
+    color: #1b4491;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center; }
 
-h1 span {
-  font-size: 37.5px;
-  display: block;
-  color: #1b4491;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center; }
-
-h2 {
-  width: 230px;
+h2.entryTitle {
   height: 23px;
-  text-align: right;
-  float: left;
   padding: 0;
   margin: 0 0 10px 0;
   clear: both;
-  font-size: 37.5px;
+  font-size: 32.5px;
   color: #1b4491;
   text-transform: uppercase; }
 
-p {
+h3.entrySubTitle {
+  padding: 0;
+  clear: both;
+  color: #7b90b5;
+  font-size: 13px;
+  width: 220px;
+  text-align: right;
+  float: left; }
+
+p.context {
   margin-left: 250px; }
 
 div.content {
@@ -88,20 +82,11 @@ ul.list li {
   float: right;
   padding-top: 32px; }
 
-h3 {
-  padding: 0;
-  clear: both;
-  color: #7b90b5;
-  font-size: 15px;
-  width: 220px;
-  text-align: right;
-  float: left; }
-
 em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   color: #999;
-  font-size: 15px;
+  font-size: 13px;
   display: block;
   padding-top: 0; }
 
@@ -128,18 +113,10 @@ ul.skills {
   background: none;
   list-style: circle; }
 
-/*
-img.portrait {
-	width: 220px;
-	height: 220px;
-	margin-left: 50px;
-	float: left;	
-}
-*/
 img.portrait {
   width: 250px;
   max-width: 343px;
-  margin-right: 1em;
+  margin: 0 1em 1em 0;
   display: inline;
   float: left; }
 
@@ -161,7 +138,7 @@ img.portrait {
       display: block;
       line-height: 25px; }
       .self ul li img {
-        height: 15px;
+        height: 13px;
         width: auto;
         margin-right: 0.7em;
         vertical-align: middle; }
@@ -169,7 +146,7 @@ img.portrait {
 /* ELEMENTS */
 /* ----------------------------------------- */
 table {
-  width: 795px;
+  width: 780px;
   margin-left: 250px;
   border-collapse: collapse;
   border: 1px solid #999; }
@@ -226,13 +203,18 @@ small {
 big {
   font-size: 120%; }
 
-/* GO TO TOP */
+.clear {
+  clear: both; }
+
+a, a:hover, a:visited, a:active {
+  color: black;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default; }
+
+/* DISPLAY NONE */
 /* ----------------------------------------- */
-#message,
-#top-link,
-.works,
-img.flag,
-.social {
+.works, .icon, footer {
   display: none; }
 
 /*# sourceMappingURL=cv-print.css.map */

@@ -1,4 +1,5 @@
 @import '_variables';
+
 /* LAYOUT */
 /* ----------------------------------------- */
 
@@ -7,30 +8,15 @@ body {
 	font-size: $pvFontSize;
 }
 
-.clear {
-	clear:both;
-}
-
-a, a:hover, a:visited, a:active {
-	color:black;
-	text-decoration: none;
-}
-
-/* iPAD BACKGROUND */
-/* ----------------------------------------- */
-
-#wrapper {
+div.container {
 	width: 1045px;
 	height: auto;
 	background: none;
 	margin: 0px;
-	padding: 0px 15px 0px 15px;
+	padding: 0px 20px 0px 20px;
 }
 
-/* SCREEN BACKGROUND */
-/* ----------------------------------------- */
-
-#screen {
+div.box {
 	width: inherit;
 	height: inherit;
 	background: none;
@@ -50,29 +36,25 @@ a, a:hover, a:visited, a:active {
 	clear          : both;
 }
 
-h1 {
-	width         : 500px;
+h1.name {
+	width         : 600px;
 	font-size     : ($pvFontSize * 3);
 	color         : #1b4491;
 	margin-bottom : 3px;
 	clear         : both;
+
+	span {
+		font-size     : ($pvFontSize * 2.5);
+		display       : block;
+		color         : #1b4491;
+		margin-top    : 15px;
+		margin-bottom : 15px;
+		text-align    : center;
+	}
 }
 
-
-h1 span {
-	font-size     : ($pvFontSize * 2.5);
-	display       : block;
-	color         : #1b4491;
-	margin-top    : 15px;
-	margin-bottom : 15px;
-	text-align    : center;
-}
-
-h2 {
-	width         : ($pvWidthTitle - 20);
+h2.entryTitle {
 	height        : 23px;
-	text-align    : right;
-	float         : left;
 	padding       : 0;
 	margin        : 0 0 10px 0;
 	clear         : both;
@@ -81,8 +63,17 @@ h2 {
 	text-transform: uppercase;	
 }
 
+h3.entrySubTitle {
+	padding    : 0;
+	clear      : both;
+	color      : #7b90b5;
+	font-size  : $pvFontSize;
+	width      : ($pvWidthTitle - 30);
+	text-align : right;
+	float      : left;
+}
 
-p {
+p.context {
 	margin-left: $pvWidthTitle;
 }
 
@@ -106,16 +97,6 @@ ul.list li {
 	display:block;
 	float:right;
 	padding-top:32px;
-}
-
-h3 {
-	padding    : 0;
-	clear      : both;
-	color      : #7b90b5;
-	font-size  : $pvFontSize;
-	width      : ($pvWidthTitle - 30);
-	text-align : right;
-	float      : left;
 }
 
 em {
@@ -153,18 +134,11 @@ ul.skills {
 	background: none;
 	list-style: circle;
 }
-/*
-img.portrait {
-	width: 220px;
-	height: 220px;
-	margin-left: 50px;
-	float: left;	
-}
-*/
+
 img.portrait {
 	width: 250px;
 	max-width: 343px;
-	margin-right: 1em;
+	margin: 0 1em 1em 0;
 	display: inline;
 	float: left;
 }
@@ -205,7 +179,7 @@ img.portrait {
 /* ----------------------------------------- */
 
 table {
-	width: 795px;
+	width: 780px;
 	margin-left:$pvWidthTitle;
 	border-collapse: collapse;
 	border:1px solid #999;
@@ -276,13 +250,20 @@ big {
 	font-size:120%;
 }
 
-/* GO TO TOP */
+.clear {
+	clear:both;
+}
+
+a, a:hover, a:visited, a:active {
+	color:black;
+	text-decoration: none;
+	pointer-events: none;
+  cursor: default;
+}
+
+/* DISPLAY NONE */
 /* ----------------------------------------- */
 
-#message,
-#top-link,
-.works,
-img.flag,
-.social {
+.works, .icon, footer {
 	display:none;
 }

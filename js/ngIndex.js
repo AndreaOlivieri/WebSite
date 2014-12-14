@@ -1,6 +1,6 @@
 (function(){
 
-	var modIndex = angular.module('modIndex', ['modAboutMe', 'modContact', 'modWords']);
+	var modIndex = angular.module('modIndex', ['modAboutMe', 'modContact', 'modWords', 'modIcon', 'modCV']);
 
 	modIndex.controller('tabController', function(){
 		this.tab = 1;
@@ -30,7 +30,7 @@
 	modIndex.directive('cv', function(){
 		return {
 			restrict    : 'E',
-			templateUrl : 'template/curriculum.html',
+			templateUrl : 'template/cv.html',
 		}
 	});
 	modIndex.directive('blog', function(){
