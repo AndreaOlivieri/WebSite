@@ -10,16 +10,15 @@
 	display        : block;
 	margin-bottom  : 1em;
 	clear          : both;
-}
 
-.entry.myself {
-	text-align:center;
+	&.myself {
+		text-align:center;
 
-	@include respondTo($widthTablet){
-		text-align:left;
+		@include respondTo($widthTablet){
+			text-align:left;
+		}
 	}
 }
-
 
 img.portrait {
 	width: 80%;
@@ -60,7 +59,6 @@ h2.entryTitle {
 	clear         : both;
 	font-size     : 2em;
 	color         : $colorTitle;
-	margin-bottom : -12px;
 	text-transform: uppercase;
 	line-height   : 1em;
 }
@@ -104,7 +102,7 @@ div.content {
 	margin      : 0;
 	overflow    : hidden;
 	display     : block;
-	padding-top : 23px;
+	padding-top : 1em;
 }
 
 
@@ -185,7 +183,7 @@ ul.skills {
 /* ----------------------------------------- */
 
 .self {
-	margin:0 0 1em 0;
+	margin: 0 0 1em 0;
 
 	@include respondTo($widthTablet){
 		float:left;

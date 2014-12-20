@@ -1,5 +1,15 @@
 @import '_variables';
 
+/* DEFAULT */
+
+//remove href when you print
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+
 /* LAYOUT */
 /* ----------------------------------------- */
 
