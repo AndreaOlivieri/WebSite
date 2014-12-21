@@ -10,6 +10,12 @@
       .entry.myself {
         text-align: left; } }
 
+a.eqf {
+  color: red;
+  float: right; }
+a.website {
+  white-space: nowrap; }
+
 img.portrait {
   width: 80%;
   max-width: 343px;
@@ -36,8 +42,6 @@ h1.name {
         text-align: center; } }
 
 h2.entryTitle {
-  padding: 0;
-  margin: 0;
   clear: both;
   font-size: 2em;
   color: #1b4491;
@@ -45,7 +49,7 @@ h2.entryTitle {
   line-height: 1em; }
 
 h3.entrySubTitle {
-  padding: 0;
+  margin-bottom: 0.3em;
   clear: both;
   color: #7b90b5;
   font-size: 0.9em; }
@@ -63,21 +67,25 @@ em {
   padding-top: 0.1em; }
 
 p.context {
-  margin-left: 23%;
   height: 100%;
   font-size: 1em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-left: 5%; }
+  @media (min-width: 768px) {
+    p.context {
+      margin-left: 23%; } }
   p.context img {
     margin-left: 20px;
     padding-left: 10px; }
 
 div.content {
   clear: both;
-  padding: 0;
-  margin: 0;
   overflow: hidden;
   display: block;
   padding-top: 1em; }
+div .rif {
+  margin-top: 10px;
+  text-align: right; }
 
 ol {
   width: 500px;
@@ -105,37 +113,18 @@ dd {
   width: 480px;
   text-indent: 20px; }
 
-ul.unordered {
-  width: 500px;
-  margin-left: 40px; }
-
-ul.unordered li {
-  margin: 0;
-  padding: 0;
-  float: left;
-  display: block;
-  width: 500px;
-  background-image: url(../img/bullet.gif);
-  background-repeat: no-repeat;
-  padding-left: 10px;
-  background-position: 0 .5em;
-  margin-top: 0; }
-
-ul.info {
-  margin: 0 0 0 23%;
+ul.info, ul.skills {
   list-style-type: none;
+  margin-left: 5%; }
+  @media (min-width: 768px) {
+    ul.info, ul.skills {
+      margin-left: 23%; } }
+ul.info {
   display: table; }
-
-ul.info li {
-  height: 100%;
-  margin: 1% 0 0 0;
-  padding: 0;
-  float: left; }
-
-ul.skills {
-  margin: 0 0 0 23%;
-  padding: 0;
-  list-style-type: none; }
+  ul.info li {
+    height: 100%;
+    margin: 1% 0 0 0;
+    float: left; }
 
 .privacy {
   display: none; }
@@ -169,8 +158,7 @@ ul.skills {
   list-style: none; }
   .icon ul li {
     float: left;
-    margin: 0 0 0 1em;
-    padding: 0; }
+    margin: 0 0 0 1em; }
     .icon ul li #print {
       display: none; }
       @media (min-width: 1200px) {
@@ -180,48 +168,30 @@ ul.skills {
       width: 1.7em;
       height: 1.7em; }
 
-/* ELEMENTS */
+/* TABLES */
 /* ----------------------------------------- */
 table {
-  width: 78%;
-  margin: 2.7em 0 0 auto;
+  margin: 1em 0 0 auto;
   border-collapse: collapse;
   border: 0.1em solid #999; }
-  @media (min-width: 485px) {
+  @media (min-width: 1200px) {
     table {
-      margin-top: 0; } }
-  @media (min-width: 1418px) {
-    table {
+      width: 77% !important;
       margin-left: 23%; } }
-
-table tr {
-  border-top: 1px dashed #999; }
-
-table td {
-  padding: 2px;
-  border-right: 1px dashed #999;
-  text-align: center; }
-  @media (min-width: 768px) {
-    table td {
-      padding: 5px; } }
-
-table td.column {
-  width: "25%"; }
-
-table td.title {
-  text-transform: uppercase;
-  font-weight: bold; }
-
-table td.subtitle {
-  font-style: italic;
-  color: grey; }
-
-div .rif {
-  margin-top: 10px;
-  text-align: right; }
-
-a.eqf {
-  color: red;
-  float: right; }
+  table td {
+    padding: 0 !important;
+    border-right: 1px dashed #999;
+    text-align: center; }
+    @media (min-width: 768px) {
+      table td {
+        padding: 5px; } }
+    table td.column {
+      width: "25%"; }
+    table td.title {
+      text-transform: uppercase;
+      font-weight: bold; }
+    table td.subtitle {
+      font-style: italic;
+      color: grey; }
 
 /*# sourceMappingURL=cv.css.map */

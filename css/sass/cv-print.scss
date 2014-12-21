@@ -36,6 +36,20 @@ div.box {
 	padding: 0px;
 }
 
+div.content {
+	clear       : both;
+	padding     : 0;
+	margin      : 0;
+	overflow    : hidden;
+	display     : block;
+	padding-top : 23px;
+}
+
+div.rif{
+	margin-top: 10px;
+	text-align: right;
+}
+
 /* ENTRIES */
 /* ----------------------------------------- */
 
@@ -87,26 +101,17 @@ p.context {
 	margin-left: $pvWidthTitle;
 }
 
-div.content {
-	clear       : both;
-	padding     : 0;
-	margin      : 0;
-	overflow    : hidden;
-	display     : block;
-	padding-top : 23px;
-}
-
 ul.list {
 	clear: both;
 	padding:0;
 	margin:0;
 	overflow: hidden;
-}
 
-ul.list li {
-	display:block;
-	float:right;
-	padding-top:32px;
+	li {
+		display:block;
+		float:right;
+		padding-top:32px;
+	}
 }
 
 em {
@@ -122,18 +127,17 @@ ul.info {
 	margin-left:$pvWidthTitle;
 	background: none;
 	list-style: square;
-	
-}
 
-ul.info li {
-	margin:0;
-	padding:0;
-	float:left;
-	display: block;
-	padding-left:0;
-	background-position: 0 .5em;
-	margin-top:12px;
-	list-style-type: square;
+	li {
+		margin:0;
+		padding:0;
+		float:left;
+		display: block;
+		padding-left:0;
+		background-position: 0 .5em;
+		margin-top:12px;
+		list-style-type: square;
+	}
 }
 
 ul.skills {
@@ -185,7 +189,7 @@ img.portrait {
 	}
 }
 
-/* ELEMENTS */
+/* TABLES */
 /* ----------------------------------------- */
 
 table {
@@ -193,41 +197,34 @@ table {
 	margin-left:$pvWidthTitle;
 	border-collapse: collapse;
 	border:1px solid #999;
+
+	tr {
+		border-top:1px dashed #999;
+	}
+
+	td {
+		padding: 5px;
+		border-right:1px dashed #999;
+		text-align: center;
+
+		&.column{
+			width :"25%";
+		}
+
+		&.title{
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		&.subtitle{
+			font-style: italic;
+			color: grey;
+		}
+	}
 }
 
-table tr {
-	border-top:1px dashed #999;
-}
-
-table td {
-	padding: 5px;
-	border-right:1px dashed #999;
-	text-align: center;
-}
-
-table td.column{
-	width :"25%";
-}
-
-table td.title{
-	text-transform: uppercase;	
-	font-weight: bold;
-}
-
-table td.subtitle{
-	font-style: italic;
-	color: grey;
-}
-
-div .rif{
-	margin-top: 10px;
-	text-align: right;
-}
-
-a.eqf{
-	color : red;
-	float : right;
-}
+/* ELEMENTS */
+/* ----------------------------------------- */
 
 blockquote {
 	border-left:3px solid #7b90b5;
@@ -269,6 +266,17 @@ a, a:hover, a:visited, a:active {
 	text-decoration: none;
 	pointer-events: none;
   cursor: default;
+}
+
+a{
+	&.eqf{
+		color : red;
+		float : right;
+	}
+
+	&.website{
+		white-space:nowrap;
+	}
 }
 
 /* DISPLAY NONE */

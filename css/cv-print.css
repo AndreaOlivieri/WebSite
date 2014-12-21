@@ -24,6 +24,18 @@ div.box {
   margin: 0px;
   padding: 0px; }
 
+div.content {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  padding-top: 23px; }
+
+div.rif {
+  margin-top: 10px;
+  text-align: right; }
+
 /* ENTRIES */
 /* ----------------------------------------- */
 .entry {
@@ -67,24 +79,15 @@ h3.entrySubTitle {
 p.context {
   margin-left: 250px; }
 
-div.content {
-  clear: both;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  display: block;
-  padding-top: 23px; }
-
 ul.list {
   clear: both;
   padding: 0;
   margin: 0;
   overflow: hidden; }
-
-ul.list li {
-  display: block;
-  float: right;
-  padding-top: 32px; }
+  ul.list li {
+    display: block;
+    float: right;
+    padding-top: 32px; }
 
 em {
   font-family: Georgia, "Times New Roman", serif;
@@ -98,16 +101,15 @@ ul.info {
   margin-left: 250px;
   background: none;
   list-style: square; }
-
-ul.info li {
-  margin: 0;
-  padding: 0;
-  float: left;
-  display: block;
-  padding-left: 0;
-  background-position: 0 .5em;
-  margin-top: 12px;
-  list-style-type: square; }
+  ul.info li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    padding-left: 0;
+    background-position: 0 .5em;
+    margin-top: 12px;
+    list-style-type: square; }
 
 ul.skills {
   margin: 0;
@@ -147,41 +149,30 @@ img.portrait {
         margin-right: 0.7em;
         vertical-align: middle; }
 
-/* ELEMENTS */
+/* TABLES */
 /* ----------------------------------------- */
 table {
   width: 780px;
   margin-left: 250px;
   border-collapse: collapse;
   border: 1px solid #999; }
+  table tr {
+    border-top: 1px dashed #999; }
+  table td {
+    padding: 5px;
+    border-right: 1px dashed #999;
+    text-align: center; }
+    table td.column {
+      width: "25%"; }
+    table td.title {
+      text-transform: uppercase;
+      font-weight: bold; }
+    table td.subtitle {
+      font-style: italic;
+      color: grey; }
 
-table tr {
-  border-top: 1px dashed #999; }
-
-table td {
-  padding: 5px;
-  border-right: 1px dashed #999;
-  text-align: center; }
-
-table td.column {
-  width: "25%"; }
-
-table td.title {
-  text-transform: uppercase;
-  font-weight: bold; }
-
-table td.subtitle {
-  font-style: italic;
-  color: grey; }
-
-div .rif {
-  margin-top: 10px;
-  text-align: right; }
-
-a.eqf {
-  color: red;
-  float: right; }
-
+/* ELEMENTS */
+/* ----------------------------------------- */
 blockquote {
   border-left: 3px solid #7b90b5;
   padding-left: 8px;
@@ -215,6 +206,12 @@ a, a:hover, a:visited, a:active {
   text-decoration: none;
   pointer-events: none;
   cursor: default; }
+
+a.eqf {
+  color: red;
+  float: right; }
+a.website {
+  white-space: nowrap; }
 
 /* DISPLAY NONE */
 /* ----------------------------------------- */
