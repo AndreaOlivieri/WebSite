@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin respondUntil($query, $type: max-width) {
+  @media ($type: $query) {
+    @content;
+  }
+}

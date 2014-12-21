@@ -83,9 +83,11 @@ div.content {
   overflow: hidden;
   display: block;
   padding-top: 1em; }
-div .rif {
+div.rif {
   margin-top: 10px;
-  text-align: right; }
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9em; }
 
 ol {
   width: 500px;
@@ -113,18 +115,34 @@ dd {
   width: 480px;
   text-indent: 20px; }
 
-ul.info, ul.skills {
-  list-style-type: none;
-  margin-left: 5%; }
+ul {
+  list-style-type: none; }
+  ul.info, ul.skills, ul.languages {
+    margin-left: 5%; }
+    @media (min-width: 768px) {
+      ul.info, ul.skills, ul.languages {
+        margin-left: 23%; } }
+  ul.info {
+    display: table; }
+    ul.info li {
+      height: 100%;
+      margin: 1% 0 0 0;
+      float: left; }
   @media (min-width: 768px) {
-    ul.info, ul.skills {
-      margin-left: 23%; } }
-ul.info {
-  display: table; }
-  ul.info li {
-    height: 100%;
-    margin: 1% 0 0 0;
-    float: left; }
+    ul.languages {
+      display: none; } }
+  ul li.title {
+    margin-left: 20px;
+    margin-top: 5px; }
+    ul li.title b {
+      text-transform: uppercase;
+      font-weight: bold; }
+  ul li.subtitle {
+    margin-left: 40px; }
+    ul li.subtitle em {
+      font-style: italic;
+      color: grey;
+      display: inline; }
 
 .privacy {
   display: none; }
@@ -170,27 +188,32 @@ ul.info {
 
 /* TABLES */
 /* ----------------------------------------- */
-table {
+table.languages {
   margin: 1em 0 0 auto;
   border-collapse: collapse;
   border: 0.1em solid #999; }
+  @media (max-width: 768px) {
+    table.languages {
+      display: none; } }
   @media (min-width: 1200px) {
-    table {
-      width: 77% !important;
+    table.languages {
+      width: 77%;
       margin-left: 23%; } }
-  table td {
+  table.languages tr {
+    border-top: 1px dashed #999; }
+  table.languages td {
     padding: 0 !important;
     border-right: 1px dashed #999;
     text-align: center; }
     @media (min-width: 768px) {
-      table td {
-        padding: 5px; } }
-    table td.column {
+      table.languages td {
+        padding: 8px; } }
+    table.languages td.column {
       width: "25%"; }
-    table td.title {
+    table.languages td.title {
       text-transform: uppercase;
       font-weight: bold; }
-    table td.subtitle {
+    table.languages td.subtitle {
       font-style: italic;
       color: grey; }
 

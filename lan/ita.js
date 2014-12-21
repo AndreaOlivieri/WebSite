@@ -87,7 +87,7 @@ var italianLanguage = function(){
   tReading   		      : new Translation("Lettura"),
   tSpokenInteraction : new Translation("Interazione"), 
   tSpokenProduction  : new Translation("Produzione Orale"),
-  languagesReference : new Translation("Quadro commune europeo di riferimento per le lingue (CEFR)"),
+  languagesReference : new Translation("Quadro comune europeo di riferimento per le lingue (CEFR)"),
 
   tCertificates : new Translation("Attestati"),
   ecdlDes       : new Translation("Conseguito il 12/05/2009 all' I.T.I.S. G.Armellini con il superamento di 7 esami: Concetti di base dell'ICT, Uso del Computer e Gestione dei File, Elaborazione Testi, Fogli Elettronici, Uso delle Basi di Dati, Strumenti di Presentazione, Navigazione e Comunicazione in Rete"),
