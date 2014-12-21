@@ -279,12 +279,11 @@ table.languages {
 	border-collapse: collapse;
 	border: 0.1em solid #999;
 
-	//Table is hiden until phone width
-	@include respondUntil ($widthPhone) {
-		display: none;
+  @media screen and (max-width: $widthPhone) {
+  	display: none;
 	}
 
-	@include respondTo ($widthTablet) {
+	@include respondTo ($widthPhone) {
 		width: 77%;
 		margin-left: 23%;
 	}
@@ -294,7 +293,7 @@ table.languages {
 	}
 
 	td {
-		padding: 0 !important;
+		padding: 0px;
 		border-right: 1px dashed #999;
 		text-align: center;
 

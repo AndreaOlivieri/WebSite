@@ -151,23 +151,23 @@ img.portrait {
 
 /* TABLES */
 /* ----------------------------------------- */
-table {
-  width: 780px;
-  margin-left: 250px;
+table.languages {
+  width: 77%;
+  margin: 1em 0 0 23%;
   border-collapse: collapse;
-  border: 1px solid #999; }
-  table tr {
+  border: 0.1em solid #999; }
+  table.languages tr {
     border-top: 1px dashed #999; }
-  table td {
-    padding: 5px;
+  table.languages td {
+    padding: 8;
     border-right: 1px dashed #999;
     text-align: center; }
-    table td.column {
+    table.languages td.column {
       width: "25%"; }
-    table td.title {
+    table.languages td.title {
       text-transform: uppercase;
       font-weight: bold; }
-    table td.subtitle {
+    table.languages td.subtitle {
       font-style: italic;
       color: grey; }
 
@@ -215,7 +215,7 @@ a.website {
 
 /* DISPLAY NONE */
 /* ----------------------------------------- */
-.works, .icon, footer {
+.works, .icon, footer, ul.languages {
   display: none; }
 
 /*# sourceMappingURL=cv-print.css.map */
