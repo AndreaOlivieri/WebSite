@@ -32,6 +32,7 @@ var italianLanguage = function(){
 		tFacebookProfile : new Translation("Il mio profilo di Facebook"),
 		tTwitterProfile  : new Translation("Il mio profilo di Twitter"),
 		tLinkedinProfile : new Translation("Il mio profilo di Linkedin"),
+		tGithubProfile   : new Translation("Il mio profilo di GitHub"),
 		/* Curriculum Entry */
 		introCV       : new Translation(""),
 		tEducation    : new Translation("Istruzione"),

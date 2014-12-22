@@ -180,8 +180,13 @@ footer p {
 /* ----------------------------------------- */
 
 img.flag {
-    width:70px;
-    height:70px;
+    width: 70px;
+    height: 70px;
+    margin: 0 0 0 15px;
+
+    @include respondTo($widthPhone){
+        margin: 4px 0 0 0;
+    }
 }
 
 img.flag:hover {
