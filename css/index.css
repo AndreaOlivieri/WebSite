@@ -112,6 +112,8 @@ footer p {
   margin: 0;
   padding: 50px 0; }
 
+/* CONTACT */
+/* ----------------------------------------- */
 .ng-dirty.ng-invalid.ng-valid-required {
   border-color: #ff0000;
   /* RED */ }
@@ -122,6 +124,9 @@ footer p {
 
 .form-group {
   text-align: center; }
+
+div.contact_info {
+  margin: 0 15px 0 15px; }
 
 /* SOCIAL ICONS */
 /* ----------------------------------------- */
