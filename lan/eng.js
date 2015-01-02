@@ -3,6 +3,14 @@ var englishLanguage = function(){
 
 		language : new Translation("en"),
 
+		name       : new Translation("Andrea"),
+		surname    : new Translation("Olivieri"),
+		email      : new Translation("andrea.olivieri1991@gmail.com"),
+		phoneNumber: new Translation("+39 3355888093"),
+		skype      : new Translation("andrea.olivieri17"),
+		website    : new Translation("www.andrea-olivieri.com"),
+		blog       : new Translation("andreaolivieri.wordpress.com"),
+
 		born       : new Translation("Born at Rome, Italy, 13/06/1991"),
 		address    : new Translation("Via Baudelaire 10, 00143, Rome, Italy"),
 		cap        : new Translation("00143"),
@@ -11,43 +19,44 @@ var englishLanguage = function(){
 		status     : new Translation("Dr."),
 		occupation : new Translation("Developer"),
 
-		/* INDEX */
+		/* Home */
 		tWelcome        : new Translation("Welcome To"),
 		tWebSite        : new Translation("Web Site"),
 		tBy             : new Translation("by"),
 		tIsLoading      : new Translation("loading"),
-		tContact	       : new Translation("Contact"),
+		tContact        : new Translation("Contact"),
 		tContactForm    : new Translation("Contact Form"),
 		contactFormDesc : new Translation("For contacting me, complete next form with name, email and phone number."),
 		tName           : new Translation("Name"),
+		tAddress        : new Translation("Address"),
 		tEmail          : new Translation("Email"),
 		tPhoneNumber    : new Translation("Phone Number"),
 		tMessage        : new Translation("Message"),
 		tSubmit         : new Translation("Submit"),
 
-		/* Curriculum Vitae */
+		/* Icons */
 		tPrintCV         : new Translation("Print CV"),
-		tContactMe       : new Translation("Contact Me"),
 		tGoogleProfile   : new Translation("Google's profile"),
 		tFacebookProfile : new Translation("Facebook's profile"),
 		tTwitterProfile  : new Translation("Twitter's profile"),
 		tLinkedinProfile : new Translation("Linkedin's profile"),
 		tGithubProfile   : new Translation("GitHub's profile"),
-		/* Curriculum Entry */
+
+		/* Curriculum Vitae */
 		introCV       : new Translation(""),
 		tEducation    : new Translation("Education"),
 
 		tRome         : new Translation("Rome"),
 
 		tToday   : new Translation("Today"),
-		tSep2014	: new Translation("Sep 2014"),
-  tSep2013 : new Translation("Sep 2013"),
+		tSep2014 : new Translation("Sep 2014"),
+		tSep2013 : new Translation("Sep 2013"),
 		tSep2010 : new Translation("Sep 2010"),
 		tSep2005 : new Translation("Sep 2005"),
-  tApr2013 : new Translation("Apr 2013"),
-  tJun2010 : new Translation("Jun 2010"),
-  tJul2013 : new Translation("Jul 2013"),
-   
+		tApr2013 : new Translation("Apr 2013"),
+		tJun2010 : new Translation("Jun 2010"),
+		tJul2013 : new Translation("Jul 2013"),
+
 		university        : new Translation("Roma Tre University"),
 		universityAddress : new Translation("Via Ostiense 159, 00154, Rome, Italy"),
 		highSchool        : new Translation("I.T.I.S. G.Armellini"),
@@ -60,7 +69,7 @@ var englishLanguage = function(){
 		EQF4    : new Translation("Level 4 EQF"),
 		hrefEQF : new Translation("http://ec.europa.eu/ploteus/en/content/descriptors-page"),
 
-		tExperiences          : new Translation("Experiences"), 
+		tExperiences          : new Translation("Experiences"),
 		tInformaticProgrammer : new Translation("Informatic Programmer"),
 		tDeveloper            : new Translation("Developer"),
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Rome, Italy"),
@@ -80,18 +89,18 @@ var englishLanguage = function(){
 		tItalian        : new Translation("Italian Language"),
 		tEnglish        : new Translation("English"),
 
- 	tLanguage          : new Translation("Language"), 
+		tLanguage          : new Translation("Language"),
 		tUnderstanding 	   : new Translation("Understanding"),
-		tSpeaking 		       : new Translation("Speaking"),
-		tWriting  		       : new Translation("Writing"),
-  tListening 		      : new Translation("Listening"), 
-  tReading   		      : new Translation("Reading"),
-  tSpokenInteraction : new Translation("Spoken Interation"), 
-  tSpokenProduction  : new Translation("Spoken Production"),
-  languagesReference : new Translation("Common European Framework of Reference for Languages (CEFR)"),
+		tSpeaking          : new Translation("Speaking"),
+		tWriting           : new Translation("Writing"),
+		tListening         : new Translation("Listening"),
+		tReading           : new Translation("Reading"),
+		tSpokenInteraction : new Translation("Spoken Interation"),
+		tSpokenProduction  : new Translation("Spoken Production"),
+		languagesReference : new Translation("Common European Framework of Reference for Languages (CEFR)"),
 
-  tCertificates : new Translation("Certificates"),
-  ecdlDes       : new Translation("I attained it at 12/05/2009 in I.T.I.S. G.Armellini with 7 exams' overcoming: Basic Concepts of ICT, Using the Computer and Managing Files, Word Processing, Spreadsheets, Using Databases, Presentations, Web Browsing and Communication"),
+		tCertificates : new Translation("Certificates"),
+		ecdlDes       : new Translation("I attained it at 12/05/2009 in I.T.I.S. G.Armellini with 7 exams' overcoming: Basic Concepts of ICT, Using the Computer and Managing Files, Word Processing, Spreadsheets, Using Databases, Presentations, Web Browsing and Communication"),
 
 
 		tWebSite    : new Translation("Website"),

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="modIndex" ng-controller="wordsController as words">
+<html ng-app="modIndex" ng-controller="wordsController">
 
 <head>
 
@@ -20,16 +20,15 @@
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/cv.css"   />
-  	<link rel="stylesheet" href="css/cv-print.css" media="print"/>
+		<link rel="stylesheet" href="css/cv-print.css" media="print"/>
 
-  	<!-- Languages -->
-  	<script src="lan/ita.js"></script>
+		<!-- Languages -->
+		<script src="lan/ita.js"></script>
 		<script src="lan/eng.js"></script>
 
 		<!-- Script -->
 		<script src="js/ngLanguage.js"></script>
 		<script src="js/ngWords.js"></script>
-		<script src="js/ngAboutMe.js"></script>
 		<script src="js/ngIcon.js"></script>
 		<script src="js/ngContact.js"></script>
 		<script src="js/ngCV.js"></script>
@@ -57,9 +56,9 @@
   		</script>
 </head>
 
-<body ng-controller="aboutMeController as aboutMe">
+<body>
 
-		<div class="brand">{{aboutMe.status.trans}} {{aboutMe.name}} {{aboutMe.surname}}</div>
+		<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
 
 		<section ng-controller="tabController as tab">
 				<!-- Navigation -->
@@ -90,7 +89,7 @@
 												</li>
 												<!--
 												<li ng-class="{ active:tab.isSelected(4) }">
-														<a ng-href="http://{{aboutMe.blog}}" ng-click="tab.selectTab(4)" wrc_done="false">BLOG</a>
+														<a ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">BLOG</a>
 												</li>
 												-->
 												<li ng-class="{ active:tab.isSelected(5) }">

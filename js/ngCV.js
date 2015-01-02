@@ -1,6 +1,6 @@
 (function(){
 
-	var modCV = angular.module('modCV',['modAboutMe', 'modIcon', 'modWords', 'modLanguage']);
+	var modCV = angular.module('modCV',['modIcon', 'modWords', 'modLanguage']);
 
 	modCV.controller('cvController', ['languageService', function(languageService){
 

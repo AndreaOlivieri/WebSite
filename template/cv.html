@@ -7,30 +7,28 @@
         <img class="portrait" src="img/profile.jpg" alt="Andrea Olivieri" />
         <!-- End Image -->
         <!-- Begin Personal Information -->
-        <div class="self" ng-controller="aboutMeController as aboutMe">
-          <h1 class="name">{{aboutMe.status.trans}} {{aboutMe.surname}} {{aboutMe.name}}<br/>
-            <span>{{aboutMe.occupation.trans}}</span></h1>
+        <div class="self">
+          <h1 class="name">{{words.status.trans}} {{words.surname.trans}} {{words.name.trans}}<br/>
+            <span>{{words.occupation.trans}}</span></h1>
           <ul>
-            <li> <img src="icon/icn-born.png">{{aboutMe.born.trans}}</li>
-            <li> <img src="icon/icn-address.png">{{aboutMe.address.trans}}</li>
-            <li> <img src="icon/icn-email.png">{{aboutMe.email}}</li>
-            <li> <img src="icon/icn-phone.png">{{aboutMe.phone}}</li>
-            <li> <img src="icon/icn-website.png">{{aboutMe.website}}</li>
-            <li> <img src="icon/icn-skype.png">{{aboutMe.skype}}</li>
+            <li> <img src="icon/icn-born.png">{{words.born.trans}}</li>
+            <li> <img src="icon/icn-address.png">{{words.address.trans}}</li>
+            <li> <img src="icon/icn-email.png">{{words.email.trans}}</li>
+            <li> <img src="icon/icn-phone.png">{{words.phoneNumber.trans}}</li>
+            <li> <img src="icon/icn-website.png">{{words.website.trans}}</li>
+            <li> <img src="icon/icn-skype.png">{{words.skype.trans}}</li>
           </ul>
         </div>
         <!-- End Personal Information -->
         <!-- Begin Icon -->
         <div class="icon" ng-controller="iconController as icon">
           <ul>
-
             <li>
               <a class='north' id="print" href="javascript:window.print()"
                  ng-attr-title="{{icon.print.title.trans}}">
                 <img ng-src="{{icon.print.src}}" alt="" />
               </a>
             </li>
-
           </ul>
         </div>
         <!-- End Icon -->
@@ -170,9 +168,9 @@
         <h2 class="entryTitle">{{cv.website.title.trans}}</h2>
         <div class="content">
           <h3 class="entrySubTitle">{{cert.name}}</h3>
-          <p class="context" ng-controller="aboutMeController as aboutMe">
+          <p class="context">
           {{cv.website.records[0].trans}}
-          <a class="website" ng-href="http://{{aboutMe.website}}">{{aboutMe.website}}</a>
+          <a class="website" ng-href="http://{{words.website.trans}}">{{words.website.trans}}</a>
           <br>
           {{cv.website.records[1].trans}}
         </p>

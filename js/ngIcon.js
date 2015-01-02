@@ -35,11 +35,6 @@
 			                      "javascript:window.print()",
 			                      lan["tPrintCV"],
 			                      "icon/icn-print.png");
-
-		this.contact  = new Icon( lan["tContactMe"],
-			                      "contact/contact.html",
-			                      lan["tContactMe"],
-			                      "icon/icn-contact.jpg");
 	}]);
 
 	var Icon = function(name, href, title, src){

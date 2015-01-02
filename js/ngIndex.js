@@ -1,6 +1,6 @@
 (function(){
 
-	var modIndex = angular.module('modIndex', ['modAboutMe', 'modContact', 'modWords', 'modIcon', 'modCV']);
+	var modIndex = angular.module('modIndex', ['modContact', 'modWords', 'modIcon', 'modCV']);
 
 	modIndex.controller('tabController', function(){
 		this.tab = 1;

@@ -255,17 +255,22 @@ ul{
 			float   : left;
 			margin  : 0 0 0 1em;
 
+			img{
+				width  : 1.7em;
+				height : 1.7em;
+			}
+
 			#print{
 				display: none;
 
 				@include respondTo($widthTablet) {
 					display: inherit;
-				}
-			}
 
-			img{
-				width  : 1.7em;
-				height : 1.7em;
+					img{
+						width  : 3em;
+						height : 3em;
+					}
+				}
 			}
 		}
 	}

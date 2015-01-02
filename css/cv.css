@@ -177,14 +177,17 @@ ul {
   .icon ul li {
     float: left;
     margin: 0 0 0 1em; }
+    .icon ul li img {
+      width: 1.7em;
+      height: 1.7em; }
     .icon ul li #print {
       display: none; }
       @media (min-width: 1200px) {
         .icon ul li #print {
-          display: inherit; } }
-    .icon ul li img {
-      width: 1.7em;
-      height: 1.7em; }
+          display: inherit; }
+          .icon ul li #print img {
+            width: 3em;
+            height: 3em; } }
 
 /* TABLES */
 /* ----------------------------------------- */
