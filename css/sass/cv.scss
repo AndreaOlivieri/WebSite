@@ -22,7 +22,7 @@
 
 a{
 	&.eqf{
-		color : red;
+		color : red !important;
 		float : right;
 	}
 
@@ -46,14 +46,14 @@ img.portrait {
 
 h1.name{
 	font-size     : 3.2em;
-	color         : $colorName;
+	color         : $colorName !important;
 	clear         : both;
 	line-height   : 0.9em;
 
 	span {
 		font-size : 0.7em;
 		display   : block;
-		color     : $colorTitle;
+		color     : $colorTitle !important;
 		margin    : 0.5em 0 0.5em 0;
 
 		@include respondTo($widthTablet){
@@ -67,7 +67,7 @@ h1.name{
 h2.entryTitle {
 	clear         : both;
 	font-size     : 2em;
-	color         : $colorTitle;
+	color         : $colorTitle !important;
 	text-transform: uppercase;
 	line-height   : 1em;
 }
@@ -75,7 +75,7 @@ h2.entryTitle {
 h3.entrySubTitle{
 	margin-bottom: 0.3em;
 	clear: both;
-	color: #7b90b5;
+	color: $colorSubTitle !important;
 	font-size: 0.9em;
 
 	@include respondTo($widthPhone) {
@@ -88,7 +88,7 @@ h3.entrySubTitle{
 em {
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
-	color:#777777;
+	color: $colorEmphasis !important;
 	display: block;
 	padding-top: 0.1em;
 }
@@ -148,7 +148,7 @@ dt {
 	float:left;
 	display: block;
 	width:500px;
-		color:#7b90b5;
+	color:#7b90b5 !important;
 }
 
 dd {
@@ -201,7 +201,7 @@ ul{
 
 		em{
 			font-style: italic;
-			color: grey;
+			color: grey !important;
 			display: inline;
 		}
 	}
@@ -317,7 +317,7 @@ table.languages {
 
 		&.subtitle{
 			font-style: italic;
-			color: grey;
+			color: grey !important;
 		}
 	}
 }

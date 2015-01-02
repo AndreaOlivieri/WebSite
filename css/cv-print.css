@@ -47,13 +47,11 @@ div.rif {
 h1.name {
   width: 600px;
   font-size: 39px;
-  color: #1b4491;
   margin-bottom: 3px;
   clear: both; }
   h1.name span {
     font-size: 32.5px;
     display: block;
-    color: #1b4491;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center; }
@@ -64,13 +62,11 @@ h2.entryTitle {
   margin: 0 0 10px 0;
   clear: both;
   font-size: 32.5px;
-  color: #1b4491;
   text-transform: uppercase; }
 
 h3.entrySubTitle {
   padding: 0;
   clear: both;
-  color: #7b90b5;
   font-size: 13px;
   width: 220px;
   text-align: right;
@@ -92,7 +88,6 @@ ul.list {
 em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
-  color: #999;
   font-size: 13px;
   display: block;
   padding-top: 0; }
@@ -168,8 +163,7 @@ table.languages {
       text-transform: uppercase;
       font-weight: bold; }
     table.languages td.subtitle {
-      font-style: italic;
-      color: grey; }
+      font-style: italic; }
 
 /* ELEMENTS */
 /* ----------------------------------------- */
@@ -202,13 +196,12 @@ big {
   clear: both; }
 
 a, a:hover, a:visited, a:active {
-  color: black;
+  color: black !important;
   text-decoration: none;
   pointer-events: none;
   cursor: default; }
 
 a.eqf {
-  color: red;
   float: right; }
 a.website {
   white-space: nowrap; }

@@ -62,14 +62,12 @@ div.rif{
 h1.name {
 	width         : 600px;
 	font-size     : ($pvFontSize * 3);
-	color         : #1b4491;
 	margin-bottom : 3px;
 	clear         : both;
 
 	span {
 		font-size     : ($pvFontSize * 2.5);
 		display       : block;
-		color         : #1b4491;
 		margin-top    : 15px;
 		margin-bottom : 15px;
 		text-align    : center;
@@ -82,14 +80,12 @@ h2.entryTitle {
 	margin        : 0 0 10px 0;
 	clear         : both;
 	font-size     : ($pvFontSize * 2.5);
-	color         : #1b4491;
 	text-transform: uppercase;	
 }
 
 h3.entrySubTitle {
 	padding    : 0;
 	clear      : both;
-	color      : #7b90b5;
 	font-size  : $pvFontSize;
 	width      : ($pvWidthTitle - 30);
 	text-align : right;
@@ -116,7 +112,6 @@ ul.list {
 em {
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
-	color:#999;
 	font-size: $pvFontSize;
 	display: block;
 	padding-top:0;
@@ -216,7 +211,6 @@ table.languages {
 
 		&.subtitle{
 			font-style: italic;
-			color: grey;
 		}
 	}
 }
@@ -260,7 +254,7 @@ big {
 }
 
 a, a:hover, a:visited, a:active {
-	color:black;
+	color:black !important;
 	text-decoration: none;
 	pointer-events: none;
   cursor: default;
@@ -268,7 +262,6 @@ a, a:hover, a:visited, a:active {
 
 a{
 	&.eqf{
-		color : red;
 		float : right;
 	}
 
