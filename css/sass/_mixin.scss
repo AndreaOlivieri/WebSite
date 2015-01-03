@@ -10,11 +10,6 @@
   }
 }
 
-@mixin transition_navbar_hover() {
-  -webkit-transition: background-image 0.4s; /* For Safari 3.1 to 6.0 */
-  transition: background-image 0.4s;
-}
-
 @mixin navbar_hover($tab) {
   background-image : url("../img/nav_bg_hover_"+$tab+".png");
   background-size  : 100% 100%;

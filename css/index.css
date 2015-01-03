@@ -147,16 +147,14 @@ div.contact_info {
 /* FLAG ICONS */
 /* ----------------------------------------- */
 img.flag {
-  width: 115px;
+  width: 74px;
   height: 74px;
   margin: 0 0 0 15px; }
   @media (min-width: 768px) {
     img.flag {
+      width: 115px;
       margin: 0;
-      padding: 0 20px 0 20px;
-      -webkit-transition: background-image 0.4s;
-      /* For Safari 3.1 to 6.0 */
-      transition: background-image 0.4s; }
+      padding: 0 20px 0 20px; }
       img.flag:hover, img.flag:focus {
         background-image: url("../img/nav_bg_hover_flag.png");
         background-size: 100% 100%; } }
@@ -220,26 +218,6 @@ img.flag:hover {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a, .navbar-default .navbar-collapse .navbar-nav > .active > a:focus {
-          background: none;
-          border: none;
-          color: white !important; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a.home:hover {
-          background-image: url("../img/nav_bg_hover_home.png");
-          background-size: 100% 100%;
-          color: #12794B !important; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a.about:hover {
-          background-image: url("../img/nav_bg_hover_about.png");
-          background-size: 100% 100%;
-          color: #12794B !important; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a.cv:hover {
-          background-image: url("../img/nav_bg_hover_cv.png");
-          background-size: 100% 100%;
-          color: #12794B !important; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a.contact:hover {
-          background-image: url("../img/nav_bg_hover_contact.png");
-          background-size: 100% 100%;
-          color: #12794B !important; }
         .navbar-default .navbar-collapse .navbar-nav li {
           height: 74px; }
           .navbar-default .navbar-collapse .navbar-nav li a {
@@ -247,10 +225,7 @@ img.flag:hover {
             color: black;
             line-height: normal;
             padding: 25px 20px 15px 20px;
-            font-weight: bold;
-            -webkit-transition: background-image 0.4s;
-            /* For Safari 3.1 to 6.0 */
-            transition: background-image 0.4s; }
+            font-weight: bold; }
             .navbar-default .navbar-collapse .navbar-nav li a.home:hover, .navbar-default .navbar-collapse .navbar-nav li a.home:focus {
               background-image: url("../img/nav_bg_hover_home.png");
               background-size: 100% 100%;
@@ -266,7 +241,27 @@ img.flag:hover {
             .navbar-default .navbar-collapse .navbar-nav li a.contact:hover, .navbar-default .navbar-collapse .navbar-nav li a.contact:focus {
               background-image: url("../img/nav_bg_hover_contact.png");
               background-size: 100% 100%;
-              color: #9e1111 !important; } }
+              color: #9e1111 !important; }
+        .navbar-default .navbar-collapse .navbar-nav .active > a {
+          background: none;
+          border: none;
+          color: white !important; }
+          .navbar-default .navbar-collapse .navbar-nav .active > a.home:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.home:hover {
+            background-image: url("../img/nav_bg_hover_home.png");
+            background-size: 100% 100%;
+            color: #12794B !important; }
+          .navbar-default .navbar-collapse .navbar-nav .active > a.about:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.about:hover {
+            background-image: url("../img/nav_bg_hover_about.png");
+            background-size: 100% 100%;
+            color: #12794B !important; }
+          .navbar-default .navbar-collapse .navbar-nav .active > a.cv:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.cv:hover {
+            background-image: url("../img/nav_bg_hover_cv.png");
+            background-size: 100% 100%;
+            color: #12794B !important; }
+          .navbar-default .navbar-collapse .navbar-nav .active > a.contact:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.contact:hover {
+            background-image: url("../img/nav_bg_hover_contact.png");
+            background-size: 100% 100%;
+            color: #12794B !important; } }
 @media screen and (min-width: 1200px) {
   .box:after {
     content: '';

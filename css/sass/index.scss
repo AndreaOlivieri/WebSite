@@ -188,15 +188,15 @@ div.contact_info{
 /* ----------------------------------------- */
 
 img.flag {
-    width: 115px;
+    width: 74px;
     height: 74px;
     margin: 0 0 0 15px;
 
     @include respondTo($widthPhone){
+        width: 115px;
         margin: 0;
         padding: 0 20px 0 20px;
 
-        @include transition_navbar_hover();
         &:hover, &:focus{
             @include navbar_hover("flag");
         }
@@ -273,30 +273,6 @@ img.flag:hover {
                 table-layout: fixed;
                 font-size: 1.25em;
 
-                & > .active > a {
-                    &, &:focus{
-                        background : none;
-                        border     : none;
-                        color      : white !important;
-                    }
-                    &.home:hover{
-                        @include navbar_hover("home");
-                        color : #12794B !important;
-                    }
-                    &.about:hover{
-                        @include navbar_hover("about");
-                        color : #12794B !important;
-                    }
-                    &.cv:hover{
-                        @include navbar_hover("cv");
-                        color : #12794B !important;
-                    }
-                    &.contact:hover{
-                        @include navbar_hover("contact");
-                        color : #12794B !important;
-                    }
-                }
-
                 li {
                     height : 74px;
 
@@ -306,7 +282,6 @@ img.flag:hover {
                         line-height : normal;
                         padding     : 25px 20px 15px 20px;
                         font-weight : bold;
-                        @include transition_navbar_hover();
 
                         &.home:hover, &.home:focus {
                             @include navbar_hover("home");
@@ -324,6 +299,29 @@ img.flag:hover {
                             @include navbar_hover("contact");
                             color : #9e1111 !important;
                         }
+                    }
+                }
+
+                .active > a {
+                    background : none;
+                    border     : none;
+                    color      : white !important;
+
+                    &.home:focus, &.home:hover{
+                        @include navbar_hover("home");
+                        color : #12794B !important;
+                    }
+                    &.about:focus, &.about:hover{
+                        @include navbar_hover("about");
+                        color : #12794B !important;
+                    }
+                    &.cv:focus, &.cv:hover{
+                        @include navbar_hover("cv");
+                        color : #12794B !important;
+                    }
+                    &.contact:focus, &.contact:hover{
+                        @include navbar_hover("contact");
+                        color : #12794B !important;
                     }
                 }
             }
