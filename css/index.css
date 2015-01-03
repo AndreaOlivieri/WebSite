@@ -154,16 +154,12 @@ img.flag {
     img.flag {
       margin: 0;
       padding: 0 20px 0 20px;
-      -webkit-transition: background-image 0.4s, border-left 0.4s, border-right 0.4s;
+      -webkit-transition: background-image 0.4s;
       /* For Safari 3.1 to 6.0 */
-      transition: background-image 0.4s, border-left 0.4s, border-right 0.4s; }
+      transition: background-image 0.4s; }
       img.flag:hover, img.flag:focus {
-        width: 119px;
-        background-image: url("../img/nav_bg_hover.png");
-        background-size: 100% 100%;
-        border-color: black !important;
-        border-left: 1px solid;
-        border-right: 1px solid; } }
+        background-image: url("../img/nav_bg_hover_flag.png");
+        background-size: 100% 100%; } }
 
 img.flag:hover {
   cursor: pointer; }
@@ -228,12 +224,21 @@ img.flag:hover {
           background: none;
           border: none;
           color: white !important; }
-        .navbar-default .navbar-collapse .navbar-nav > .active > a:hover {
-          background-image: url("../img/nav_bg_hover.png");
+        .navbar-default .navbar-collapse .navbar-nav > .active > a.home:hover {
+          background-image: url("../img/nav_bg_hover_home.png");
           background-size: 100% 100%;
-          border-color: black !important;
-          border-left: 1px solid;
-          border-right: 1px solid;
+          color: #12794B !important; }
+        .navbar-default .navbar-collapse .navbar-nav > .active > a.about:hover {
+          background-image: url("../img/nav_bg_hover_about.png");
+          background-size: 100% 100%;
+          color: #12794B !important; }
+        .navbar-default .navbar-collapse .navbar-nav > .active > a.cv:hover {
+          background-image: url("../img/nav_bg_hover_cv.png");
+          background-size: 100% 100%;
+          color: #12794B !important; }
+        .navbar-default .navbar-collapse .navbar-nav > .active > a.contact:hover {
+          background-image: url("../img/nav_bg_hover_contact.png");
+          background-size: 100% 100%;
           color: #12794B !important; }
         .navbar-default .navbar-collapse .navbar-nav li {
           height: 74px; }
@@ -243,15 +248,24 @@ img.flag:hover {
             line-height: normal;
             padding: 25px 20px 15px 20px;
             font-weight: bold;
-            -webkit-transition: background-image 0.4s, border-left 0.4s, border-right 0.4s;
+            -webkit-transition: background-image 0.4s;
             /* For Safari 3.1 to 6.0 */
-            transition: background-image 0.4s, border-left 0.4s, border-right 0.4s; }
-            .navbar-default .navbar-collapse .navbar-nav li a:hover, .navbar-default .navbar-collapse .navbar-nav li a:focus {
-              background-image: url("../img/nav_bg_hover.png");
+            transition: background-image 0.4s; }
+            .navbar-default .navbar-collapse .navbar-nav li a.home:hover, .navbar-default .navbar-collapse .navbar-nav li a.home:focus {
+              background-image: url("../img/nav_bg_hover_home.png");
               background-size: 100% 100%;
-              border-color: black !important;
-              border-left: 1px solid;
-              border-right: 1px solid;
+              color: #9e1111 !important; }
+            .navbar-default .navbar-collapse .navbar-nav li a.about:hover, .navbar-default .navbar-collapse .navbar-nav li a.about:focus {
+              background-image: url("../img/nav_bg_hover_about.png");
+              background-size: 100% 100%;
+              color: #9e1111 !important; }
+            .navbar-default .navbar-collapse .navbar-nav li a.cv:hover, .navbar-default .navbar-collapse .navbar-nav li a.cv:focus {
+              background-image: url("../img/nav_bg_hover_cv.png");
+              background-size: 100% 100%;
+              color: #9e1111 !important; }
+            .navbar-default .navbar-collapse .navbar-nav li a.contact:hover, .navbar-default .navbar-collapse .navbar-nav li a.contact:focus {
+              background-image: url("../img/nav_bg_hover_contact.png");
+              background-size: 100% 100%;
               color: #9e1111 !important; } }
 @media screen and (min-width: 1200px) {
   .box:after {

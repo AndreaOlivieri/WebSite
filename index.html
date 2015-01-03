@@ -79,21 +79,29 @@
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav" >
 												<li ng-class="{ active:tab.isSelected(1) }">
-														<a href ng-click="tab.selectTab(1)">Home</a>
+														<a class="home" href ng-click="tab.selectTab(1)">
+															{{words.tHome.trans}}
+														</a>
 												</li>
 												<li ng-class="{ active:tab.isSelected(2) }">
-														<a href ng-click="tab.selectTab(2)">About</a>
+														<a class="about" href ng-click="tab.selectTab(2)">
+															{{words.tAbout.trans}}
+														</a>
 												</li>
 												<li ng-class="{ active:tab.isSelected(3) }">
-														<a href ng-click="tab.selectTab(3)">CV</a>
+														<a class="cv" href ng-click="tab.selectTab(3)">
+															{{words.tCV.trans}}
+														</a>
 												</li>
 												<!--
 												<li ng-class="{ active:tab.isSelected(4) }">
-														<a ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">BLOG</a>
+														<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
+															{{words.tBlog.trans}}
+														</a>
 												</li>
 												-->
 												<li ng-class="{ active:tab.isSelected(5) }">
-														<a href ng-click="tab.selectTab(5)">
+														<a class="contact" href ng-click="tab.selectTab(5)">
 															{{words.tContact.trans}}
 														</a>
 												</li>

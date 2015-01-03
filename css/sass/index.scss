@@ -198,8 +198,7 @@ img.flag {
 
         @include transition_navbar_hover();
         &:hover, &:focus{
-            width: 119px;
-            @include navbar_hover();
+            @include navbar_hover("flag");
         }
     }
 }
@@ -280,9 +279,21 @@ img.flag:hover {
                         border     : none;
                         color      : white !important;
                     }
-                    &:hover{
-                        @include navbar_hover();
-                        color            : #12794B !important;
+                    &.home:hover{
+                        @include navbar_hover("home");
+                        color : #12794B !important;
+                    }
+                    &.about:hover{
+                        @include navbar_hover("about");
+                        color : #12794B !important;
+                    }
+                    &.cv:hover{
+                        @include navbar_hover("cv");
+                        color : #12794B !important;
+                    }
+                    &.contact:hover{
+                        @include navbar_hover("contact");
+                        color : #12794B !important;
                     }
                 }
 
@@ -290,16 +301,28 @@ img.flag:hover {
                     height : 74px;
 
                     a {
-                        height        : 100%;
-                        color         : black;
-                        line-height   : normal;
-                        padding       : 25px 20px 15px 20px;
-                        font-weight   : bold;
+                        height      : 100%;
+                        color       : black;
+                        line-height : normal;
+                        padding     : 25px 20px 15px 20px;
+                        font-weight : bold;
                         @include transition_navbar_hover();
 
-                        &:hover, &:focus {
-                            @include navbar_hover();
-                            color             : #9e1111 !important;
+                        &.home:hover, &.home:focus {
+                            @include navbar_hover("home");
+                            color : #9e1111 !important;
+                        }
+                        &.about:hover, &.about:focus {
+                            @include navbar_hover("about");
+                            color : #9e1111 !important;
+                        }
+                        &.cv:hover, &.cv:focus {
+                            @include navbar_hover("cv");
+                            color : #9e1111 !important;
+                        }
+                        &.contact:hover, &.contact:focus {
+                            @include navbar_hover("contact");
+                            color : #9e1111 !important;
                         }
                     }
                 }
