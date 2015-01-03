@@ -227,7 +227,7 @@ img.flag:hover {
         .navbar-default .navbar-collapse .navbar-nav > .active > a, .navbar-default .navbar-collapse .navbar-nav > .active > a:focus {
           background: none;
           border: none;
-          color: white; }
+          color: white !important; }
         .navbar-default .navbar-collapse .navbar-nav > .active > a:hover {
           background-image: url("../img/nav_bg_hover.png");
           background-size: 100% 100%;

@@ -278,7 +278,7 @@ img.flag:hover {
                     &, &:focus{
                         background : none;
                         border     : none;
-                        color      : white;
+                        color      : white !important;
                     }
                     &:hover{
                         @include navbar_hover();
