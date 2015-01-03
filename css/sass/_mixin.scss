@@ -9,3 +9,16 @@
     @content;
   }
 }
+
+@mixin transition_navbar_hover() {
+  -webkit-transition: background-image 0.4s, border-left 0.4s, border-right 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: background-image 0.4s, border-left 0.4s, border-right 0.4s;
+}
+
+@mixin navbar_hover() {
+  background-image : url("../img/nav_bg_hover.png");
+  background-size  : 100% 100%;
+  border-color     : black !important;
+  border-left      : 1px solid;
+  border-right     : 1px solid;
+}
