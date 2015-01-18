@@ -34,9 +34,17 @@ var italianLanguage = function(){
 		tName           : new Translation("Nome"),
 		tAddress        : new Translation("Indirizzo"),
 		tEmail          : new Translation("Email"),
+		tSkype          : new Translation("Skype"),
 		tPhoneNumber    : new Translation("Numero Telefonico"),
 		tMessage        : new Translation("Messaggio"),
 		tSubmit         : new Translation("Invia"),
+
+		/* About */
+		introduce_myself : new Translation("Mi Presento"),
+		hello_everybody  : new Translation("Ciao a tutti! Sono Andrea Olivieri, nato a Roma il 13/06/1991, laureato in ingegneria informatica presso l’università di Roma Tre.  La mia passione più grande è il computer, con il quale passo la maggior parte del tempo, esso è il motivo principale dei miei studi e del mio lavoro come sviluppatore. Fin da quando ho iniziato a programmare, il linguaggio di programmazione con cui ho avuto più esperienze è stato Java, con il quale il pattern MVC"),
+
+		my_story     : new Translation("La Mia Storia"),
+		my_story_text: new Translation("Fin da quando ero piccolo nutro un forte interesse per i computer che mi ha portato ad intraprendere una carriera nell'ambito dell'informatica. I primi passi li ho mossi nell'istituto tecnico G. Armellini di Roma dove ho imparato a programmare utilizzando Java. Tra le tante esperienze fatte in quell'istituto ne feci una di livello internazionale partecipando ad un progetto europeo per la sicurezza informatica in collaborazione con un liceo turco ed uno spagnolo. Nel 2010 ho conseguito l'ECDL ed in seguito mi sono sono diplomato con 88/100. Terminata la scuola, mi sono iscritto all'università di Roma Tre alla facoltà di ingegneria informatica. Superati tutti gli esami, ho fatto il tirocinio presso I.S.T.C.-C.N.R. dove ho sviluppato un' applicazione desktop per una piattaforma robotica con lo scopo di analisi della postura e dell'equilibrio di una persona attraverso tre semplici esercizi motori. L'applicativo è stato sviluppato in C# e lavorando a stretto contatto con il sensore Kinect per il tracciamento della postura. Nell’estate del 2013, a meno di tre anni dall’immatricolazione, ho conseguito con 104/110L la laurea triennale in ingegneria informatica. Da neo-laureato ho fatto la mia prima esperienza lavorativa all’ H.S.C. dove, lavorando insieme ad un team di programmatori, ho imparato il linguaggio di programmazione Delphi per lo sviluppo del software aziendale e PL-SQL per le interrogazioni ai database Oracle. Nel settembre del 2014, dopo un esperienza di circa un anno, ho lasciato il posto per poter riprendere a studiare a tempo pieno per la magistrale in ingegneria informatica. Nel frattempo sono entrato nel mondo delle startup partecipando allo ‘startup weekend 2014’ di Roma con il team di ‘Showay’."),
 
 		/* Icons */
 		tPrintCV         : new Translation("Stampa CV"),

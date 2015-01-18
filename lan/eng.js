@@ -34,9 +34,17 @@ var englishLanguage = function(){
 		tName           : new Translation("Name"),
 		tAddress        : new Translation("Address"),
 		tEmail          : new Translation("Email"),
+		tSkype          : new Translation("Skype"),
 		tPhoneNumber    : new Translation("Phone Number"),
 		tMessage        : new Translation("Message"),
 		tSubmit         : new Translation("Submit"),
+
+		/* About */
+		introduce_myself : new Translation("Let Me Introduce Myself"),
+		hello_everybody  : new Translation("Hello everybody! I'm Andrea Olivieri and I was born in Rome the 13/06/1991."),
+
+		my_story     : new Translation("My Story"),
+		my_story_text: new Translation("Since I was a little boy I feel a strong interest for the computers that led me to follow an informatic career. I've moved my first steps at G. Armellini technical institute of Rome where I started to program using Java. Among many experiences in that high school, the most important it was participating in an European project for information security in conjunction with a turkish and Spanish high school. In 2010 I obtained the ECDL and then I graduated with 88/100. After high school, I enrolled at Roma Tre university in the faculty of computer engineering. After passing all exams, I decided to do an internship at ISTC-CNR where I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture. In the summer of 2013, less than three years after enrollment, I achieved my bachelor's degree in computer engineering with 104/110L. As recent graduate I decided to do my first working experience at H.S.C. company where I learned Delphi programming language to develop its enterprise software and PL-SQL to query Oracle databases. After one year I left the company to start studying full-time again for the master degree in computer engineering. Meanwhile I entered in the startup's world participating at ‘startup weekend 2014’ of Rome within ‘Showay’ team."),
 
 		/* Icons */
 		tPrintCV         : new Translation("Print CV"),
@@ -79,7 +87,7 @@ var englishLanguage = function(){
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Rome, Italy"),
 		hscLearned            : new Translation("For over a year I have collaborated for developing an enterprise software, using Delphi programming language and PL/SQL for database queries."),
 		istcAddress           : new Translation("Via S. Martino della Battaglia 44, 00185, Rome, Italy"),
-		istcLearned           : new Translation("For my internship I developed a desktop application to a robotic platform with the aim of analyzing the posture and balance of a person through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture."),
+		istcLearned           : new Translation("For my internship I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture."),
 
 		tSkills               : new Translation("Skills"),
 		tProgrammingLanguages : new Translation("Programming Languages"),

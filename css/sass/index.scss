@@ -63,6 +63,7 @@ hr {
     border-color: #999999;
 }
 
+.img-about,
 .brand,
 .address-bar {
     display: none;
@@ -112,10 +113,8 @@ hr {
 }
 
 .intro-text {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 400;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 1.8em;
 }
 
 .img-border {
@@ -335,5 +334,22 @@ img.flag:hover {
         content: '';
         display: table;
         clear: both;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .img-about {
+        display: inherit;
+        width: 25%;
+        height: auto;
+        margin: 20px;
+
+        &.left{
+            float: left;
+        }
+
+        &.right{
+            float: right;
+        }
     }
 }
