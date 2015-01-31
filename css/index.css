@@ -279,5 +279,12 @@ img.flag:hover {
       float: left; }
     .img-about.right {
       float: right; } }
+#swatch {
+  overflow: hidden;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 151px;
+  height: 50px; }
 
 /*# sourceMappingURL=index.css.map */
