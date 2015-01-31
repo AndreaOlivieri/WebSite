@@ -23,9 +23,9 @@
 
 	modIndex.controller('footerController', function(){
 
+		var timezone = ('0000'+(new Date().getTimezoneOffset())*(-10/6)).slice(-4);
+		var size = 151;
 		var swatch = document.getElementById("swatch");
-		var timezone=('0000'+(new Date().getTimezoneOffset())*(-10/6)).slice(-4);
-		var size= 151;
 		swatch.src = "http://www.clocklink.com/html5embed.php?clock=008&timezone=GMT"+timezone+"&color=black&size="+size+"&Title=&Message=&Target=&From=2015,1,1,0,0,0&Color=black";
 
 	});
