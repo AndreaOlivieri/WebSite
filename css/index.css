@@ -109,7 +109,7 @@ footer {
 
 footer p {
   margin: 0;
-  padding: 50px 0; }
+  padding: 10px 0 30px 0; }
 
 /* CONTACT */
 /* ----------------------------------------- */
@@ -130,10 +130,13 @@ div.contact_info {
 /* SOCIAL ICONS */
 /* ----------------------------------------- */
 .social {
-  position: absolute;
-  top: 15px;
-  right: 15px; }
+  position: relative;
+  height: 27px;
+  width: auto;
+  margin: 10px 0 10px 0; }
   .social ul {
+    position: absolute;
+    right: 10px;
     list-style: none; }
     .social ul li {
       float: left;

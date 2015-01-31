@@ -17,6 +17,7 @@
 		<script src="lib/js/angular.min.js"></script>
 		<script src="lib/js/jquery-1.11.0.js"></script>
 		<script src="lib/js/bootstrap.js"></script>
+		<script src="lib/js/clocklink.js"></script>
 		<link rel="stylesheet" href="lib/css/bootstrap.css" />
 
 		<!-- Stylesheet -->
@@ -136,7 +137,6 @@
 						<div class="row">
 
 								<div class="col-lg-12 text-center">
-										<p>Copyright &copy; Andrea Olivieri</p>
 
 										<div class="social" ng-controller="iconController as icon">
 						          <ul>
@@ -178,6 +178,19 @@
 
 						          </ul>
 						        </div>
+
+										<script type="text/javascript" language="JavaScript">
+											obj=new Object;
+											obj.clockfile="5012-black.swf";
+											var offset=('0000'+(new Date().getTimezoneOffset())*(-10/6)).slice(-4);
+											obj.TimeZone="GMT"+offset;
+											obj.width=151;
+											obj.height=50;
+											obj.wmode="transparent";
+											showClock(obj);
+										</script>
+
+										<p>Copyright &copy; Andrea Olivieri</p>
 
 								</div>
 
