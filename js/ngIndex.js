@@ -23,12 +23,22 @@
 
 	modIndex.controller('footerController', function(){
 
-		var timezone = ('0000'+(new Date().getTimezoneOffset())*(-10/6)).slice(-4);
 		var size = 151;
 		var swatch = document.getElementById("swatch");
-		swatch.src = "http://www.clocklink.com/html5embed.php?clock=008&timezone=GMT"+timezone+"&color=black&size="+size+"&Title=&Message=&Target=&From=2015,1,1,0,0,0&Color=black";
-
+		swatch.src = "http://www.clocklink.com/html5embed.php?clock=008&timezone=GMT"+getTimeZone()+"&color=black&size="+size+"&Title=&Message=&Target=&From=2015,1,1,0,0,0&Color=black";
 	});
+
+	function getTimeZone(){
+		var date = new Date();
+		var time = Math.round(date.getTimezoneOffset() / -60) * 100;
+		var timezone = "";
+		if(time < 0){
+			timezone = "-";
+		}
+		time = Math.abs(time);
+		timezone += ('0000'+ time).slice(-4);
+		return timezone;
+	}
 
 	/**************** TAB ********************/
 	modIndex.directive('home', function(){
