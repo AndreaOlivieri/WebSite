@@ -7,7 +7,7 @@
 		lan = languageService.getLanguage();
 
 		this.google   = new Icon( "Google+",
-			                      "https://plus.google.com/104083083589650440165/posts",
+			                      "https://plus.google.com/102553212030062995896/about",
 			                      lan["tGoogleProfile"],
 			                      "icon/icn-googleplus.png");
 
