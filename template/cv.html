@@ -11,12 +11,12 @@
           <h1 class="name">{{words.status.trans}} {{words.surname.trans}} {{words.name.trans}}<br/>
             <span>{{words.occupation.trans}}</span></h1>
           <ul>
-            <li> <img src="icon/icn-born.png">{{words.born.trans}}</li>
-            <li> <img src="icon/icn-address.png">{{words.address.trans}}</li>
-            <li> <img src="icon/icn-email.png">{{words.email.trans}}</li>
-            <li> <img src="icon/icn-phone.png">{{words.phoneNumber.trans}}</li>
-            <li> <img src="icon/icn-website.png">{{words.website.trans}}</li>
-            <li> <img src="icon/icn-skype.png">{{words.skype.trans}}</li>
+            <li> <img src="img/icon/icn-born.png">{{words.born.trans}}</li>
+            <li> <img src="img/icon/icn-address.png">{{words.address.trans}}</li>
+            <li> <img src="img/icon/icn-email.png">{{words.email.trans}}</li>
+            <li> <img src="img/icon/icn-phone.png">{{words.phoneNumber.trans}}</li>
+            <li> <img src="img/icon/icn-website.png">{{words.website.trans}}</li>
+            <li> <img src="img/icon/icn-skype.png">{{words.skype.trans}}</li>
           </ul>
         </div>
         <!-- End Personal Information -->
@@ -37,121 +37,142 @@
       <div class="entry">
         <h2 class="entryTitle">{{cv.education.title.trans}}</h2>
         <div class="content" ng-repeat="edu in cv.education.records">
-          <h3 class="entrySubTitle">{{edu.start.trans}} - {{edu.end.trans}}</h3>
-          <p class="context"> 
-            <a class ="eqf" ng-href="{{edu.eqf.href.trans}}">{{edu.eqf.level.trans}}</a>
-            {{edu.description.trans}}<br/> 
-            <a ng-href="{{edu.href}}">{{edu.place.trans}}</a> - {{edu.address.trans}}
-          </p>
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{edu.start.trans}} - {{edu.end.trans}}</h3>
+          </div>
+          <div class="right-side">
+            <p>
+              <a class ="eqf" ng-href="{{edu.eqf.href.trans}}">{{edu.eqf.level.trans}}</a>
+              {{edu.description.trans}}<br/>
+              <a ng-href="{{edu.href}}">{{edu.place.trans}}</a> - {{edu.address.trans}}
+            </p>
+          </div>
         </div>
       </div>
       <!-- EXPERIENCES -->
       <div class="entry">
         <h2 class="entryTitle">{{cv.experiences.title.trans}}</h2>
         <div class="content" ng-repeat="exp in cv.experiences.records">
-          <h3 class="entrySubTitle">{{exp.start.trans}} - {{exp.end.trans}}</h3>
-          <p class="context">
-          	<a ng-href="{{exp.href}}">{{exp.place}}</a> - {{exp.description.trans}} <br/>
-            <em>{{exp.position.trans}}</em>
-          </p>
-          <ul class="info">
-            <li>{{exp.learned.trans}}</li>
-          </ul>
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{exp.start.trans}} - {{exp.end.trans}}</h3>
+            <img src="{{exp.img}}">
+          </div>
+          <div class="right-side">
+            <p>
+            	<a ng-href="{{exp.href}}">{{exp.place}}</a> - {{exp.description.trans}} <br/>
+              <em>{{exp.position.trans}}</em>
+            </p>
+            <ul class="info">
+              <li>{{exp.learned.trans}}</li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- SKILLS -->
       <div class="entry">
         <h2 class="entryTitle">{{cv.skills.title.trans}}</h2>
         <div class="content" ng-repeat="ski in cv.skills.records">
-          <h3 class="entrySubTitle">{{ski.title.trans}}</h3>
-          <p class="context skills">{{ski.skills}}</p>
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{ski.title.trans}}</h3>
+          </div>
+          <div class="right-side">
+            <p>{{ski.skills}}</p>
+          </div>
         </div>
       </div>
       <!-- LANGUAGES -->
-      <div class="entry">
+      <div class="entry pagebreak">
         <h2 class="entryTitle">{{cv.languages.title.trans}}</h2>
         <div class="content">
-          <h3 class="entrySubTitle">{{cv.languages.motherTongue.definition.trans}}</h3>
-          <p class="context">
-            {{cv.languages.motherTongue.name.trans}}
-          </p>
-          <br>
-          <h3 class="entrySubTitle">{{cv.languages.otherLanguages.title.trans}}</h3>
-
-          <ul class="languages" ng-repeat="language in cv.languages.otherLanguages.records">
-            <li><b>{{language.name.trans}}</b></li>
-            <ul>
-              <li class="title">
-                {{cv.languages.otherLanguages.tUnderstanding.trans}}
-              </li>
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{cv.languages.motherTongue.definition.trans}}</h3>
+          </div>
+          <div class="right-side">
+            <p>
+              {{cv.languages.motherTongue.name.trans}}
+            </p>
+          </div>
+          <!--<br>-->
+        </div>
+        <div class="content">
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{cv.languages.otherLanguages.title.trans}}</h3>
+          </div>
+          <div class="right-side">
+            <ul class="languages" ng-repeat="language in cv.languages.otherLanguages.records">
+              <li><b>{{language.name.trans}}</b></li>
               <ul>
-                <li class="subtitle">
-                  <em>{{cv.languages.otherLanguages.tListening.trans}}</em>: <b>{{language.listening}}</b>
+                <li class="title">
+                  {{cv.languages.otherLanguages.tUnderstanding.trans}}
                 </li>
-                <li class="subtitle">
-                  <em>{{cv.languages.otherLanguages.tReading.trans}}</em>: <b>{{language.reading}}</b>
+                <ul>
+                  <li class="subtitle">
+                    <em>{{cv.languages.otherLanguages.tListening.trans}}</em>: <b>{{language.listening}}</b>
+                  </li>
+                  <li class="subtitle">
+                    <em>{{cv.languages.otherLanguages.tReading.trans}}</em>: <b>{{language.reading}}</b>
+                  </li>
+                </ul>
+                <li class="title">
+                  {{cv.languages.otherLanguages.tSpeaking.trans}}
+                </li>
+                <ul>
+                  <li class="subtitle">
+                    <em>{{cv.languages.otherLanguages.tSpokenInteraction.trans}}</em>: <b>{{language.spokenInteraction}}</b>
+                  </li>
+                  <li class="subtitle">
+                    <em>{{cv.languages.otherLanguages.tSpokenProduction.trans}}</em>: <b>{{language.spokenProduction}}</b>
+                  </li>
+                </ul>
+                <li class="title">
+                  {{cv.languages.otherLanguages.tWriting.trans}}: <b>{{language.writing}}</b>
                 </li>
               </ul>
-              <li class="title">
-                {{cv.languages.otherLanguages.tSpeaking.trans}}
-              </li>
-              <ul>
-                <li class="subtitle">
-                  <em>{{cv.languages.otherLanguages.tSpokenInteraction.trans}}</em>: <b>{{language.spokenInteraction}}</b>
-                </li>
-                <li class="subtitle">
-                  <em>{{cv.languages.otherLanguages.tSpokenProduction.trans}}</em>: <b>{{language.spokenProduction}}</b>
-                </li>
-              </ul>
-              <li class="title">
-                {{cv.languages.otherLanguages.tWriting.trans}}: <b>{{language.writing}}</b>
-              </li>
             </ul>
-          </ul>
 
-          <table class="languages">
-            <tr>
-              <td class="column title">
-                {{cv.languages.otherLanguages.tLanguage.trans}}
-              </td>
-              <td class="column title" colspan="2">
-                {{cv.languages.otherLanguages.tUnderstanding.trans}}
-              </td>
-              <td class="column title" colspan="2">
-                {{cv.languages.otherLanguages.tSpeaking.trans}}
-              </td>
-              <td class="column title">
-                {{cv.languages.otherLanguages.tWriting.trans}}
-              </td>
-            </tr>
-            <tr>
-              <td> </td>
-              <td class="subtitle">
-                {{cv.languages.otherLanguages.tListening.trans}}
-              </td>
-              <td class="subtitle">
-                {{cv.languages.otherLanguages.tReading.trans}}
-              </td>
-              <td class="subtitle">
-                {{cv.languages.otherLanguages.tSpokenInteraction.trans}}
-              </td>
-              <td class="subtitle">
-                {{cv.languages.otherLanguages.tSpokenProduction.trans}}
-              </td>
-              <td> </td>
-            </tr>
-            <tr ng-repeat="language in cv.languages.otherLanguages.records">
-              <td><b>{{language.name.trans}}</b></td>
-              <td><b>{{language.listening}}</b></td>
-              <td><b>{{language.reading}}</b></td>
-              <td><b>{{language.spokenInteraction}}</b></td>
-              <td><b>{{language.spokenProduction}}</b></td>
-              <td><b>{{language.writing}}</b></td>
-            </tr>
-          </table>
-
-          <div class="rif">
-            {{cv.languages.otherLanguages.languagesReference.trans}}
+            <table class="languages">
+              <tr>
+                <td class="column title">
+                  {{cv.languages.otherLanguages.tLanguage.trans}}
+                </td>
+                <td class="column title" colspan="2">
+                  {{cv.languages.otherLanguages.tUnderstanding.trans}}
+                </td>
+                <td class="column title" colspan="2">
+                  {{cv.languages.otherLanguages.tSpeaking.trans}}
+                </td>
+                <td class="column title">
+                  {{cv.languages.otherLanguages.tWriting.trans}}
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td class="subtitle">
+                  {{cv.languages.otherLanguages.tListening.trans}}
+                </td>
+                <td class="subtitle">
+                  {{cv.languages.otherLanguages.tReading.trans}}
+                </td>
+                <td class="subtitle">
+                  {{cv.languages.otherLanguages.tSpokenInteraction.trans}}
+                </td>
+                <td class="subtitle">
+                  {{cv.languages.otherLanguages.tSpokenProduction.trans}}
+                </td>
+                <td> </td>
+              </tr>
+              <tr ng-repeat="language in cv.languages.otherLanguages.records">
+                <td><b>{{language.name.trans}}</b></td>
+                <td><b>{{language.listening}}</b></td>
+                <td><b>{{language.reading}}</b></td>
+                <td><b>{{language.spokenInteraction}}</b></td>
+                <td><b>{{language.spokenProduction}}</b></td>
+                <td><b>{{language.writing}}</b></td>
+              </tr>
+            </table>
+            <div class="rif">
+              {{cv.languages.otherLanguages.languagesReference.trans}}
+            </div>
           </div>
         </div>
       </div>
@@ -159,21 +180,12 @@
       <div class="entry">
         <h2 class="entryTitle">{{cv.certificates.title.trans}}</h2>
         <div class="content" ng-repeat="cert in cv.certificates.records">
-          <h3 class="entrySubTitle">{{cert.name}}</h3>
-          <p class="context">{{cert.description.trans}}</p>
-        </div>
-      </div>
-      <!-- WEBSITE -->
-      <div class="entry">
-        <h2 class="entryTitle">{{cv.website.title.trans}}</h2>
-        <div class="content">
-          <h3 class="entrySubTitle">{{cert.name}}</h3>
-          <p class="context">
-          {{cv.website.records[0].trans}}
-          <a class="website" ng-href="http://{{words.website.trans}}">{{words.website.trans}}</a>
-          <br>
-          {{cv.website.records[1].trans}}
-        </p>
+          <div class="left-side">
+            <h3 class="entrySubTitle">{{cert.name}}</h3>
+          </div>
+          <div class="right-side">
+            <p>{{cert.description.trans}}</p>
+          </div>
         </div>
       </div>
       <!-- PRIVACY -->
@@ -181,7 +193,6 @@
         {{cv.privacy.trans}}
       </div>
       <div class="clear"></div>
-
 		</div>
 	</div>
 </div>

@@ -20,14 +20,12 @@
 	}
 }
 
+.pagebreak { page-break-before: always; } // page-break-after works, as well
+
 a{
 	&.eqf{
 		color : red !important;
 		float : right;
-	}
-
-	&.website{
-		white-space:nowrap;
 	}
 }
 
@@ -77,12 +75,6 @@ h3.entrySubTitle{
 	clear: both;
 	color: $colorSubTitle !important;
 	font-size: 0.9em;
-
-	@include respondTo($widthPhone) {
-		width      : 20%;
-		text-align : right;
-		float      : left;
-	}
 }
 
 em {
@@ -93,38 +85,78 @@ em {
 	padding-top: 0.1em;
 }
 
-p.context {
-	height: 100%;
-	font-size: 1em;
-	line-height: 1.2em;
-	margin-left: 5%;
+div.content{
+	clear       : both;
+	overflow    : hidden;
+	display     : block;
+	padding-top : 1em;
 
-	@include respondTo($widthPhone) {
-		margin-left: 23%;
+	div.left-side{
+		@include respondTo($widthPhone) {
+			text-align : right;
+			width      : 20%;
+			float      : left;
+		}
+		img{
+			max-width: 80%;
+			max-height: 100%;
+			float: right;
+			@include respondUntil ($widthPhone){
+		  	display: none;
+			}
+		}
 	}
 
-	img {
-		margin-left  : 20px;
-		padding-left : 10px;
+	div.right-side{
+		height: 100%;
+		font-size: 1em;
+		line-height: 1.2em;
+		margin-left: 5%;
+		@include respondTo($widthPhone) {
+			width      : 77%;
+			margin-left: 23%;
+		}
+
+		ul{
+			list-style-type: none;
+			li.title{
+				margin-left: 20px;
+				margin-top: 5px;
+				b {
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+			}
+			li.subtitle{
+				margin-left: 40px;
+				em{
+					font-style: italic;
+					color: grey !important;
+					display: inline;
+				}
+			}
+		}
+		ul.info {
+				display: table;
+				li {
+					height  : 100%;
+					margin  : 1% 0 0 0;
+					float   : left;
+				}
+			}
+		ul.languages{
+			@include respondTo($widthPhone) {
+				display: none;
+			}
+		}
+		.rif{
+			margin-top: 10px;
+			text-align: right;
+			font-style: italic;
+			font-size: 0.9em;
+		}
 	}
 }
-
-div {
-	&.content{
-		clear       : both;
-		overflow    : hidden;
-		display     : block;
-		padding-top : 1em;
-	}
-
-	&.rif{
-		margin-top: 10px;
-		text-align: right;
-		font-style: italic;
-		font-size: 0.9em;
-	}
-}
-
 
 ol {
 	width:500px;
@@ -156,55 +188,6 @@ dd {
 	display: block;
 	width:480px;
 	text-indent:20px;
-}
-
-
-ul{
-	list-style-type: none;
-
-	&.info, &.skills, &.languages{
-		margin-left: 5%;
-
-		@include respondTo($widthPhone) {
-			margin-left: 23%;
-		}
-	}
-
-	&.info {
-		display: table;
-
-		li {
-			height  : 100%;
-			margin  : 1% 0 0 0;
-			float   : left;
-		}
-	}
-
-	&.languages{
-		@include respondTo($widthPhone) {
-			display: none;
-		}
-	}
-
-	li.title{
-		margin-left: 20px;
-		margin-top: 5px;
-
-		b {
-			text-transform: uppercase;
-			font-weight: bold;
-		}
-	}
-
-	li.subtitle{
-		margin-left: 40px;
-
-		em{
-			font-style: italic;
-			color: grey !important;
-			display: inline;
-		}
-	}
 }
 
 .privacy{
@@ -280,17 +263,15 @@ ul{
 /* ----------------------------------------- */
 
 table.languages {
-	margin: 1em 0 0 auto;
 	border-collapse: collapse;
 	border: 0.1em solid #999;
 
-  @media screen and (max-width: $widthPhone) {
+	@include respondUntil ($widthPhone){
   	display: none;
 	}
 
 	@include respondTo ($widthPhone) {
-		width: 77%;
-		margin-left: 23%;
+		width: 100%;
 	}
 
 	tr {

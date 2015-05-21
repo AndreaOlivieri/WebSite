@@ -1,11 +1,11 @@
-@mixin respondTo($query, $type: min-width) {
-  @media ($type: $query) {
+@mixin respondTo($query) {
+  @media screen and (min-width: $query) {
     @content;
   }
 }
 
-@mixin respondUntil($query, $type: max-width) {
-  @media ($type: $query) {
+@mixin respondUntil($query) {
+  @media screen and (max-width: $query) {
     @content;
   }
 }

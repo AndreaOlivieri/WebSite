@@ -9,32 +9,43 @@
 		this.google   = new Icon( "Google+",
 			                      "https://plus.google.com/102553212030062995896/about",
 			                      lan["tGoogleProfile"],
-			                      "icon/icn-googleplus.png");
+			                      "img/icon/icn-googleplus.png");
 
 		this.facebook = new Icon( "Facebook",
 			                      "https://www.facebook.com/andrea.olivieri.5074",
 			                      lan["tFacebookProfile"],
-			                      "icon/icn-facebook.jpg");
+			                      "img/icon/icn-facebook.jpg");
 
 		this.twitter  = new Icon( "Twitter",
 			                      "https://twitter.com/OliAndrea17",
 			                      lan["tTwitterProfile"],
-			                      "icon/icn-twitter.png");
+			                      "img/icon/icn-twitter.png");
 
 		this.linkedin = new Icon( "Linkedin",
 			                      "http://it.linkedin.com/pub/andrea-olivieri/65/228/8a2",
 			                      lan["tLinkedinProfile"],
-			                      "icon/icn-linkedin.png");
+			                      "img/icon/icn-linkedin.png");
 
 		this.github = new Icon( "Github",
 			                      "https://github.com/AndreaOlivieri",
 			                      lan["tGithubProfile"],
-			                      "icon/icn-github.png");
+			                      "img/icon/icn-github.png");
 
 		this.print    = new Icon( lan["tPrintCV"],
 			                      "javascript:window.print()",
 			                      lan["tPrintCV"],
-			                      "icon/icn-print.png");
+			                      "img/icon/icn-print.png");
+
+		this.innlab = new Icon( "InnovAction Lab",
+			                      "http://www.innovactionlab.org/",
+			                      lan["tInnLabProfile"],
+			                      "img/logo/logo_innlab.png");
+
+		this.fashape = new Icon( "Fashape",
+			                      "https://fashape.com/",
+			                      lan["tFashapeProfile"],
+			                      "img/logo/logo_fashape.png");
+
 	}]);
 
 	var Icon = function(name, href, title, src){

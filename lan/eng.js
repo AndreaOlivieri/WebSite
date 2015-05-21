@@ -17,7 +17,7 @@ var englishLanguage = function(){
 		city       : new Translation("Rome"),
 		nation     : new Translation("Italy"),
 		status     : new Translation("Dr."),
-		occupation : new Translation("Developer"),
+		occupation : new Translation("Software Developer"),
 
 		/* Home */
 		tWelcome        : new Translation("Welcome To"),
@@ -46,6 +46,9 @@ var englishLanguage = function(){
 		my_story     : new Translation("My Story"),
 		my_story_text: new Translation("Since I was a little boy I feel a strong interest for the computers that led me to follow an informatic career. I've moved my first steps at G. Armellini technical institute of Rome where I’ve started to program using Java. Among many experiences in that high school, the most important was participating in an european project for information security in conjunction with a turkish and spanish high school. In 2010 I obtained the ECDL and then I graduated with 88/100. After high school, I enrolled at Roma Tre university in the faculty of computer engineering. After passing all exams, I decided to do an internship at ISTC-CNR where I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and worked closely with the Kinect sensor for tracking posture. In the summer of 2013, less than three years after enrollment, I achieved my bachelor's degree in computer engineering with 104/110L. As recent graduate I decided to do my first working experience at H.S.C. company where I learned Delphi programming language in order to develop its enterprise software and PL-SQL to query Oracle databases. After one year I left the company to start studying full-time again for the master degree in computer engineering. Meanwhile I entered in the startup's world participating at ‘startup weekend 2014’ of Rome within ‘Showay’ team and then ‘InnovAction Lab 2015’."),
 
+		tFashape      : new Translation("Fashape"),
+		fashape_story : new Translation(""),
+
 		/* Icons */
 		tPrintCV         : new Translation("Print CV"),
 		tGoogleProfile   : new Translation("Google's profile"),
@@ -53,6 +56,8 @@ var englishLanguage = function(){
 		tTwitterProfile  : new Translation("Twitter's profile"),
 		tLinkedinProfile : new Translation("Linkedin's profile"),
 		tGithubProfile   : new Translation("GitHub's profile"),
+		tInnLabProfile   : new Translation("InnovAction Lab website"),
+		tFashapeProfile  : new Translation("Fashape website"),
 
 		/* Curriculum Vitae */
 		introCV       : new Translation(""),
@@ -61,6 +66,8 @@ var englishLanguage = function(){
 		tRome         : new Translation("Rome"),
 
 		tToday   : new Translation("Today"),
+		tFeb2015 : new Translation("Feb 2015"),
+		tMay2015 : new Translation("May 2015"),
 		tSep2014 : new Translation("Sep 2014"),
 		tSep2013 : new Translation("Sep 2013"),
 		tSep2010 : new Translation("Sep 2010"),
@@ -82,8 +89,12 @@ var englishLanguage = function(){
 		hrefEQF : new Translation("http://ec.europa.eu/ploteus/en/content/descriptors-page"),
 
 		tExperiences          : new Translation("Experiences"),
-		tInformaticProgrammer : new Translation("Informatic Programmer"),
-		tDeveloper            : new Translation("Developer"),
+		tDeveloper            : new Translation("Software Developer"),
+		ctoFashape            : new Translation("Co-founder and CTO"),
+		fashapeAddress        : new Translation("Rome, Italy"),
+		fashapeLearned        : new Translation("Fashape is the startup that aims to help people find the best men’s fashion products through a wish list of most voted objects from social networks. The entire development of the site was carried out by me through the use of Microsoft Azure cloud resources and Meteor javascript framework."),
+		innlabAddress         : new Translation("Rome, Italy"),
+		innlabLearned         : new Translation("InnovAction Lab is a training course that gives you the ability to turn your innovative idea into a startup. At the end of the course I was able, with my team, to found our startup: Fashape."),
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Rome, Italy"),
 		hscLearned            : new Translation("For over a year I have collaborated for developing an enterprise software, using Delphi programming language and PL/SQL for database queries."),
 		istcAddress           : new Translation("Via S. Martino della Battaglia 44, 00185, Rome, Italy"),
@@ -91,8 +102,11 @@ var englishLanguage = function(){
 
 		tSkills               : new Translation("Skills"),
 		tProgrammingLanguages : new Translation("Programming Languages"),
+		tWith                 : new Translation("with"),
+		tIntern                : new Translation("Intern"),
 		tOverTheWeb           : new Translation("Over the Web"),
 		tSoftwareKnowledges   : new Translation("Software Knowledges"),
+		CVS                   : new Translation("CVS"),
 		tOperatingSystems     : new Translation("Operating Systems"),
 
 		tLanguages      : new Translation("Languages"),
@@ -117,7 +131,6 @@ var englishLanguage = function(){
 
 		tWebSite    : new Translation("Website"),
 		webSiteDes0 : new Translation("For detailed information about me, please visit my website: "),
-		webSiteDes1 : new Translation("The website has been developed with HTML, CSS, Javascript, PHP, AngularJS, JQuery and Bootstrap."),
 
 		tClose : new Translation("Close"),
 		privacy: new Translation("")

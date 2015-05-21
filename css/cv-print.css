@@ -31,10 +31,33 @@ div.content {
   overflow: hidden;
   display: block;
   padding-top: 23px; }
-
-div.rif {
-  margin-top: 10px;
-  text-align: right; }
+  div.content div.left-side {
+    text-align: right;
+    width: 20%;
+    float: left; }
+    div.content div.left-side img {
+      max-width: 80%;
+      max-height: 100%;
+      float: right; }
+  div.content div.right-side {
+    width: 75%;
+    margin-left: 250px;
+    text-align: left; }
+    div.content div.right-side div.rif {
+      margin-top: 10px;
+      text-align: right; }
+    div.content div.right-side ul.info {
+      background: none;
+      list-style: square; }
+      div.content div.right-side ul.info li {
+        margin: 0;
+        padding: 0;
+        float: left;
+        display: block;
+        padding-left: 0;
+        background-position: 0 .5em;
+        margin-top: 12px;
+        list-style-type: square; }
 
 /* ENTRIES */
 /* ----------------------------------------- */
@@ -72,47 +95,12 @@ h3.entrySubTitle {
   text-align: right;
   float: left; }
 
-p.context {
-  margin-left: 250px; }
-
-ul.list {
-  clear: both;
-  padding: 0;
-  margin: 0;
-  overflow: hidden; }
-  ul.list li {
-    display: block;
-    float: right;
-    padding-top: 32px; }
-
 em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 13px;
   display: block;
   padding-top: 0; }
-
-ul.info {
-  margin-left: 250px;
-  background: none;
-  list-style: square; }
-  ul.info li {
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: block;
-    padding-left: 0;
-    background-position: 0 .5em;
-    margin-top: 12px;
-    list-style-type: square; }
-
-ul.skills {
-  margin: 0;
-  padding: 0;
-  margin-left: 250px;
-  margin-top: -6px;
-  background: none;
-  list-style: circle; }
 
 img.portrait {
   width: 250px;
@@ -147,10 +135,9 @@ img.portrait {
 /* TABLES */
 /* ----------------------------------------- */
 table.languages {
-  width: 77%;
-  margin: 1em 0 0 23%;
   border-collapse: collapse;
-  border: 0.1em solid #999; }
+  border: 0.1em solid #999;
+  width: 100%; }
   table.languages tr {
     border-top: 1px dashed #999; }
   table.languages td {

@@ -17,7 +17,7 @@ var italianLanguage = function(){
 		city       : new Translation("Roma"),
 		nation     : new Translation("Italia"),
 		status     : new Translation("Dott."),
-		occupation : new Translation("Sviluppatore"),
+		occupation : new Translation("Sviluppatore Software"),
 
 		/* Home */
 		tWelcome        : new Translation("Benvenuti nel"),
@@ -46,6 +46,9 @@ var italianLanguage = function(){
 		my_story     : new Translation("La Mia Storia"),
 		my_story_text: new Translation("Fin da quando ero piccolo ho sempre provato un forte interesse per i computer che mi ha portato ad intraprendere una carriera nell'ambito dell'informatica. I primi passi li ho mossi nell'istituto tecnico G. Armellini di Roma dove ho imparato a programmare utilizzando Java. Tra le tante esperienze fatte in quell'istituto ne ho fatta una di livello internazionale partecipando ad un progetto europeo per la sicurezza informatica in collaborazione con un liceo turco ed uno spagnolo. Nel 2010 ho conseguito l'ECDL ed in seguito mi sono sono diplomato con 88/100. Terminata la scuola, mi sono iscritto all'università di Roma Tre alla facoltà di ingegneria informatica. Superati tutti gli esami, ho fatto il tirocinio presso I.S.T.C.-C.N.R. dove ho sviluppato un' applicazione desktop per una piattaforma robotica con lo scopo di analisi della postura e dell'equilibrio di una persona attraverso tre semplici esercizi motori. L'applicativo è stato sviluppato in C# e lavorando a stretto contatto con il sensore Kinect per il tracciamento della postura. Nell’estate del 2013, a meno di tre anni dall’immatricolazione, ho conseguito con 104/110 la laurea triennale in ingegneria informatica. Da neo-laureato ho fatto la mia prima esperienza lavorativa all’ H.S.C. dove, lavorando insieme ad un team di programmatori, ho imparato il linguaggio di programmazione Delphi per lo sviluppo del software aziendale e PL-SQL per le interrogazioni ai database Oracle. Nel settembre del 2014, dopo un esperienza di circa un anno, ho lasciato il posto per riprendere a studiare per la laurea magistrale in ingegneria informatica. Nel frattempo sono entrato nel mondo delle startup partecipando allo ‘startup weekend 2014’ di Roma con il team di ‘Showay’ ed in seguito ad ‘InnovAction Lab 2015’."),
 
+		tFashape      : new Translation("Fashape"),
+		fashape_story : new Translation(""),
+
 		/* Icons */
 		tPrintCV         : new Translation("Stampa CV"),
 		tGoogleProfile   : new Translation("Il mio profilo di Google"),
@@ -53,6 +56,8 @@ var italianLanguage = function(){
 		tTwitterProfile  : new Translation("Il mio profilo di Twitter"),
 		tLinkedinProfile : new Translation("Il mio profilo di Linkedin"),
 		tGithubProfile   : new Translation("Il mio profilo di GitHub"),
+		tInnLabProfile   : new Translation("Sito web di InnovAction Lab"),
+		tFashapeProfile  : new Translation("Sito web di Fashape"),
 
 		/* Curriculum Vitae */
 		introCV       : new Translation(""),
@@ -61,6 +66,8 @@ var italianLanguage = function(){
 		tRome         : new Translation("Roma"),
 
 		tToday   : new Translation("Oggi"),
+		tFeb2015 : new Translation("Feb 2015"),
+		tMay2015 : new Translation("Mag 2015"),
 		tSep2014 : new Translation("Set 2014"),
 		tSep2013 : new Translation("Set 2013"),
 		tSep2010 : new Translation("Set 2010"),
@@ -82,8 +89,12 @@ var italianLanguage = function(){
 		hrefEQF : new Translation("http://www.isfol.it/eqf"),
 
 		tExperiences          : new Translation("Esperienze"),
-		tInformaticProgrammer : new Translation("Programmatore Informatico"),
-		tDeveloper            : new Translation("Sviluppatore"),
+		tDeveloper            : new Translation("Sviluppatore Software"),
+		ctoFashape            : new Translation("Co-founder e CTO"),
+		fashapeAddress        : new Translation("Roma, Italia"),
+		fashapeLearned        : new Translation("Fashape è la startup che mira ad aiutare le persone a trovare i prodotti maschili più fashion del momento, proponendo una wishlist degli oggetti più votati sui social network. L'intero sviluppo del sito è stato portato avanti da me mediante l'utilizzo delle risorse cloud di Microsoft Azure e l’ausilio del framework javascript Meteor."),
+		innlabAddress         : new Translation("Roma, Italia"),
+		innlabLearned         : new Translation("InnovAction Lab è un corso formativo che ti da la possibilità di trasformare la tua idea innovativa in una vera startup. Al termine del percorso sono riuscito, insieme al mio team, a fondare la nostra startup : Fashape."),
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Roma, Italia"),
 		hscLearned            : new Translation("Per oltre un anno ho collaborato allo sviluppo del software aziendale in qualità di programmatore informatico, utilizzando il linguaggio di programmazione Delphi e PL/SQL per le interrogazioni ai database."),
 		istcAddress           : new Translation("Via S. Martino della Battaglia 44, 00185, Roma, Italia"),
@@ -91,8 +102,11 @@ var italianLanguage = function(){
 
 		tSkills                : new Translation("Competenze"),
 		tProgrammingLanguages  : new Translation("Linguaggi di Programmazione"),
+		tWith                  : new Translation("con"),
+		tIntern                : new Translation("Tirocinante"),
 		tOverTheWeb            : new Translation("Sul Web"),
 		tSoftwareKnowledges    : new Translation("Conoscenze Software"),
+		CVS                    : new Translation("CVS"),
 		tOperatingSystems      : new Translation("Sistemi Operativi"),
 
 		tLanguages      : new Translation("Lingue"),
@@ -116,7 +130,6 @@ var italianLanguage = function(){
 
 		tWebSite    : new Translation("Sito Web"),
 		webSiteDes0 : new Translation("Puoi trovare maggiori informazioni su di me visitando il mio sito web alla pagina: "),
-		webSiteDes1 : new Translation("Il sito è stato sviluppato utilizzando HTML, CSS, Javascript, PHP, AngularJS, JQuery e Bootstrap."),
 
 		tClose : new Translation("Chiudi"),
 		privacy: new Translation("Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base art. 13 del D. Lgs. 196/2003.")

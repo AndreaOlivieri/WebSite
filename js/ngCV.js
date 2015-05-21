@@ -13,14 +13,17 @@
 			]);
 
 		this.experiences = new Entry(lan["tExperiences"],
-			[ new Experience(lan["tSep2013"], lan["tSep2014"],     "H.S.C. s.r.l.",      "http://www.hsc.it/",  lan["hscAddress"], lan["tInformaticProgrammer"],  lan["hscLearned"]),
-			  new Experience(lan["tApr2013"], lan["tJul2013"], "I.S.T.C. - C.N.R.", "http://www.istc.cnr.it/", lan["istcAddress"],            lan["tDeveloper"], lan["istcLearned"])
+			[ new Experience(lan["tFeb2015"],   lan["tToday"],           "Fashape",           "https://fashape.com/", "img/logo/logo_fashape.png", lan["fashapeAddress"], lan["ctoFashape"], lan["fashapeLearned"]),
+			  new Experience(lan["tFeb2015"], lan["tMay2015"],   "InnovAction Lab", "http://www.innovactionlab.org/",  "img/logo/logo_innlab.png",  lan["innlabAddress"], lan["tDeveloper"],  lan["innlabLearned"]),
+			  new Experience(lan["tSep2013"], lan["tSep2014"],     "H.S.C. s.r.l.",             "http://www.hsc.it/",     "img/logo/logo_hsc.png",     lan["hscAddress"], lan["tDeveloper"],     lan["hscLearned"]),
+			  new Experience(lan["tApr2013"], lan["tJul2013"], "I.S.T.C. - C.N.R.",        "http://www.istc.cnr.it/",    "img/logo/logo_istc.png",    lan["istcAddress"],    lan["tIntern"],    lan["istcLearned"])
 			]);
 
 		this.skills     = new Entry(lan["tSkills"],
 			[ new Skill( lan["tProgrammingLanguages"], "Java, C#, Delphi, PL/SQL"),
-			  new Skill(           lan["tOverTheWeb"], "HTML, CSS, SASS, Javascript, JQuery, AngularJS"),
-			  new Skill(   lan["tSoftwareKnowledges"], "Sublime Text, Eclipse, RAD Studio, Delphi 7, PLSQL Developer, Android SDK, Git, GitHub, Borland StarTeam, Photoshop, Microsoft Office"),
+			  new Skill(           lan["tOverTheWeb"], "HTML, CSS/SASS, Javascript, JQuery, AngularJS, Meteor"),
+			  new Skill(   lan["tSoftwareKnowledges"], "Sublime Text, Eclipse, RAD Studio, PLSQL Developer, Android SDK, Photoshop, Microsoft Office"),
+			  new Skill(                   lan["CVS"], "Git "+lan["tWith"].trans+" GitHub/Bitbucket, Borland StarTeam"),
 			  new Skill(     lan["tOperatingSystems"], "Windows, Mac OS, Android")
 			]);
 
@@ -35,11 +38,6 @@
 		this.certificates  = new Entry(lan["tCertificates"],
 			[
 				new Certificate("ECDL Core", lan["ecdlDes"])
-			]);
-
-		this.website    = new Entry(lan["tWebSite"],
-			[ lan["webSiteDes0"],
-			  lan["webSiteDes1"]
 			]);
 
 		this.privacy = lan["privacy"];
@@ -66,11 +64,12 @@
 		this.href  = lan["hrefEQF"];
 	}
 
-	var Experience = function(start, end, place, href, description, position, learned){
+	var Experience = function(start, end, place, href, img, description, position, learned){
 		this.start        = start;
 		this.end          = end;
 		this.place        = place;
 		this.href         = href;
+		this.img          = img;
 		this.description  = description;
 		this.position     = position;
 		this.learned      = learned;

@@ -21,13 +21,6 @@
 		};
 	});
 
-	modIndex.controller('footerController', function(){
-
-		var size = 151;
-		var swatch = document.getElementById("swatch");
-		swatch.src = "http://www.clocklink.com/html5embed.php?clock=008&timezone=GMT"+getTimeZone()+"&color=black&size="+size+"&Title=&Message=&Target=&From=2015,1,1,0,0,0&Color=black";
-	});
-
 	function getTimeZone(){
 		var date = new Date();
 		var time = Math.round(date.getTimezoneOffset() / -60) * 100;
