@@ -92,7 +92,7 @@ var italianLanguage = function(){
 		tDeveloper            : new Translation("Sviluppatore Software"),
 		ctoFashape            : new Translation("Co-founder e CTO"),
 		fashapeAddress        : new Translation("Roma, Italia"),
-		fashapeLearned        : new Translation("Fashape è la startup che mira ad aiutare le persone a trovare i prodotti maschili più fashion del momento, proponendo una wishlist degli oggetti più votati sui social network. L'intero sviluppo del sito è stato portato avanti da me mediante l'utilizzo delle risorse cloud di Microsoft Azure e l’ausilio del framework javascript Meteor."),
+		fashapeLearned        : new Translation("Fashape è la startup che aiuta le persone a trovare i prodotti maschili più fashion del momento, proponendo una wishlist giornaliera degli oggetti più votati sui social network. L'intero sviluppo del sito è stato portato avanti da me mediante l'utilizzo del framework Meteor e le risorse cloud di Microsoft Azure."),
 		innlabAddress         : new Translation("Roma, Italia"),
 		innlabLearned         : new Translation("InnovAction Lab è un corso formativo che ti da la possibilità di trasformare la tua idea innovativa in una vera startup. Al termine del percorso sono riuscito, insieme al mio team, a fondare la nostra startup : Fashape."),
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Roma, Italia"),

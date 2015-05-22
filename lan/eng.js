@@ -92,7 +92,7 @@ var englishLanguage = function(){
 		tDeveloper            : new Translation("Software Developer"),
 		ctoFashape            : new Translation("Co-founder and CTO"),
 		fashapeAddress        : new Translation("Rome, Italy"),
-		fashapeLearned        : new Translation("Fashape is the startup that aims to help people find the best men’s fashion products through a wish list of most voted objects from social networks. The entire development of the site was carried out by me through the use of Microsoft Azure cloud resources and Meteor javascript framework."),
+		fashapeLearned        : new Translation("Fashape is the startup that help people to find the best men’s fashion products through a daily wish list of most voted objects from social networks. The entire development of the site was carried out by me with Meteor javascript framework and Microsoft Azure cloud resources."),
 		innlabAddress         : new Translation("Rome, Italy"),
 		innlabLearned         : new Translation("InnovAction Lab is a training course that gives you the ability to turn your innovative idea into a startup. At the end of the course I was able, with my team, to found our startup: Fashape."),
 		hscAddress            : new Translation("Via Elio Lampridio Cerva 103, 00143, Rome, Italy"),
