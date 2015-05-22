@@ -1,230 +1,222 @@
 <!DOCTYPE html>
 <html ng-app="modIndex" ng-controller="wordsController">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Andrea Olivieri</title>
+		<meta name="description" content="Andrea Olivieri's website, graduate in computer engineering with developer skills.">
+		<meta name="keywords" content="andrea olivieri developer sviluppatore computer software engineering innovaction site sito html css javascript jquery angular meteor java fashape cto">
+		<meta name="author" content="Andrea Olivieri, andrea.olivieri1991@gmail.com">
+		<link rel="shortcut icon" href="img/icon/icn-tab.ico">
 
-<head>
-	<script type="application/ld+json">
-	{
-	  "@context": "http://www.andrea-olivieri.com",
-	  "@type": "Person",
-	  "address": {
-	    "@type": "PostalAddress",
-	    "addressCountry": "Italy",
-	    "addressLocality": "Rome",
-	    "postalCode": "00100",
-	    "streetAddress": "Via Baudelaire"
-	  },
-	  "email": "mailto:andrea.olivieri1991@gmail.com",
-	  "image": "img/andrea.png",
-	  "jobTitle": "Software Developer",
-	  "name": "Andrea Olivieri",
-	  "url": "http://www.andrea-olivieri.com",
-	  "sameAs" : [ "https://www.facebook.com/andrea.olivieri.5074",
-    						 "https://twitter.com/OliAndrea17",
-    						 "https://plus.google.com/102553212030062995896/about",
-    						 "http://it.linkedin.com/pub/andrea-olivieri/65/228/8a2"
-    					 ]
-	}
-	</script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FACEBOOK OPENGRAPH TAG -->
+		<meta property="og:title" content="Andrea Olivieri"/>
+	  <meta property="og:type" content="website" />
+	  <meta property="og:url" content="http://www.andrea-olivieri.com/" />
+	  <meta property="og:image" content="http://www.andrea-olivieri.com/img/andrea.png"/>
+	  <meta property="og:image:type" content="image/png" />
+	  <meta property="og:image:width" content="540" />
+	  <meta property="og:image:height" content="540" />
+	  <meta property="og:description" content="Andrea Olivieri's website, graduate in computer engineering with developer skills." />
 
-	<title>Andrea Olivieri</title>
-	<meta name="description" content="Andrea Olivieri's website, graduate in computer engineering with developer skills.">
-	<meta name="keywords" content="andrea olivieri developer sviluppatore computer software engineering innovaction site sito html css javascript jquery angular meteor java fashape cto">
-	<meta name="author" content="Andrea Olivieri, andrea.olivieri1991@gmail.com">
+		<!-- LIBRARIES -->
+		<script src="lib/js/angular.min.js"></script>
+		<script src="lib/js/jquery-1.11.0.js"></script>
+		<script src="lib/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="lib/css/bootstrap.css" />
 
-	<meta property="og:title" content="Andrea Olivieri"/>
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.andrea-olivieri.com/" />
-  <meta property="og:image" content="img/andrea.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="540" />
-  <meta property="og:image:height" content="540" />
-  <meta property="og:description" content="Andrea Olivieri's website, graduate in computer engineering with developer skills." />
+		<!-- STYLESHEET -->
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/cv.css"   />
+		<link rel="stylesheet" href="css/cv-print.css" media="print"/>
 
-	<link rel="shortcut icon" href="img/icon/icn-tab.ico">
+		<!-- LANGUAGES -->
+		<script src="lan/ita.js"></script>
+		<script src="lan/eng.js"></script>
 
-	<!-- Libraries -->
-	<script src="lib/js/angular.min.js"></script>
-	<script src="lib/js/jquery-1.11.0.js"></script>
-	<script src="lib/js/bootstrap.js"></script>
-	<link rel="stylesheet" href="lib/css/bootstrap.css" />
+		<!-- ANGULAR SCRIPT -->
+		<script src="js/ngLanguage.js"></script>
+		<script src="js/ngWords.js"></script>
+		<script src="js/ngIcon.js"></script>
+		<script src="js/ngContact.js"></script>
+		<script src="js/ngCV.js"></script>
+		<script src="js/ngIndex.js"></script>
 
-	<!-- Stylesheet -->
-	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="css/cv.css"   />
-	<link rel="stylesheet" href="css/cv-print.css" media="print"/>
+		<!-- FONTS -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
-	<!-- Languages -->
-	<script src="lan/ita.js"></script>
-	<script src="lan/eng.js"></script>
 
-	<!-- Script -->
-	<script src="js/ngLanguage.js"></script>
-	<script src="js/ngWords.js"></script>
-	<script src="js/ngIcon.js"></script>
-	<script src="js/ngContact.js"></script>
-	<script src="js/ngCV.js"></script>
-	<script src="js/ngIndex.js"></script>
+		<!--GOOGLE ANALYTICS-->
+		<script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!-- Fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	    ga('create', 'UA-59810963-1', 'auto');
+	    ga('send', 'pageview');
+	  </script>
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	  <!-- SCHEMA TAG -->
+	  <script type="application/ld+json">
+		{
+		  "@context": "http://www.andrea-olivieri.com",
+		  "@type": "Person",
+		  "address": {
+		    "@type": "PostalAddress",
+		    "addressCountry": "Italy",
+		    "addressLocality": "Rome",
+		    "postalCode": "00100",
+		    "streetAddress": "Via Baudelaire"
+		  },
+		  "email": "mailto:andrea.olivieri1991@gmail.com",
+		  "image": "img/andrea.png",
+		  "jobTitle": "Software Developer",
+		  "name": "Andrea Olivieri",
+		  "url": "http://www.andrea-olivieri.com",
+		  "sameAs" : [ "https://www.facebook.com/andrea.olivieri.5074",
+	    						 "https://twitter.com/OliAndrea17",
+	    						 "https://plus.google.com/102553212030062995896/about",
+	    						 "http://it.linkedin.com/pub/andrea-olivieri/65/228/8a2"
+	    					 ]
+		}
+		</script>
+	</head>
 
-	<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<body>
+			<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
 
-    ga('create', 'UA-59810963-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
+			<section ng-controller="tabController as tab">
+					<!-- Navigation -->
+					<nav class="navbar navbar-default" role="navigation">
+							<div class="container">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+													<span class="sr-only">Toggle navigation</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+											</button>
+											<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+											<a class="navbar-brand" href="index.html">{{about.name}} {{about.surname}}</a>
+									</div>
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+											<ul class="nav navbar-nav" >
+													<li ng-class="{ active:tab.isSelected(1) }">
+															<a class="home" href ng-click="tab.selectTab(1)">
+																{{words.tHome.trans}}
+															</a>
+													</li>
+													<li ng-class="{ active:tab.isSelected(2) }">
+															<a class="about" href ng-click="tab.selectTab(2)">
+																{{words.tAbout.trans}}
+															</a>
+													</li>
+													<li ng-class="{ active:tab.isSelected(3) }">
+															<a class="cv" href ng-click="tab.selectTab(3)">
+																{{words.tCV.trans}}
+															</a>
+													</li>
+													<!--
+													<li ng-class="{ active:tab.isSelected(4) }">
+															<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
+																{{words.tBlog.trans}}
+															</a>
+													</li>
+													-->
+													<li ng-class="{ active:tab.isSelected(5) }">
+															<a class="contact" href ng-click="tab.selectTab(5)">
+																{{words.tContact.trans}}
+															</a>
+													</li>
 
-<body>
-
-		<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
-
-		<section ng-controller="tabController as tab">
-				<!-- Navigation -->
-				<nav class="navbar navbar-default" role="navigation">
-						<div class="container">
-								<!-- Brand and toggle get grouped for better mobile display -->
-								<div class="navbar-header">
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-												<span class="sr-only">Toggle navigation</span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-												<span class="icon-bar"></span>
-										</button>
-										<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-										<a class="navbar-brand" href="index.html">{{about.name}} {{about.surname}}</a>
-								</div>
-								<!-- Collect the nav links, forms, and other content for toggling -->
-								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-										<ul class="nav navbar-nav" >
-												<li ng-class="{ active:tab.isSelected(1) }">
-														<a class="home" href ng-click="tab.selectTab(1)">
-															{{words.tHome.trans}}
-														</a>
-												</li>
-												<li ng-class="{ active:tab.isSelected(2) }">
-														<a class="about" href ng-click="tab.selectTab(2)">
-															{{words.tAbout.trans}}
-														</a>
-												</li>
-												<li ng-class="{ active:tab.isSelected(3) }">
-														<a class="cv" href ng-click="tab.selectTab(3)">
-															{{words.tCV.trans}}
-														</a>
-												</li>
-												<!--
-												<li ng-class="{ active:tab.isSelected(4) }">
-														<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
-															{{words.tBlog.trans}}
-														</a>
-												</li>
-												-->
-												<li ng-class="{ active:tab.isSelected(5) }">
-														<a class="contact" href ng-click="tab.selectTab(5)">
-															{{words.tContact.trans}}
-														</a>
-												</li>
-
-												<li class="flag" ng-controller="languageController as lan"
-												    ng-click="lan.changeLanguage()">
-							          	<img class="flag" ng-src="img/flag/{{lan.language.trans}}.png" />
-							          </li>
-										</ul>
-								</div>
-								<!-- /.navbar-collapse -->
-						</div>
-						<!-- /.container -->
-				</nav>
-
-				<home    ng-show="tab.isSelected(1)"></home>
-
-				<about   ng-show="tab.isSelected(2)"></about>
-
-				<cv      ng-show="tab.isSelected(3)"></cv>
-
-<!--				<blog    ng-show="tab.isSelected(4)"></blog> -->
-
-				<contact ng-show="tab.isSelected(5)"></contact>
-
-		</section>
-
-		<footer>
-				<div class="container">
-						<div class="row">
-
-								<div class="col-lg-12 text-center">
-
-										<div class="social" ng-controller="iconController as icon">
-											<ul class="left">
-												<li>
-						              <a href="{{icon.innlab.href}}"
-						                 ng-attr-title="{{icon.innlab.title.trans}}">
-						                <img ng-src="{{icon.innlab.src}}" alt="" />
-						              </a>
-						            </li>
-						            <li>
-						              <a href="{{icon.fashape.href}}"
-						                 ng-attr-title="{{icon.fashape.title.trans}}">
-						                <img ng-src="{{icon.fashape.src}}" alt="" />
-						              </a>
-						            </li>
+													<li class="flag" ng-controller="languageController as lan"
+													    ng-click="lan.changeLanguage()">
+								          	<img class="flag" ng-src="img/flag/{{lan.language.trans}}.png" />
+								          </li>
 											</ul>
-						          <ul class="right">
-						            <li>
-						              <a href="{{icon.google.href}}"
-						                 ng-attr-title="{{icon.google.title.trans}}">
-						                <img ng-src="{{icon.google.src}}" alt="" />
-						              </a>
-						            </li>
-						            <li>
-						              <a href="{{icon.facebook.href}}"
-						                 ng-attr-title="{{icon.facebook.title.trans}}">
-						                <img ng-src="{{icon.facebook.src}}" alt="" />
-						              </a>
-						            </li>
-						            <li>
-						              <a href="{{icon.twitter.href}}"
-						                 ng-attr-title="{{icon.twitter.title.trans}}">
-						                <img ng-src="{{icon.twitter.src}}" alt="" />
-						              </a>
-						            </li>
-						            <li>
-						              <a href="{{icon.linkedin.href}}"
-						                 ng-attr-title="{{icon.linkedin.title.trans}}">
-						                <img ng-src="{{icon.linkedin.src}}" alt="" />
-						              </a>
-						            </li>
-						            <li>
-						              <a href="{{icon.github.href}}"
-						                 ng-attr-title="{{icon.github.title.trans}}">
-						                <img ng-src="{{icon.github.src}}" alt="" />
-						              </a>
-						            </li>
-						          </ul>
-						        </div>
+									</div>
+									<!-- /.navbar-collapse -->
+							</div>
+							<!-- /.container -->
+					</nav>
 
-										<p>Copyright &copy; Andrea Olivieri</p>
+					<home    ng-show="tab.isSelected(1)"></home>
 
-								</div>
+					<about   ng-show="tab.isSelected(2)"></about>
 
-						</div>
-				</div>
-		</footer>
-</body>
+					<cv      ng-show="tab.isSelected(3)"></cv>
 
+	<!--				<blog    ng-show="tab.isSelected(4)"></blog> -->
+
+					<contact ng-show="tab.isSelected(5)"></contact>
+
+			</section>
+
+			<footer>
+					<div class="container">
+							<div class="row">
+
+									<div class="col-lg-12 text-center">
+
+											<div class="social" ng-controller="iconController as icon">
+												<ul class="left">
+													<li>
+							              <a href="{{icon.innlab.href}}"
+							                 ng-attr-title="{{icon.innlab.title.trans}}">
+							                <img ng-src="{{icon.innlab.src}}" alt="" />
+							              </a>
+							            </li>
+							            <li>
+							              <a href="{{icon.fashape.href}}"
+							                 ng-attr-title="{{icon.fashape.title.trans}}">
+							                <img ng-src="{{icon.fashape.src}}" alt="" />
+							              </a>
+							            </li>
+												</ul>
+							          <ul class="right">
+							            <li>
+							              <a href="{{icon.google.href}}"
+							                 ng-attr-title="{{icon.google.title.trans}}">
+							                <img ng-src="{{icon.google.src}}" alt="" />
+							              </a>
+							            </li>
+							            <li>
+							              <a href="{{icon.facebook.href}}"
+							                 ng-attr-title="{{icon.facebook.title.trans}}">
+							                <img ng-src="{{icon.facebook.src}}" alt="" />
+							              </a>
+							            </li>
+							            <li>
+							              <a href="{{icon.twitter.href}}"
+							                 ng-attr-title="{{icon.twitter.title.trans}}">
+							                <img ng-src="{{icon.twitter.src}}" alt="" />
+							              </a>
+							            </li>
+							            <li>
+							              <a href="{{icon.linkedin.href}}"
+							                 ng-attr-title="{{icon.linkedin.title.trans}}">
+							                <img ng-src="{{icon.linkedin.src}}" alt="" />
+							              </a>
+							            </li>
+							            <li>
+							              <a href="{{icon.github.href}}"
+							                 ng-attr-title="{{icon.github.title.trans}}">
+							                <img ng-src="{{icon.github.src}}" alt="" />
+							              </a>
+							            </li>
+							          </ul>
+							        </div>
+
+											<p>Copyright &copy; Andrea Olivieri</p>
+
+									</div>
+							</div>
+					</div>
+			</footer>
+	</body>
 </html>
