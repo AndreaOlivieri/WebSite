@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Andrea Olivieri</title>
 		<meta name="description" content="Andrea Olivieri's website, graduate in computer engineering with developer skills.">
-		<meta name="keywords" content="andrea olivieri developer sviluppatore computer software engineering innovaction site sito html css javascript jquery angular meteor java fashape cto">
+		<meta name="keywords" content="andrea olivieri site sito developer sviluppatore computer software engineering fashape">
 		<meta name="author" content="Andrea Olivieri, andrea.olivieri1991@gmail.com">
 		<link rel="shortcut icon" href="img/icon/icn-tab.ico">
 
@@ -86,137 +86,137 @@
 	</head>
 
 	<body>
-			<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
+		<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
 
-			<section ng-controller="tabController as tab">
-					<!-- Navigation -->
-					<nav class="navbar navbar-default" role="navigation">
-							<div class="container">
-									<!-- Brand and toggle get grouped for better mobile display -->
-									<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-													<span class="sr-only">Toggle navigation</span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-											</button>
-											<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-											<a class="navbar-brand" href="index.html">{{about.name}} {{about.surname}}</a>
-									</div>
-									<!-- Collect the nav links, forms, and other content for toggling -->
-									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-											<ul class="nav navbar-nav" >
-													<li ng-class="{ active:tab.isSelected(1) }">
-															<a class="home" href ng-click="tab.selectTab(1)">
-																{{words.tHome.trans}}
-															</a>
-													</li>
-													<li ng-class="{ active:tab.isSelected(2) }">
-															<a class="about" href ng-click="tab.selectTab(2)">
-																{{words.tAbout.trans}}
-															</a>
-													</li>
-													<li ng-class="{ active:tab.isSelected(3) }">
-															<a class="cv" href ng-click="tab.selectTab(3)">
-																{{words.tCV.trans}}
-															</a>
-													</li>
-													<!--
-													<li ng-class="{ active:tab.isSelected(4) }">
-															<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
-																{{words.tBlog.trans}}
-															</a>
-													</li>
-													-->
-													<li ng-class="{ active:tab.isSelected(5) }">
-															<a class="contact" href ng-click="tab.selectTab(5)">
-																{{words.tContact.trans}}
-															</a>
-													</li>
-
-													<li class="flag" ng-controller="languageController as lan"
-													    ng-click="lan.changeLanguage()">
-								          	<img class="flag" ng-src="img/flag/{{lan.language.trans}}.png" />
-								          </li>
-											</ul>
-									</div>
-									<!-- /.navbar-collapse -->
-							</div>
-							<!-- /.container -->
-					</nav>
-
-					<home    ng-show="tab.isSelected(1)"></home>
-
-					<about   ng-show="tab.isSelected(2)"></about>
-
-					<cv      ng-show="tab.isSelected(3)"></cv>
-
-	<!--				<blog    ng-show="tab.isSelected(4)"></blog> -->
-
-					<contact ng-show="tab.isSelected(5)"></contact>
-
-			</section>
-
-			<footer>
-					<div class="container">
-							<div class="row">
-
-									<div class="col-lg-12 text-center">
-
-											<div class="social" ng-controller="iconController as icon">
-												<ul class="left">
-													<li>
-							              <a href="{{icon.innlab.href}}"
-							                 ng-attr-title="{{icon.innlab.title.trans}}">
-							                <img ng-src="{{icon.innlab.src}}" alt="" />
-							              </a>
-							            </li>
-							            <li>
-							              <a href="{{icon.fashape.href}}"
-							                 ng-attr-title="{{icon.fashape.title.trans}}">
-							                <img ng-src="{{icon.fashape.src}}" alt="" />
-							              </a>
-							            </li>
-												</ul>
-							          <ul class="right">
-							            <li>
-							              <a href="{{icon.google.href}}"
-							                 ng-attr-title="{{icon.google.title.trans}}">
-							                <img ng-src="{{icon.google.src}}" alt="" />
-							              </a>
-							            </li>
-							            <li>
-							              <a href="{{icon.facebook.href}}"
-							                 ng-attr-title="{{icon.facebook.title.trans}}">
-							                <img ng-src="{{icon.facebook.src}}" alt="" />
-							              </a>
-							            </li>
-							            <li>
-							              <a href="{{icon.twitter.href}}"
-							                 ng-attr-title="{{icon.twitter.title.trans}}">
-							                <img ng-src="{{icon.twitter.src}}" alt="" />
-							              </a>
-							            </li>
-							            <li>
-							              <a href="{{icon.linkedin.href}}"
-							                 ng-attr-title="{{icon.linkedin.title.trans}}">
-							                <img ng-src="{{icon.linkedin.src}}" alt="" />
-							              </a>
-							            </li>
-							            <li>
-							              <a href="{{icon.github.href}}"
-							                 ng-attr-title="{{icon.github.title.trans}}">
-							                <img ng-src="{{icon.github.src}}" alt="" />
-							              </a>
-							            </li>
-							          </ul>
-							        </div>
-
-											<p>Copyright &copy; Andrea Olivieri</p>
-
-									</div>
-							</div>
+		<section ng-controller="tabController as tab">
+			<!-- Navigation -->
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+						<a class="navbar-brand" href="index.html">{{about.name}} {{about.surname}}</a>
 					</div>
-			</footer>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav" >
+							<li ng-class="{ active:tab.isSelected(1) }">
+								<a class="home" href ng-click="tab.selectTab(1)">
+									{{words.tHome.trans}}
+								</a>
+							</li>
+							<li ng-class="{ active:tab.isSelected(2) }">
+								<a class="about" href ng-click="tab.selectTab(2)">
+									{{words.tAbout.trans}}
+								</a>
+							</li>
+							<li ng-class="{ active:tab.isSelected(3) }">
+								<a class="cv" href ng-click="tab.selectTab(3)">
+									{{words.tCV.trans}}
+								</a>
+							</li>
+							<!--
+							<li ng-class="{ active:tab.isSelected(4) }">
+									<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
+										{{words.tBlog.trans}}
+									</a>
+							</li>
+							-->
+							<li ng-class="{ active:tab.isSelected(5) }">
+								<a class="contact" href ng-click="tab.selectTab(5)">
+									{{words.tContact.trans}}
+								</a>
+							</li>
+
+							<li class="flag" ng-controller="languageController as lan"
+							    ng-click="lan.changeLanguage()">
+		          	<img class="flag" ng-src="img/flag/{{lan.language.trans}}.png" />
+		          </li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container -->
+			</nav>
+
+			<home    ng-show="tab.isSelected(1)"></home>
+
+			<about   ng-show="tab.isSelected(2)"></about>
+
+			<cv      ng-show="tab.isSelected(3)"></cv>
+
+<!--				<blog    ng-show="tab.isSelected(4)"></blog> -->
+
+			<contact ng-show="tab.isSelected(5)"></contact>
+
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-12 text-center">
+
+						<div class="social" ng-controller="iconController as icon">
+							<ul class="left">
+								<li>
+		              <a href="{{icon.innlab.href}}"
+		                 ng-attr-title="{{icon.innlab.title.trans}}">
+		                <img ng-src="{{icon.innlab.src}}" alt="" />
+		              </a>
+		            </li>
+		            <li>
+		              <a href="{{icon.fashape.href}}"
+		                 ng-attr-title="{{icon.fashape.title.trans}}">
+		                <img ng-src="{{icon.fashape.src}}" alt="" />
+		              </a>
+		            </li>
+							</ul>
+		          <ul class="right">
+		            <li>
+		              <a href="{{icon.google.href}}"
+		                 ng-attr-title="{{icon.google.title.trans}}">
+		                <img ng-src="{{icon.google.src}}" alt="" />
+		              </a>
+		            </li>
+		            <li>
+		              <a href="{{icon.facebook.href}}"
+		                 ng-attr-title="{{icon.facebook.title.trans}}">
+		                <img ng-src="{{icon.facebook.src}}" alt="" />
+		              </a>
+		            </li>
+		            <li>
+		              <a href="{{icon.twitter.href}}"
+		                 ng-attr-title="{{icon.twitter.title.trans}}">
+		                <img ng-src="{{icon.twitter.src}}" alt="" />
+		              </a>
+		            </li>
+		            <li>
+		              <a href="{{icon.linkedin.href}}"
+		                 ng-attr-title="{{icon.linkedin.title.trans}}">
+		                <img ng-src="{{icon.linkedin.src}}" alt="" />
+		              </a>
+		            </li>
+		            <li>
+		              <a href="{{icon.github.href}}"
+		                 ng-attr-title="{{icon.github.title.trans}}">
+		                <img ng-src="{{icon.github.src}}" alt="" />
+		              </a>
+		            </li>
+		          </ul>
+		        </div>
+
+						<p>Copyright &copy; Andrea Olivieri</p>
+
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
