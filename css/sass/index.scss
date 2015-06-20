@@ -128,6 +128,13 @@ hr {
     margin: 0 auto 0;
 }
 
+/* POST */
+/* ----------------------------------------- */
+#twitter-widget-0{
+  max-width: inherit !important;
+  width: 100% !important;
+}
+
 /* CONTACT */
 /* ----------------------------------------- */
 
@@ -207,7 +214,7 @@ img.flag {
     margin: 0 0 0 15px;
 
     @include respondTo($widthPhone){
-        width: 115px;
+        width: 110px;
         margin: 0;
         padding: 0 20px 0 20px;
 
@@ -309,6 +316,10 @@ img.flag:hover {
                             @include navbar_hover("cv");
                             color : #9e1111 !important;
                         }
+                        &.post:hover, &.post:focus {
+                            @include navbar_hover("about");
+                            color : #9e1111 !important;
+                        }
                         &.contact:hover, &.contact:focus {
                             @include navbar_hover("contact");
                             color : #9e1111 !important;
@@ -331,6 +342,10 @@ img.flag:hover {
                     }
                     &.cv:focus, &.cv:hover{
                         @include navbar_hover("cv");
+                        color : #12794B !important;
+                    }
+                    &.post:focus, &.post:hover{
+                        @include navbar_hover("about");
                         color : #12794B !important;
                     }
                     &.contact:focus, &.contact:hover{

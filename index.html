@@ -86,6 +86,9 @@
 	</head>
 
 	<body>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
 		<div class="brand">{{words.status.trans}} {{words.name.trans}} {{words.surname.trans}}</div>
 
 		<section ng-controller="tabController as tab">
@@ -121,6 +124,11 @@
 									{{words.tCV.trans}}
 								</a>
 							</li>
+							<li ng-class="{ active:tab.isSelected(4) }">
+									<a class="post" href ng-click="tab.selectTab(4)">
+										Post
+									</a>
+							</li>
 							<!--
 							<li ng-class="{ active:tab.isSelected(4) }">
 									<a class="blog" ng-href="http://{{words.blog.trans}}" ng-click="tab.selectTab(4)" wrc_done="false">
@@ -150,6 +158,8 @@
 			<about   ng-show="tab.isSelected(2)"></about>
 
 			<cv      ng-show="tab.isSelected(3)"></cv>
+
+			<post    ng-show="tab.isSelected(4)"></post>
 
 <!--				<blog    ng-show="tab.isSelected(4)"></blog> -->
 

@@ -52,6 +52,12 @@
 			templateUrl : 'template/cv.html',
 		}
 	});
+	modIndex.directive('post', function(){
+		return {
+			restrict    : 'E',
+			templateUrl : 'template/post.html',
+		}
+	});
 	modIndex.directive('blog', function(){
 		return {
 			restrict    : 'E',

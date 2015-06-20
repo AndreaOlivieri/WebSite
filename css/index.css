@@ -103,6 +103,12 @@ hr {
   float: none;
   margin: 0 auto 0; }
 
+/* POST */
+/* ----------------------------------------- */
+#twitter-widget-0 {
+  max-width: inherit !important;
+  width: 100% !important; }
+
 /* CONTACT */
 /* ----------------------------------------- */
 .ng-dirty.ng-invalid.ng-valid-required {
@@ -163,7 +169,7 @@ img.flag {
   margin: 0 0 0 15px; }
   @media screen and (min-width: 768px) {
     img.flag {
-      width: 115px;
+      width: 110px;
       margin: 0;
       padding: 0 20px 0 20px; }
       img.flag:hover, img.flag:focus {
@@ -249,6 +255,10 @@ img.flag:hover {
               background-image: url("../img/nav_bg_hover_cv.png");
               background-size: 100% 100%;
               color: #9e1111 !important; }
+            .navbar-default .navbar-collapse .navbar-nav li a.post:hover, .navbar-default .navbar-collapse .navbar-nav li a.post:focus {
+              background-image: url("../img/nav_bg_hover_about.png");
+              background-size: 100% 100%;
+              color: #9e1111 !important; }
             .navbar-default .navbar-collapse .navbar-nav li a.contact:hover, .navbar-default .navbar-collapse .navbar-nav li a.contact:focus {
               background-image: url("../img/nav_bg_hover_contact.png");
               background-size: 100% 100%;
@@ -267,6 +277,10 @@ img.flag:hover {
             color: #12794B !important; }
           .navbar-default .navbar-collapse .navbar-nav .active > a.cv:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.cv:hover {
             background-image: url("../img/nav_bg_hover_cv.png");
+            background-size: 100% 100%;
+            color: #12794B !important; }
+          .navbar-default .navbar-collapse .navbar-nav .active > a.post:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.post:hover {
+            background-image: url("../img/nav_bg_hover_about.png");
             background-size: 100% 100%;
             color: #12794B !important; }
           .navbar-default .navbar-collapse .navbar-nav .active > a.contact:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.contact:hover {
