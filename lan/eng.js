@@ -20,9 +20,7 @@ var englishLanguage = function(){
 		occupation : new Translation("Software Developer"),
 
 		/* Home */
-		tWelcome        : new Translation("Welcome To"),
-		tWebSite        : new Translation("Web Site"),
-		tBy             : new Translation("by"),
+		tWelcome        : new Translation("Welcome"),
 		tIsLoading      : new Translation("loading"),
 		tContact        : new Translation("Contact"),
 		tHome           : new Translation("Home"),

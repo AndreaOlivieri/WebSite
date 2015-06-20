@@ -20,9 +20,7 @@ var italianLanguage = function(){
 		occupation : new Translation("Sviluppatore Software"),
 
 		/* Home */
-		tWelcome        : new Translation("Benvenuti nel"),
-		tWebSite        : new Translation("Sito Web"),
-		tBy             : new Translation("di"),
+		tWelcome        : new Translation("Benvenuto"),
 		tIsLoading      : new Translation("in caricamento"),
 		tContact        : new Translation("Contatti"),
 		tHome           : new Translation("Home"),
