@@ -241,8 +241,12 @@ img.flag:hover {
             height: 100%;
             color: black;
             line-height: normal;
-            padding: 25px 20px 15px 20px;
-            font-weight: bold; }
+            padding: 25px 12px 15px 12px;
+            font-weight: bold; } }
+          @media screen and (min-width: 768px) and (min-width: 1200px) {
+            .navbar-default .navbar-collapse .navbar-nav li a {
+              padding: 25px 20px 15px 20px; } }
+@media screen and (min-width: 768px) {
             .navbar-default .navbar-collapse .navbar-nav li a.home:hover, .navbar-default .navbar-collapse .navbar-nav li a.home:focus {
               background-image: url("../img/nav_bg_hover_home.png");
               background-size: 100% 100%;
@@ -252,10 +256,10 @@ img.flag:hover {
               background-size: 100% 100%;
               color: #9e1111 !important; }
             .navbar-default .navbar-collapse .navbar-nav li a.cv:hover, .navbar-default .navbar-collapse .navbar-nav li a.cv:focus {
-              background-image: url("../img/nav_bg_hover_cv.png");
+              background-image: url("../img/nav_bg_hover_home.png");
               background-size: 100% 100%;
               color: #9e1111 !important; }
-            .navbar-default .navbar-collapse .navbar-nav li a.post:hover, .navbar-default .navbar-collapse .navbar-nav li a.post:focus {
+            .navbar-default .navbar-collapse .navbar-nav li a.tweet:hover, .navbar-default .navbar-collapse .navbar-nav li a.tweet:focus {
               background-image: url("../img/nav_bg_hover_about.png");
               background-size: 100% 100%;
               color: #9e1111 !important; }
@@ -279,7 +283,7 @@ img.flag:hover {
             background-image: url("../img/nav_bg_hover_cv.png");
             background-size: 100% 100%;
             color: #12794B !important; }
-          .navbar-default .navbar-collapse .navbar-nav .active > a.post:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.post:hover {
+          .navbar-default .navbar-collapse .navbar-nav .active > a.tweet:focus, .navbar-default .navbar-collapse .navbar-nav .active > a.tweet:hover {
             background-image: url("../img/nav_bg_hover_about.png");
             background-size: 100% 100%;
             color: #12794B !important; }

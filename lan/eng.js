@@ -25,7 +25,7 @@ var englishLanguage = function(){
 		tContact        : new Translation("Contact"),
 		tHome           : new Translation("Home"),
 		tAbout          : new Translation("About"),
-		tCV             : new Translation("CV"),
+		tCV             : new Translation("Resume"),
 		tBlog           : new Translation("Blog"),
 		tContactForm    : new Translation("Contact Form"),
 		contactFormDesc : new Translation("For contacting me, complete next form with name, email and phone number."),

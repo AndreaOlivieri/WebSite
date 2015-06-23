@@ -52,10 +52,10 @@
 			templateUrl : 'template/cv.html',
 		}
 	});
-	modIndex.directive('post', function(){
+	modIndex.directive('tweet', function(){
 		return {
 			restrict    : 'E',
-			templateUrl : 'template/post.html',
+			templateUrl : 'template/tweet.html',
 		}
 	});
 	modIndex.directive('blog', function(){

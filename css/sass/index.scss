@@ -301,7 +301,10 @@ img.flag:hover {
                         height      : 100%;
                         color       : black;
                         line-height : normal;
-                        padding     : 25px 20px 15px 20px;
+                        padding     : 25px 12px 15px 12px;
+                        @include respondTo($widthTablet){
+                            padding : 25px 20px 15px 20px;
+                        }
                         font-weight : bold;
 
                         &.home:hover, &.home:focus {
@@ -313,10 +316,10 @@ img.flag:hover {
                             color : #9e1111 !important;
                         }
                         &.cv:hover, &.cv:focus {
-                            @include navbar_hover("cv");
+                            @include navbar_hover("home");
                             color : #9e1111 !important;
                         }
-                        &.post:hover, &.post:focus {
+                        &.tweet:hover, &.tweet:focus {
                             @include navbar_hover("about");
                             color : #9e1111 !important;
                         }
@@ -344,7 +347,7 @@ img.flag:hover {
                         @include navbar_hover("cv");
                         color : #12794B !important;
                     }
-                    &.post:focus, &.post:hover{
+                    &.tweet:focus, &.tweet:hover{
                         @include navbar_hover("about");
                         color : #12794B !important;
                     }
