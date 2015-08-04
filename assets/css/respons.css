@@ -2,6 +2,9 @@
     #wraper{
         width: 100%;
     }
+    .block-image {
+        display: none;
+    }
 }
 
 @media (max-width: 991px) {

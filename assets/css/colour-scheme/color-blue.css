@@ -40,6 +40,15 @@ body {
     background-color: #fdfdfd;
     border-color: #dfdfdf;
 }
+.block-image{
+    padding-left:50px;
+    padding-top:50px;
+    height: 600px;
+}
+.block-image img{
+    height: 100%;
+    width: auto;
+}
 .border-bottom{
     border-bottom-color: #ededed;
 }
