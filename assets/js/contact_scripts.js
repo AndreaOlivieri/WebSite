@@ -27,7 +27,7 @@ $(document).ready(function(){
                 position: myLatLng,
                 map: map,
                 title: 'Andrea Olivieri',
-                icon: './assets/img/marker-' + $('#stylesheet-new').attr('data-color') + '.png'
+                icon: './assets/img/marker-color-red.png'
             });
         } else {
             return false;
