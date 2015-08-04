@@ -247,54 +247,21 @@ a:hover, a:visited, a:focus, a:active{
 }
 .menu .menu-li .foto {
     display: block;
+
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6e6e6e;
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+
+
 }
 .menu .menu-li .name{
     text-underline: none;
     margin-top: 13px;
     display: block;
-}
-
-.menu-style1{
-    padding: 48px 0;
-    text-align: center;
-}
-.menu-style1 .menu-li{
-    display: inline-block;
-    position: relative;
-    width: 170px;
-    height: 170px;
-    margin-left: 20px;
-    margin-right: 20px;
-    overflow: hidden;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 50%;
-    border-color: #cccccc;
-}
-.menu-style1 .menu-li .name{
-    text-underline: none;
-    top: 0px;
-    padding-top: 75px;
-    display: block;
-    text-align: center;
-    width: 170px;
-    height: 170px;
-    font-size: 21px;
-    z-index: 3;
-}
-.menu-style1 .menu-li .foto{
-    display: block;
-    overflow: hidden;
-    z-index: 4;
-    position: relative;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-.menu-style1 .menu-li:hover .foto{
-    margin-top: -172px;
 }
 
 .small-menu{

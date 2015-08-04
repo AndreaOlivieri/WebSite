@@ -81,17 +81,6 @@ body {
 .menu .menu-li .name{
     color: #000000;
 }
-.menu-style1 .menu-li .foto{
-    border-color: #cccccc;
-}
-.menu-style1 .menu-li .name{
-    border-color: #ccc;
-    background-color: #f5f5f5;
-    color: #222;
-}
-.menu-style1 .menu-li{
-    border-color: #cccccc;
-}
 
 .icons-menu-button,
 .icons-menu-toggle-button {
