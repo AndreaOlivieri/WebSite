@@ -17,8 +17,10 @@
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
 
       $mail = new PHPMailer(true);
-
+      
       try {
+        $mail->IsSMTP();
+        $mail->Host = "smtp.gmail.com";
         $mail->From = $email;
         $mail->FromName = $name;
         $mail->AddAddress($to); //recipient 
