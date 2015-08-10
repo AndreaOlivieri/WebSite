@@ -21,7 +21,7 @@
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
         mail($to, $subject, $message, $headers);
-        echo "Success"; // this method sends the mail.
+        echo "success"; // this method sends the mail.
         exit;
     }else{
         echo "error: Invalid Email"; //error
