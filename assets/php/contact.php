@@ -6,14 +6,14 @@
     $message = ( $_REQUEST['user-message'] ) ? $_REQUEST['user-message'] : '';
     $status = $_REQUEST['user-status'];
 
-    $to = 'andreaolivieri1991@gmail.com';
+    $to = 'andrea.olivieri1991+website@gmail.com';
     $message = 'Name: '.$name.'<br /> Email: '.$email.'<br />Message: '.$message;
 
-    $subject = 'Subject';
+    $subject = 'Email from Website';
 
-    $headers = "From: You company <".$to.">". "\r\n" .
-                  "Return-Path: You company <info@yousite.com>\r\n".
-                  "Reply-To: You company <".$to.">" . "\r\n" .
+    $headers = "From: Andrea Olivieri <".$to.">". "\r\n" .
+                  "Return-Path: Andrea Olivieri <andrea.olivieri1991@gmail.com>\r\n".
+                  "Reply-To: Andrea Olivieri <".$to.">" . "\r\n" .
                   "MIME-Version: 1.0\r\n".
                   "Content-type: text/html; charset=iso-8859-1\r\n".
                   "X-Priority: 3\r\n" .
