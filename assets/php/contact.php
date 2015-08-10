@@ -9,7 +9,6 @@
     $status = $_REQUEST["user-status"];
 
     $to = "oli.andrea17@gmail.com";
-    $message = "Name: ".$name."<br /> Email: ".$email."<br />Message: ".$message;
 
     $subject = "Website Email";
 
