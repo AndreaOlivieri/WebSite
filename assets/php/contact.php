@@ -30,7 +30,7 @@
                "status = ".$status."\r\n".
                "to = ".$to."\r\n".
                "headers = ".$headers."\r\n".
-               "mail_sent = ".$mail_sent."\r\n";
+               "mail_sent = ".$mail_sent===NULL."\r\n";
         }
     }else{
         echo "error: Invalid Email"; //error
