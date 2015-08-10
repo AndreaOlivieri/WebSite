@@ -11,9 +11,9 @@
 
     $subject = "Subject";
 
-    $headers = "From: ".$name." <".$email.">". "\r\n" .
-               "Return-Path: Andrea Olivieri <".$to.">\r\n".
-               "Reply-To: Andrea Olivieri <".$to.">" . "\r\n" .
+    $headers = "From: ".$email. "\r\n" .
+               "Return-Path: ".$to."\r\n".
+               "Reply-To: ".$to."\r\n" .
                "MIME-Version: 1.0\r\n".
                "Content-type: text/html; charset=iso-8859-1\r\n".
                "X-Priority: 3\r\n" .
@@ -21,7 +21,7 @@
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
         mail($to, $subject, $message, $headers);
-        echo function_exists('mail') ? "Success" : "error: something is wrong "; // this method sends the mail.
+        echo "Success"; // this method sends the mail.
         exit;
     }else{
         echo "error: Invalid Email"; //error
