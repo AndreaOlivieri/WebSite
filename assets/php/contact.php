@@ -17,9 +17,7 @@
                "X-Mailer: PHP/".phpversion();
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
-        //$mail_sent = mail($to, $subject, $message, $headers);
-        $mail_sent = mail("andrea.olivieri1991@gmail.com", "Oggetto", "Linea 1"); 
-        if ($mail_sent) { // this method sends the mail.
+        if (mail($to, $subject, $message, $headers)) { // this method sends the mail.
           echo "success"; // success message
         }
         else{
@@ -29,8 +27,7 @@
                "message = ".$message."\r\n".
                "status = ".$status."\r\n".
                "to = ".$to."\r\n".
-               "headers = ".$headers."\r\n".
-               "mail_sent = ".(string)$mail_sent."\r\n";
+               "headers = ".$headers."\r\n";
         }
     }else{
         echo "error: Invalid Email"; //error
