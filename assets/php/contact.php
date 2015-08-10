@@ -27,7 +27,7 @@
                "message = ".$message."\r\n".
                "status = ".$status."\r\n".
                "to = ".$to."\r\n".
-               "headers = ".$headers."\r\n".
+               "headers = ".$headers."\r\n";
         }
     }else{
         echo "error: Invalid Email"; //error
