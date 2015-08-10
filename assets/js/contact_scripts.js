@@ -95,6 +95,7 @@ $(document).ready(function(){
                             }, 5000
                         );
                     } else {
+                        alert(data);
                         $(".info-message-form p").text("Error");
                         $(".info-message-form").addClass('error');
                         setTimeout(
