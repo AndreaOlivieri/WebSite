@@ -15,20 +15,18 @@
     //create an instance of PHPMailer
     $mail = new PHPMailer(true);
 
+    $mail->From = $email;
+    $mail->FromName = $name;
+    $mail->AddAddress($to); //recipient 
+    $mail->Subject = $subject;
+    $mail->Body = $message;
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
-      try {
-        $mail->From = $email;
-        $mail->FromName = $name;
-        $mail->AddAddress($to); //recipient 
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->Send();
-        echo "Message Sent OK\n";
-      } catch (phpmailerException $e) {
-        echo $e->errorMessage(); //Pretty error messages from PHPMailer
-      } catch (Exception $e) {
-        echo $e->getMessage(); //Boring error messages from anything else!
+
+      if($mail->Send()) {
+          echo "success"; // this method sends the mail.
+      }else{
+          echo "error: something wrong"; // this method sends the mail.
       }
     }else{
         echo "error: Invalid Email"; //error
