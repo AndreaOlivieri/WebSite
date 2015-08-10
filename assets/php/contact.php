@@ -1,5 +1,5 @@
 <?php
-    require_once '../PHPMailer/PHPMailerAutoload.php';
+    require_once 'PHPMailer/PHPMailerAutoload.php';
 
 
     // Here we get all the information from the fields sent over by the form.
