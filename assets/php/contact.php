@@ -6,7 +6,7 @@
     $message = ( $_REQUEST["user-message"] ) ? $_REQUEST["user-message"] : "";
     $status = $_REQUEST["user-status"];
 
-    $to = "andrea.olivieri1991+website@gmail.com";
+    $to = "oli.andrea17@gmail.com";
     $message = "Name: ".$name."<br /> Email: ".$email."<br />Message: ".$message;
 
     $subject = "Website Email";
@@ -14,7 +14,7 @@
     $headers = "From: ".$email. "\r\n" .
                "Reply-To: ".$to."\r\n" .
                "MIME-Version: 1.0\r\n".
-               "Content-type: text/html; charset='UTF-8'\r\n".
+               "Content-type: text/html; charset=iso-8859-1\r\n".
                "X-Priority: 3\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
