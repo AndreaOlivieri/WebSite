@@ -8,7 +8,7 @@
     $message = ( $_REQUEST["user-message"] ) ? $_REQUEST["user-message"] : "";
     $status = $_REQUEST["user-status"];
 
-    $to = "oli.andrea17@gmail.com";
+    $to = "andrea.olivieri1991@gmail.com";
 
     $subject = "Website Email";
 
