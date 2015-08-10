@@ -9,7 +9,7 @@
     $to = "andrea.olivieri1991+website@gmail.com";
     $message = "Name: ".$name."<br /> Email: ".$email."<br />Message: ".$message;
 
-    $subject = "Subject";
+    $subject = "Website Email";
 
     $headers = "From: ".$email. "\r\n" .
                "Reply-To: ".$to."\r\n" .
