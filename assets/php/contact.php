@@ -13,7 +13,7 @@
     $subject = "Website Email";
 
     //create an instance of PHPMailer
-    $mail = new PHPMailer(true);
+    $mail = new PHPMailer();
 
     $mail->From = $email;
     $mail->FromName = $name;
