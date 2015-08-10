@@ -2,6 +2,16 @@ $(document).ready(function(){
 
     "use strict";
 
+    function getAge(){
+        var birthday = new Date("1991-06-13");
+        var ageDifMs = Date.now() - birthday;
+        var ageDate = new Date(ageDifMs);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    };
+
+    if ($("#Age") != null) {
+        $("#Age").html(getAge() + " years");
+    }
 
     /*
      ----------------------------------------------------------------------
@@ -227,7 +237,6 @@ $(document).ready(function(){
     if ( colour_bg != "" && colour_bg != undefined ){
         $("body").css('background-color',colour_bg);
     }
-
 
 
 }); // End $(document).ready(function(){
