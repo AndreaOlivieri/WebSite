@@ -20,7 +20,8 @@
                "X-Mailer: PHP/" . phpversion();
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
-        echo mail($to, $subject, $message, $headers) ? "Success" : "error: something is wrong ".function_exists('mail'); // this method sends the mail.
+        mail($to, $subject, $message, $headers);
+        function_exists('mail') ? "Success" : "error: something is wrong "; // this method sends the mail.
         exit;
     }else{
         echo "error: Invalid Email"; //error
