@@ -1,4 +1,6 @@
 <?php
+    require_once '../PHPMailer/PHPMailerAutoload.php';
+
 
     // Here we get all the information from the fields sent over by the form.
     $name = $_REQUEST["user-name"];
@@ -11,17 +13,22 @@
 
     $subject = "Website Email";
 
-    $headers = "From: ".$email. "\r\n" .
-               "Reply-To: ".$to."\r\n" .
-               "MIME-Version: 1.0\r\n".
-               "Content-type: text/html; charset=iso-8859-1\r\n".
-               "X-Priority: 3\r\n" .
-               "X-Mailer: PHP/" . phpversion();
+    //create an instance of PHPMailer
+    $mail = new PHPMailer();
+
+    $mail->From = $email;
+    $mail->FromName = $name;
+    $mail->AddAddress($to); //recipient 
+    $mail->Subject = $subject;
+    $mail->Body = $message;
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL) && $status == "yes" ) { // shis line checks that we have a valid email address
-        mail($to, $subject, $message, $headers);
-        echo "success"; // this method sends the mail.
-        exit;
+
+      if($mail->send()) {
+          echo "success"; // this method sends the mail.
+      }else{
+          echo "error: something wrong"; // this method sends the mail.
+      }
     }else{
         echo "error: Invalid Email"; //error
     }
