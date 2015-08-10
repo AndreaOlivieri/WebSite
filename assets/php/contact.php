@@ -1,5 +1,4 @@
 <?php
-
     // Here we get all the information from the fields sent over by the form.
     $name = $_REQUEST['user-name'];
     $email = $_REQUEST['user-email'];
@@ -9,8 +8,8 @@
     $to = 'andrea.olivieri1991@gmail.com';
     $subject = "Website Email";
 
-    $headers = "From: ".$name." <".$email.">\r\n".
-               "Reply-To: ".$name." <".$email.">\r\n".
+    $headers = "From: ".$name." <".$email.">". "\r\n" .
+               "Reply-To: ".$name." <".$email.">". "\r\n".
                "MIME-Version: 1.0\r\n".
                "Content-type: text/html; charset=iso-8859-1\r\n".
                "X-Priority: 1\r\n".
