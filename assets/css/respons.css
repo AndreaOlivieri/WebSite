@@ -2,7 +2,11 @@
     #wraper{
         width: 100%;
     }
-    .block-image {
+}
+
+@media (max-width: 1200px) {
+    .block-image,
+    .contact-image {
         display: none;
     }
 }

@@ -45,7 +45,12 @@ body {
     padding-top:50px;
     height: 600px;
 }
-.block-image img{
+.contact-image{
+    height: 341px;
+}
+
+.block-image img,
+.contact-image img{
     height: 100%;
     width: auto;
 }
