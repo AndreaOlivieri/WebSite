@@ -1,0 +1,13 @@
+#MAILTRAP.IO
+staging:
+  MAILTRAP_USER_NAME: "95daf854ff80ef"
+  MAILTRAP_PASSWORD: "fc049183c4d3d4"
+
+#GMAIL
+GMAIL_USER_NAME: "andrea.olivieri1991@gmail.com"
+GMAIL_PASSWORD: "KingofKings13061991"
+
+#TIME ZONE
+TZ: "Europe/Rome"
+
+
