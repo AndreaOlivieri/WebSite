@@ -13,4 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
+//= bootstrap.min
+//= jquery.appear
+//= jquery.nicescroll.min
+//= jquery.mixitup.min
+//= jquery.magnific-popup.min
+//= owl.carousel.min
+//= jquery.inview.min
+//= jquery.knob.min
+//= jquery.cookie
+//= scripts
+
 //= require_tree .
