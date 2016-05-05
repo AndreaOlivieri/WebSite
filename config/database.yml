@@ -1,12 +1,12 @@
 default: &default
-  adapter: postgresql
+  adapter: <%= ENV['DBMS_OLIVIERIANDREA'] %>
   pool: 5
   timeout: 5000
+  username: <%= ENV['DBMS_USER_NAME'] %>
+  password: <%= ENV['DBMS_PASSWORD'] %>
 
 development:
   <<: *default
-  username: postgres
-  password: RUCJCDK4.
   database: olivieriandrea_db
 
 # Warning: The database defined as "test" will be erased and
@@ -14,8 +14,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/olivieriandrea_test_db
+  database: olivieriandrea_test_db
 
 production:
   <<: *default
-  database: db/olivieriandrea_production_db
+  database: olivieriandrea_production_db

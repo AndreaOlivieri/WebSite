@@ -271,7 +271,7 @@ a:hover, a:visited, a:focus, a:active{
     position: relative;
 }
 .small-menu .arrow{
-    background: url("images/arrow.png") left top no-repeat;
+    background: url("/assets/images/arrow.png") left top no-repeat;
     width: 300px;
     height: 200px;
     position: absolute;
@@ -383,7 +383,7 @@ a.icons-menu-button:focus,
     height: 36px;
     margin-top: 16px;
     margin-right: 16px;
-    background-image: url("images/close.svg");
+    background-image: url("/assets/images/close.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -647,7 +647,7 @@ a.icons-menu-button:focus,
     padding: 0;
     font-size: 21px;
     cursor: pointer;
-    background-image: url('images/close.svg');
+    background-image: url('/assets/images/close.svg');
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
@@ -1147,7 +1147,7 @@ a.icons-menu-button:focus,
     margin: -125px 0 0 -125px;
     width: 250px;
     height: 250px;
-    background-image: url("/images/loading.gif");
+    background-image: url("/assets/images/loading.gif");
     background-position: center;
     background-repeat: no-repeat;
 }

@@ -8,14 +8,14 @@
             <!-- start row -->
             <div class="row">
                 <div class="col-xs-8 col-sm-11 col-lg-11">
-                    <img class="logo-page" src="./assets/img/profile_l.png" alt="About Me">
+                    <%= image_tag "profile_l.png", class:"logo-page", alt:"About Me" %>
                     <!-- Title Page -->
                     <h2 class="title">Profile</h2>
                     <!-- Description Page -->
                     <h4 class="sub-title">A Brief About Me</h4>
                 </div>
                 <div class="col-xs-4 col-sm-1 col-lg-1 text-right">
-                    <a href="index.html" class="btn-close hover-animate"></a>
+                    <%= link_to "", root_path, class: "btn-close hover-animate" %>
                 </div>
             </div>
             <!-- end row -->
@@ -66,7 +66,7 @@
                         </table>
                     </div>
                     <div class="block-image">
-                        <img src="assets/img/andrea_laurea.png">
+                        <%= image_tag "andrea_laurea.png" %>
                     </div>
                 </div>
             </div>

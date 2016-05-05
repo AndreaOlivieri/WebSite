@@ -18,9 +18,10 @@
 //= require jquery.nicescroll.min
 //= require jquery.mixitup.min
 //= require jquery.magnific-popup.min
-//= require owl.carousel.min
 //= require jquery.inview.min
 //= require jquery.knob.min
 //= require jquery.cookie
 //= require jquery.countTo
 //= require TweenMax.min
+//= require owl.carousel.min
+//= require_self

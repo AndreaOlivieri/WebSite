@@ -5,9 +5,12 @@ staging:
 
 #GMAIL
 GMAIL_USER_NAME: "andrea.olivieri1991@gmail.com"
-GMAIL_PASSWORD: "KingofKings13061991"
+GMAIL_PASSWORD: "Rucjcdk4.1991"
+
+#POSTGRES
+DBMS_OLIVIERIANDREA: postgresql
+DBMS_USER_NAME: postgres
+DBMS_PASSWORD: RUCJCDK4.
 
 #TIME ZONE
 TZ: "Europe/Rome"
-
-

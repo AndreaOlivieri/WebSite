@@ -8,14 +8,14 @@
             <!-- start row -->
             <div class="row">
                 <div class="col-xs-8 col-sm-11 col-lg-11">
-                    <img class="logo-page" src="./assets/img/resume_l.png" alt="Resume">
+                    <%= image_tag "resume_l.png", class:"logo-page", alt:"Resume" %>
                     <!-- Title Page -->
                     <h2 class="title">Resume</h2>
                     <!-- Description Page -->
                     <h4 class="sub-title">My Academic Qualifications</h4>
                 </div>
                 <div class="col-xs-4 col-sm-1 col-lg-1 text-right">
-                    <a href="index.html" class="btn-close hover-animate"></a>
+                    <%= link_to "", root_path, class: "btn-close hover-animate" %>
                 </div>
             </div>
             <!-- end row -->
@@ -223,21 +223,35 @@
                         </div>
                     </div>
 
-                    <label class="progress-bar-label">HTML &amp; CSS</label>
+                    <label class="progress-bar-label">HTML</label>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
-                            <span>82%</span>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span>90%</span>
+                        </div>
+                    </div>
+
+                    <label class="progress-bar-label">CSS &amp; SCSS</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span>90%</span>
                         </div>
                     </div>
 
                     <label class="progress-bar-label">Javascript</label>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <span>75%</span>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            <span>85%</span>
                         </div>
                     </div>
 
                     <label class="progress-bar-label">JQuery</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span>80%</span>
+                        </div>
+                    </div>
+
+                    <label class="progress-bar-label">Ruby on Rails</label>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                             <span>70%</span>
@@ -253,26 +267,19 @@
 
                     <label class="progress-bar-label">Photoshop</label>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                            <span>65%</span>
-                        </div>
-                    </div>
-
-                    <label class="progress-bar-label">AngularJS</label>
-                    <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                             <span>60%</span>
                         </div>
                     </div>
 
-                    <label class="progress-bar-label">Meteor</label>
+                    <label class="progress-bar-label">AngularJS</label>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                             <span>50%</span>
                         </div>
                     </div>
 
-                    <label class="progress-bar-label">Ruby on Rails</label>
+                    <label class="progress-bar-label">Meteor</label>
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
                             <span>30%</span>
@@ -358,7 +365,8 @@
             </div>
             <!-- end row -->
             <p>
-                <a href="contact.html" class="btn hover-animate">Hire me Now</a><a href="assets/cv_andrea_olivieri.pdf" download="CV_Andrea_Olivieri" class="btn btn-color hover-animate">Download Resume</a>
+                <!-- <a href="contact.html" class="btn hover-animate">Hire me Now</a> -->
+                <a href="assets/resume.pdf" download="Andrea_Olivieri_Resume" class="btn btn-color hover-animate">Download Resume</a>
             </p>
         </div>
         <!-- end container -->
