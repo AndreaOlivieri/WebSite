@@ -1,8 +1,8 @@
-if($('#contact_page').length > 0){
-    $(document).ready(function(){
+$(document).ready(function(){
 
-        "use strict";
-
+    "use strict";
+    
+    if($('.contact_page').length > 0){
         /*
          ----------------------------------------------------------------------
          Map
@@ -35,7 +35,8 @@ if($('#contact_page').length > 0){
             }
 
         }
-        google.maps.event.addDomListener(window, 'load', initialize_map);
+        initialize_map();
+        //google.maps.event.addDomListener(window, 'load', initialize_map);
 
 
         /*
@@ -135,6 +136,5 @@ if($('#contact_page').length > 0){
 
         });
 
-
-    }); // End $(document).ready(function(){
-}
+    }
+}); // End $(document).ready(function(){

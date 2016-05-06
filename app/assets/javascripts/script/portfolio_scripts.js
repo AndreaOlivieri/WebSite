@@ -1,8 +1,8 @@
-if($('#portfolio_page').length > 0){
-    $(document).ready(function(){
+$(document).ready(function(){
 
-        "use strict";
+    "use strict";
 
+    if($('.portfolio_page').length > 0){
         /*
          ----------------------------------------------------------------------
          Portfolio
@@ -35,6 +35,5 @@ if($('#portfolio_page').length > 0){
             $(this).find(".podrt-desc").attr("id", "work-" + i);
         });
 
-
-    }); // End $(document).ready(function(){
-}
+    }
+}); // End $(document).ready(function(){
