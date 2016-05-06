@@ -10,14 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap.min
- *= require animate
  *= require font-awesome.min
-
+ *= require bootstrap.min
+ *= require owl.carousel
+ *= require owl.theme
+ *= require animate
  *= require style
- *= require switcher
+ *= require colour-scheme
  *= require respons
-
+ *= require switcher
  *= require_directory .
  *= require_self
  */

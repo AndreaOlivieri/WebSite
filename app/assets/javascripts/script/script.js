@@ -62,7 +62,7 @@ $(document).ready(function(){
 
         var $div = $(this);
         var img_name = $div.attr("data-img-name");
-        var src = "./images/menu/" + img_name + ".png";
+        var src = "/assets/images/menu/" + img_name + ".png";
         $div.attr("src",src);
 
     });
@@ -155,7 +155,6 @@ $(document).ready(function(){
      Sliders
      ----------------------------------------------------------------------
      */
-     console.log("funge");
     $("#education-slider").owlCarousel({
 
         navigation : true, // Show next and prev buttons
