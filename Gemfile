@@ -38,7 +38,7 @@ gem 'figaro'
 # gem 'capistrano-rails', group: :development
 
 group :development do
-  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano', '= 3.4.0'
   gem 'capistrano3-puma'
   gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
