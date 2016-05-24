@@ -1,0 +1,57 @@
+- provide(:title, 'Home')
+- provide(:page_class, 'home_page')
+/ Start Home-header section
+%section.home-header.border-bottom.padding-block
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-5.col-lg-5.text-right
+        / Your foto
+        .foto
+          = image_tag 'photo.png', alt: "Andrea Olivieri"
+        / end your foto
+      .col-xs-12.col-sm-7.col-lg-7
+        / Your Name
+        %h1.title Andrea Olivieri
+        / Your Profession
+        %h3.sub-title Web Developer
+        / social icon
+        = render "shared/social_icons"
+/ Start Menu section
+%nav.menu
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-12
+        / start menu block (profile)
+        = link_to(:profile, class: "menu-li") do
+          %span.foto
+            = image_tag image_path('/assets/images/menu/profile.png'), class:"menu-img", "data-img-name": "profile", alt:"Profile"
+          %span.name Profile
+        = link_to(:resume, class: "menu-li") do
+          %span.foto
+            = image_tag image_path('/assets/images/menu/resume.png'), class:"menu-img", "data-img-name": "resume", alt:"Resume"
+          %span.name Resume
+        /  start menu block (portfolio)
+        /  = link_to(:portfolio, class: "menu-li") do
+        /    %span.foto
+        /      = image_tag '/assets/images/menu/portfolio.png', class:"menu-img", "data-img-name": "portfolio", alt:"Portfolio"
+        /    %span.name Portfolio
+        /
+
+        /  start menu block (blog)
+        /  = link_to(:blog, class: "menu-li") do
+        /    %span.foto
+        /      = image_tag '/assets/images/menu/blog.png', class:"menu-img", "data-img-name": "blog", alt:"Blog"
+        /    %span.name Blog
+        /
+
+        / start menu block (contact)
+        = link_to(:contact, class: "menu-li") do
+          / img menu block
+          %span.foto
+            = image_tag image_path('/assets/images/menu/contact.png'), class:"menu-img", "data-img-name": "contact", alt:"Contact"
+          / name menu block
+          %span.name Contact

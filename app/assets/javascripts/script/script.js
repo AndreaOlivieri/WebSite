@@ -9,8 +9,8 @@ $(document).ready(function(){
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     };
 
-    if ($("#Age") != null) {
-        $("#Age").html(getAge() + " years");
+    if ($("#age") != null) {
+        $("#age").html(getAge() + " years");
     }
 
     /*

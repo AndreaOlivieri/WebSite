@@ -31,6 +31,9 @@ gem 'puma'
 # Figaro, for ENV
 gem 'figaro'
 
+# no more .erb file
+gem 'haml'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

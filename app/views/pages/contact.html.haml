@@ -1,0 +1,58 @@
+- provide(:title, 'Contact')
+- provide(:page_class, 'contact_page')
+/ Start Head section
+%header.head
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-8.col-sm-11.col-lg-11
+        = image_tag "contact_l.png", class:"logo-page", alt:"Contact"
+        / Title Page
+        %h2.title Contact
+        / Description Page
+        %h4.sub-title Get in touch with me
+      .col-xs-4.col-sm-1.col-lg-1.text-right
+        = link_to "", root_path, class: "btn-close hover-animate"
+/ Start Content section
+%section.content.padding-block.border-bottom
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-6
+        %h3.title.title-contact Contact info
+        .block-grey
+          %table
+            %tr
+              %td.font-weight-m.width-td Address
+              %td Via Baudelaire 10, 00143, Rome, Italy
+            %tr
+              %td.font-weight-m Phone
+              %td
+                = link_to "+39 335-5888093", "tel:00393355888093", class: "btn-close hover-animate"
+            %tr
+              %td.font-weight-m E-mail
+              %td
+                = link_to "andrea.olivieri1991@gmail.com", "mailto:andrea.olivieri1991+website@gmail.com", class: "btn-close hover-animate"
+            %tr
+              %td.font-weight-m Skype
+              %td
+                = link_to "andrea.olivieri17", "skype:andrea.olivieri17?call", class: "btn-close hover-animate"
+            %tr
+              %td.font-weight-m Website
+              %td
+                = link_to "www.andrea-olivieri.com", "http://andrea-olivieri.com", class: "btn-close hover-animate"
+          / social icon
+          = render "shared/social_icons"
+      .col-xs-12.col-sm-12.col-lg-6
+        .contact-image
+          = image_tag image_path("/assets/images/og_andrea.png")
+/ Start Map section
+.contact-map.padding-block.text-center
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-12
+        #map.map

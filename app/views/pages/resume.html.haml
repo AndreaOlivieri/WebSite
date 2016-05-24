@@ -1,0 +1,235 @@
+- provide(:title, 'Resume')
+- provide(:page_class, 'resume_page')
+/ Start Head section
+%header.head
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-8.col-sm-11.col-lg-11
+        = image_tag "resume_l.png", class:"logo-page", alt:"Resume"
+        / Title Page
+        %h2.title Resume
+        / Description Page
+        %h4.sub-title My Academic Qualifications
+      .col-xs-4.col-sm-1.col-lg-1.text-right
+        = link_to "", root_path, class: "btn-close hover-animate"
+/ Start Content section
+%section.content.padding-block.border-bottom
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-6
+        %h3.title.title-resume Education
+        .block-grey
+          #education-slider.owl-carousel.owl-theme
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td Name
+                  %td Roma Tre - Computer Engineer
+                %tr
+                  %td.font-weight-m Address
+                  %td Via Ostiense 159, 00154, Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Sep 2013 - Today
+                %tr
+                  %td.font-weight-m Level
+                  %td 8 EQF
+                %tr
+              %p Studying for Master's Degree in Computer Engineering
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td Name
+                  %td Roma Tre - Computer Engineer
+                %tr
+                  %td.font-weight-m Address
+                  %td Via Ostiense 159, 00154, Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Sep 2010 - Jul 2013
+                %tr
+                  %td.font-weight-m Level
+                  %td 6 EQF
+              %p Bachelor's Degree in Computer Engineering (104/110)
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td Name
+                  <td>I.T.I.S. G.Armellini</td>
+                %tr
+                  %td.font-weight-m Address
+                  %td Largo B. Placido Riccardi 13, 00146 Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Sep 2005 - Jun 2010
+                %tr
+                  %td.font-weight-m Level
+                  %td 4 EQF
+              %p Diploma of Computer Science (88/100)
+      .col-xs-12.col-sm-12.col-lg-6
+        %h3.title.title-resume Professional Experience
+        .block-grey
+          #work-slider.owl-carousel.owl-theme
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td1 Company Name
+                  %td The City s.r.l.s.
+                %tr
+                  %td.font-weight-m Address
+                  %td Via In Arcione 98, 00187, Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Jul 2015 - Feb 2016
+                %tr
+                  %td.font-weight-m Post
+                  %td Web Developer
+              %p As part-time job I worked for a real estate agency where I developed its website [www.thecity.im] using Html5, SCSS, Javascript, JQuery, Bootstrap for front-end. The back-end has been developed with Ruby on Rails.
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td1 Experience Name
+                  %td InnovAction Lab - Fashape
+                %tr
+                  %td.font-weight-m Address
+                  %td Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Feb 2015 - May 2015
+                %tr
+                  %td.font-weight-m Post
+                  %td Co-founder and CTO at Fashape
+              %p InnovAction Lab is a training course that gives you the ability to turn your innovative idea into a startup. At the end of the course I was able, with my team, to found our startup: Fashape. Fashape is the startup that help people to find the best men’s fashion products through a daily wish list of most voted objects from social networks. The entire development of the site was carried out by me with Meteor javascript framework and Microsoft Azure cloud resources.
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td1 Company Name
+                  %td H.S.C. s.r.l.
+                %tr
+                  %td.font-weight-m Address
+                  %td Via Elio Lampridio Cerva 103, 00143, Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td SEP 2013 - SEP 2014
+                %tr
+                  %td.font-weight-m Post
+                  %td Software Developer
+              %p For over a year I have collaborated for developing an enterprise software, using Delphi programming language and PL/SQL for database queries.
+            .item
+              %table
+                %tr
+                  %td.font-weight-m.width-td1 Company Name
+                  %td I.S.T.C. - C.N.R.
+                %tr
+                  %td.font-weight-m Address
+                  %td Via S. Martino della Battaglia 44, 00185, Rome, Italy
+                %tr
+                  %td.font-weight-m Period
+                  %td Apr 2013 - Jul 2013
+                %tr
+                  %td.font-weight-m Post
+                  %td Intern
+              %p For my internship I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture.
+/ Start Skills section
+%section.skills.border-bottom.padding-block
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-6
+        %h3.title.title-skills Professional skills
+        %label.progress-bar-label Java
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"90", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 90%
+        %label.progress-bar-label HTML
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"90", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 90%
+        %label.progress-bar-label CSS &amp; SCSS
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"90", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 90%
+        %label.progress-bar-label Javascript
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"85", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 85%
+        %label.progress-bar-label JQuery
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"80", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 80%
+        %label.progress-bar-label Ruby on Rails
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"70", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 70%
+        %label.progress-bar-label Git
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"70", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 70%
+        %label.progress-bar-label Photoshop
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"60", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 60%
+        %label.progress-bar-label AngularJS
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"50", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 50%
+        %label.progress-bar-label Meteor
+        .progress
+          .progress-bar{ role: "progressbar", "aria-valuenow"=>"30", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
+            %span 30%
+      .col-xs-12.col-sm-12.col-lg-6
+        %h3.title.title-skills Additional skills
+        .circle-progress-block
+          .circle-progress
+            %input{ type: "text", class: "dial", value: "90", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
+          %label.circle-progress-label Software Development
+        .circle-progress-block
+          .circle-progress
+            %input{ type: "text", class: "dial", value: "90", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
+          %label.circle-progress-label Problem Solving
+        .circle-progress-block
+          .circle-progress
+            %input{ type: "text", class: "dial", value: "70", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
+          %label.circle-progress-label Team Work
+        .circle-progress-block
+          .circle-progress
+            %input{ type: "text", class: "dial", value: "60", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
+          %label.circle-progress-label English
+/ Start Info section
+%section.info.border-bottom.padding-block.text-center
+  / start container
+  .container
+    / start row
+    .row
+      .col-xs-12.col-sm-12.col-lg-12
+        %h3.title Hobbies &amp; Interest
+    .row
+      .col-xs-12.col-sm-12.col-lg-12
+        .circle-block
+          %span.icon.hover-animate
+            %i.fa.fa-futbol-o
+          %span.name.hover-animate Football
+        .circle-block
+          %span.icon.hover-animate
+            %i.fa.fa-headphones
+          %span.name.hover-animate Music
+        .circle-block
+          %span.icon.hover-animate
+            %i.fa.fa-rocket
+          %span.name.hover-animate Travelling
+        .circle-block
+          %span.icon.hover-animate
+            %i.fa.fa-car
+          %span.name.hover-animate Cars
+        .circle-block
+          %span.icon.hover-animate
+            %i.fa.fa-gamepad
+          %span.name.hover-animate Video games
+    %p
+      / <a href="contact.html" class="btn hover-animate">Hire me Now</a>
+      = link_to "Download Resume", "assets/resume.pdf", download: "Andrea_Olivieri_Resume", class: "btn btn-color hover-animate"
