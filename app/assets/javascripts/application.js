@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require google_analytics
 //= require jquery-1.11.2.min
 //= require turbolinks
 //= require bootstrap.min
@@ -22,5 +23,4 @@
 //= require jquery.inview.min
 //= require jquery.knob.min
 //= require jquery.cookie
-//= require google_analytics
 //= require_self
