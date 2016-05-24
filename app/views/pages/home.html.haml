@@ -1,7 +1,7 @@
 - provide(:title, 'Home')
 - provide(:page_class, 'home_page')
 / Start Home-header section
-%section.home-header.border-bottom.padding-block
+%section.home-header.border-bottom.padding-block{ itemscope: true, itemtype: "http://schema.org/Person" }
   / start container
   .container
     / start row
@@ -9,13 +9,13 @@
       .col-xs-12.col-sm-5.col-lg-5.text-right
         / Your foto
         .foto
-          = image_tag 'photo.png', alt: "Andrea Olivieri"
+          = image_tag 'photo.png', alt: "Andrea Olivieri", itemprop: :image
         / end your foto
       .col-xs-12.col-sm-7.col-lg-7
         / Your Name
         %h1.title Andrea Olivieri
         / Your Profession
-        %h3.sub-title Web Developer
+        %h3.sub-title{ itemprop: :jobTitle } Web Developer
         / social icon
         = render "shared/social_icons"
 / Start Menu section

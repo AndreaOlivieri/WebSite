@@ -15,7 +15,7 @@
       .col-xs-4.col-sm-1.col-lg-1.text-right
         = link_to "", root_path, class: "btn-close hover-animate"
 / Start Content section
-%section.content.border-bottom.padding-block
+%section.content.border-bottom.padding-block{ itemscope: true, itemtype: "http://schema.org/Person" }
   / start container
   %div.container
     / start row
@@ -30,19 +30,19 @@
           %table
             %tr
               %td.font-weight-m Name
-              %td.text-right Andrea Olivieri</td>
+              %td.text-right{ itemprop: :name } Andrea Olivieri</td>
             %tr
               %td.font-weight-m Age
               %td.text-right#age
             %tr
               %td.font-weight-m Date of birth
-              %td.text-right 13 June 1991
+              %td.text-right{ itemprop: :birthDate } 13 June 1991
             %tr
               %td.font-weight-m Hometown
-              %td.text-right Rome - Italy
+              %td.text-right{ itemprop: :birthPlace } Rome - Italy
             %tr
               %td.font-weight-m Height
-              %td.text-right 1.70 meters
+              %td.text-right{ itemprop: :height } 1.70 meters
             %tr
               %td.font-weight-m Grade
               %td.text-right Bachelor in Computer Engineering

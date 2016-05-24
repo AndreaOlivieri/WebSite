@@ -1,5 +1,5 @@
 / Start Footer section
-%footer.footer
+%footer.footer{ itemscope: true, itemtype: "http://schema.org/Person" }
   / start container
   .container
     / start row
@@ -9,19 +9,19 @@
         = link_to("tel:00393355888093", class: "hover-animate") do
           %span.ukie-icons.hover-animate
             %i.fa.fa-phone
-          +39 335-5888093
+          %span{ itemprop: :telephone } +39 335-5888093
       / start email
       .col-xs-12.col-sm-6.col-lg-3
         = link_to("mailto:andreaolivieri1991+website@gmail.com", class: "hover-animate") do
           %span.ukie-icons.hover-animate
             %i.fa.fa-paper-plane
-          andrea.olivieri1991@gmail.com
+          %span{ itemprop: :email } andrea.olivieri1991@gmail.com
       / start address
       .col-xs-12.col-sm-6.col-lg-3
         = link_to("https://www.google.it/maps/place/Via+Baudelaire,+10,+00143+Roma/@41.8090188,12.4706368,17z/data=!3m1!4b1!4m2!3m1!1s0x13258b6da75168ab:0xd9dbc29890b258f1?hl=it", class: "hover-animate") do
           %span.ukie-icons.hover-animate
             %i.fa.fa-map-marker
-          Via Baudelaire 10, Rome
+          %span{ itemprop: :address } Via Baudelaire 10, Rome
       / start Copyright
       .col-xs-12.col-sm-6.col-lg-3.text-right
         %span.copyright Copyright © 2015 All right reserved
