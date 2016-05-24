@@ -22,4 +22,5 @@
 //= require jquery.inview.min
 //= require jquery.knob.min
 //= require jquery.cookie
+//= require google_analytics
 //= require_self
