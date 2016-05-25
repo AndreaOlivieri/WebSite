@@ -4,31 +4,30 @@
 / [if IE 8 ]><html class="ie ie8" lang="en"> <![endif]
 / [if (gte IE 9)|!(IE)]
 %html
-%head
-  %meta{ charset: "utf-8" }
-  %title
-    = full_title(yield(:title))
-  / Google Fonts
-  %link{ href: "https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", rel: "stylesheet", type: "text/css" }
-  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  %script{ src: "https://maps.googleapis.com/maps/api/js?v=3.exp" }
-  / <link href="stylesheets/colour-scheme.css" rel="stylesheet" type="text/css" data-color="color-blue" media="all" id="stylesheet-new">
-  %link{ rel: "apple-touch-icon", sizes: "144x144", href: "/assets/images/favicons/apple-touch-icon-144x144.png" }
-  %link{ rel: "apple-touch-icon", sizes: "114x114", href: "/assets/images/favicons/apple-touch-icon-114x114.png" }
-  %link{ rel: "apple-touch-icon", sizes: "72x72", href: "/assets/images/favicons/apple-touch-icon-72x72.png" }
-  %link{ rel: "apple-touch-icon", href: "/assets/images/favicons/apple-touch-icon.png" }
-  %link{ rel: "shortcut icon", href: "/assets/images/favicons/favicon.png" }
-  = csrf_meta_tags
-  = render 'layouts/seo'
-%body
-  / Load page
-  .animationload
-    .loader
-  #wraper{ class: "#{yield(:page_class)}" }
-    = yield
-    = render 'shared/footer'
-  / Scroll to Top
-  = link_to("#", class: "btn scrollToTop") do
-    %i.fa.fa-angle-up
-  = javascript_include_tag 'application_script'
+  %head
+    %meta{ charset: "utf-8" }
+    %title
+      = full_title(yield(:title))
+    / Google Fonts
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp"
+    %link{ rel: "apple-touch-icon", sizes: "144x144", href: "/assets/images/favicons/apple-touch-icon-144x144.png" }
+    %link{ rel: "apple-touch-icon", sizes: "114x114", href: "/assets/images/favicons/apple-touch-icon-114x114.png" }
+    %link{ rel: "apple-touch-icon", sizes: "72x72", href: "/assets/images/favicons/apple-touch-icon-72x72.png" }
+    %link{ rel: "apple-touch-icon", href: "/assets/images/favicons/apple-touch-icon.png" }
+    %link{ rel: "shortcut icon", href: "/assets/images/favicons/favicon.png" }
+    = render 'layouts/seo'
+    = csrf_meta_tags
+  %body
+    / Load page
+    .animationload
+      .loader
+    #wraper{ class: "#{yield(:page_class)}" }
+      = yield
+      = render 'shared/footer'
+    / Scroll to Top
+    = link_to("#", class: "btn scrollToTop") do
+      %i.fa.fa-angle-up
+    = javascript_include_tag 'application_script'

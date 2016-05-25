@@ -10,4 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require_directory ./script
+//= require script/menu
+//= require script/portfolio_scripts
+//= require script/script
+//= require script/contact_scripts

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     "use strict";
-    
+
     if($('.contact_page').length > 0){
         /*
          ----------------------------------------------------------------------
