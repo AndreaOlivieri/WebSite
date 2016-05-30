@@ -1,23 +1,76 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  A_Brief_About_Me: 'A Brief About Me'
+  Additional_skills: 'Additional skills'
+  Andrea_Olivieri_Resume: 'Andrea_Olivieri_Resume'
+  As_part_time_job_I_worked_for_a_real_estate_agency: 'As part-time job I worked for a real estate agency where I developed its website [www.thecity.im] using Html5, SCSS, Javascript, JQuery, Bootstrap for front-end. The back-end has been developed with Ruby on Rails.'
+  About_Me: 'About Me'
+  Address: 'Address'
+  Age: 'Age'
+  Apr: 'Apr'
+  Bachelor_in_Computer_Engineering: 'Bachelor in Computer Engineering'
+  Bachelor_s_Degree_in_Computer_Engineering: "Bachelor's Degree in Computer Engineering (104/110)"
+  Cars: 'Cars'
+  Co_founder_and_CTO_at_Fashape: ' Co-founder and CTO at Fashape'
+  Company_Name: 'Company Name'
+  Contact: 'Contact'
+  Contact_info: 'Contact info'
+  Date_of_birth: 'Date of birth'
+  Diploma_of_Computer_Science: 'Diploma of Computer Science (88/100)'
+  Download_Resume: 'Download Resume'
+  E_mail: 'E-mail'
+  Education: 'Education'
+  English: 'English'
+  Experience_Name: 'Experience Name'
+  Feb: 'Feb'
+  Football: 'Football'
+  For_over_a_year_I_have_collaborated_for_developing_an_enterprise_software: "For over a year I have collaborated for developing an enterprise software, using Delphi programming language and PL/SQL for database queries."
+  For_my_internship_I_developed_a_desktop_application_to_a_robotic_platform_with_the_aim_of_analyzing: "For my internship I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture."
+  Get_in_touch_with_me: 'Get in touch with me'
+  Grade: 'Grade'
+  Height: 'Height'
+  Hello_everyone_I_m_Andrea_24_years_old_and_graduated_in: "Hello everyone! I'm Andrea, %{age} years old, degree in computer engineering and I'm studying for master's degree at Roma Tre university. My biggest passion is the computer, with whom I spend most of the time, it’s the main reason of my studies and my work. I am a object-oriented software developer using Java programming language, Agile methodologies and MVC pattern. I’m also a web developer, front-end side I have a great knoledge of HTML, CSS/SCSS, Javascript and some of famous libraries/frameworks like JQuery, AngularJS, Bootstrap and AJAX techniques. Back-end side I develop with Ruby on Rails. In the past I've done some experiences working in a developers team and I learned how to use several version control systems as GIT or Borland StarTeam. In my free time, I follow online courses on different sites (Udemy, School Code) to update my knowledge or learn new ones such as the development of Android applications, the use of photoshop or new scripting languages."
+  Hobbies_Interest_html: "Hobbies &amp; Interest"
+  Hometown: 'Hometown'
+  Home: 'Home'
+  InnovAction_Lab_is_a_training_course: "InnovAction Lab is a training course that gives you the ability to turn your innovative idea into a startup. At the end of the course I was able, with my team, to found our startup: Fashape. Fashape is the startup that help people to find the best men’s fashion products through a daily wish list of most voted objects from social networks. The entire development of the site was carried out by me with Meteor javascript framework and Microsoft Azure cloud resources."
+  Intern: 'Intern'
+  Jul: 'Jul'
+  Jun: 'Jun'
+  June_1991: '13 June 1991'
+  Largo_B_Placido_Riccardi_13_00146_Rome_Italy: 'Largo B. Placido Riccardi 13, 00146 Rome, Italy'
+  Let_Me_Introduce_Myself: 'Let Me Introduce Myself'
+  Level: 'Level'
+  Music: 'Music'
+  My_Academic_Qualifications: 'My Academic Qualifications'
+  My_Story: 'My Story'
+  n_age: "%{age} years"
+  n_meters: "%{n} meters"
+  Name: 'Name'
+  Period: 'Period'
+  Phone: 'Phone'
+  Post: 'Post'
+  Problem_Solving: 'Problem Solving'
+  Professional_Experience: 'Professional Experience'
+  Professional_skills: 'Professional skills'
+  Profile: 'Profile'
+  Resume: 'Resume'
+  Roma_Tre_Computer_Engineer: 'Roma Tre - Computer Engineer'
+  Rome_Italy: 'Rome, Italy'
+  Sep: 'Sep'
+  Since_I_was_a_little_boy_I_feel_a: "Since I was a little boy I feel a strong interest for the computer that led me to follow an informatic career. I've moved my first steps at G. Armellini technical institute of Rome where I’ve started to program using Java. The most important experience I made in high school has been an european project for information security in conjunction with a turkish and spanish high school. In 2010 I obtained the ECDL and diploma. After high school, I enrolled at Roma Tre university in computer engineering faculty. In 2013, after passing all exams, I did an internship at ISTC-CNR where I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and worked closely with the Kinect sensor for tracking posture. In the summer of 2013, less than three years after enrollment, I achieved my bachelor's degree in computer engineering. As new graduate I decided to do my first working experience at H.S.C. company where I learned Delphi programming language in order to develop its enterprise software and PL-SQL to query Oracle databases. After one year I left the company to start studying full-time again for master degree in computer engineering. Meanwhile I focused my attention in startup's world where I tried to create my own startup in two different events, first one has been the ‘startup weekend 2014’ of Rome with ‘Showay’ team and then ‘InnovAction Lab 2015’ with ‘Fashape’ team. In summer of 2015 I came back to work as web developer in The City srls real estate agency where I developed its website. This work experience gives me the opportunity to learn Ruby on Rails and fly to Los Angeles. Back to Rome I decided to left the real estate agency and finish my master degree."
+  Skype: 'Skype'
+  Software_Developer: 'Software Developer'
+  Software_Development: 'Software Development'
+  Studying_for_Master_s_Degree_in_Computer_Engineering: "Studying for Master's Degree in Computer Engineering"
+  Team_Work: 'Team Work'
+  Today: 'Today'
+  Travelling: 'Travelling'
+  Via_Baudelaire_10_Rome: 'Via Baudelaire 10, Rome'
+  Via_Baudelaire_10_00143_Rome_Italy: 'Via Baudelaire 10, 00143, Rome, Italy'
+  Via_Elio_Lampridio_Cerva_103_00143_Rome_Italy: 'Via Elio Lampridio Cerva 103, 00143, Rome, Italy'
+  Via_In_Arcione_98_00187_Rome_Italy: 'Via In Arcione 98, 00187, Rome, Italy'
+  Via_Ostiense_159_00154_Rome_Italy: 'Via Ostiense 159, 00154, Rome, Italy'
+  Via_S_Martino_della_Battaglia_44_00185_Rome_Italy: 'Via S. Martino della Battaglia 44, 00185, Rome, Italy'
+  Video_games: 'Video games'
+  Web_Developer: 'Web Developer'
+  Website: 'Website'

@@ -1,4 +1,4 @@
-- provide(:title, 'Resume')
+- provide(:title, t(:Resume))
 - provide(:page_class, 'resume_page')
 / Start Head section
 %header.head
@@ -7,11 +7,9 @@
     / start row
     .row
       .col-xs-8.col-sm-11.col-lg-11
-        = image_tag "resume_l.png", class:"logo-page", alt:"Resume"
+        = image_tag "resume_l.png", class:"logo-page", alt: t(:Resume)
         / Title Page
-        %h2.title Resume
-        / Description Page
-        %h4.sub-title My Academic Qualifications
+        %h2.title= t(:Resume)
       .col-xs-4.col-sm-1.col-lg-1.text-right
         = link_to "", root_path, class: "btn-close hover-animate"
 / Start Content section
@@ -21,119 +19,119 @@
     / start row
     .row
       .col-xs-12.col-sm-12.col-lg-6
-        %h3.title.title-resume Education
+        %h3.title.title-resume= t(:Education)
         .block-grey
           #education-slider.owl-carousel.owl-theme
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td Name
-                  %td Roma Tre - Computer Engineer
+                  %td.font-weight-m.width-td= t(:Name)
+                  %td= t(:Roma_Tre_Computer_Engineer)
                 %tr
-                  %td.font-weight-m Address
-                  %td Via Ostiense 159, 00154, Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Via_Ostiense_159_00154_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Sep 2013 - Today
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Sep)+" 2013 - "+t(:Today)
                 %tr
-                  %td.font-weight-m Level
+                  %td.font-weight-m= t(:Level)
                   %td 8 EQF
                 %tr
-              %p Studying for Master's Degree in Computer Engineering
+              %p= t(:Studying_for_Master_s_Degree_in_Computer_Engineering)
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td Name
-                  %td Roma Tre - Computer Engineer
+                  %td.font-weight-m.width-td= t(:Name)
+                  %td= t(:Roma_Tre_Computer_Engineer)
                 %tr
-                  %td.font-weight-m Address
-                  %td Via Ostiense 159, 00154, Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Via_Ostiense_159_00154_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Sep 2010 - Jul 2013
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Sep)+" 2010 - "+t(:Jul)+" 2013"
                 %tr
-                  %td.font-weight-m Level
+                  %td.font-weight-m= t(:Level)
                   %td 6 EQF
-              %p Bachelor's Degree in Computer Engineering (104/110)
+              %p= t(:Bachelor_s_Degree_in_Computer_Engineering)
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td Name
-                  <td>I.T.I.S. G.Armellini</td>
+                  %td.font-weight-m.width-td= t(:Name)
+                  %td I.T.I.S. G.Armellini
                 %tr
-                  %td.font-weight-m Address
-                  %td Largo B. Placido Riccardi 13, 00146 Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Largo_B_Placido_Riccardi_13_00146_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Sep 2005 - Jun 2010
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Sep)+" 2005 - "+t(:Jun)+" 2010"
                 %tr
-                  %td.font-weight-m Level
+                  %td.font-weight-m= t(:Level)
                   %td 4 EQF
-              %p Diploma of Computer Science (88/100)
+              %p= t(:Diploma_of_Computer_Science)
       .col-xs-12.col-sm-12.col-lg-6
-        %h3.title.title-resume Professional Experience
+        %h3.title.title-resume= t(:Professional_Experience)
         .block-grey
           #work-slider.owl-carousel.owl-theme
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td1 Company Name
+                  %td.font-weight-m.width-td1= t(:Company_Name)
                   %td The City s.r.l.s.
                 %tr
-                  %td.font-weight-m Address
-                  %td Via In Arcione 98, 00187, Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Via_In_Arcione_98_00187_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Jul 2015 - Feb 2016
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Jul)+" 2015 - "+t(:Feb)+" 2016"
                 %tr
-                  %td.font-weight-m Post
-                  %td Web Developer
-              %p As part-time job I worked for a real estate agency where I developed its website [www.thecity.im] using Html5, SCSS, Javascript, JQuery, Bootstrap for front-end. The back-end has been developed with Ruby on Rails.
+                  %td.font-weight-m= t(:Post)
+                  %td= t(:Web_Developer)
+              %p= t(:As_part_time_job_I_worked_for_a_real_estate_agency)
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td1 Experience Name
+                  %td.font-weight-m.width-td1= t(:Experience_Name)
                   %td InnovAction Lab - Fashape
                 %tr
-                  %td.font-weight-m Address
-                  %td Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Feb 2015 - May 2015
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Feb)+" 2015 - "+t(:May)+" 2015"
                 %tr
-                  %td.font-weight-m Post
-                  %td Co-founder and CTO at Fashape
-              %p InnovAction Lab is a training course that gives you the ability to turn your innovative idea into a startup. At the end of the course I was able, with my team, to found our startup: Fashape. Fashape is the startup that help people to find the best men’s fashion products through a daily wish list of most voted objects from social networks. The entire development of the site was carried out by me with Meteor javascript framework and Microsoft Azure cloud resources.
+                  %td.font-weight-m= t(:Post)
+                  %td= t(:Co_founder_and_CTO_at_Fashape)
+              %p= t(:InnovAction_Lab_is_a_training_course)
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td1 Company Name
+                  %td.font-weight-m.width-td1= t(:Company_Name)
                   %td H.S.C. s.r.l.
                 %tr
-                  %td.font-weight-m Address
-                  %td Via Elio Lampridio Cerva 103, 00143, Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= (:Via_Elio_Lampridio_Cerva_103_00143_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td SEP 2013 - SEP 2014
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Sep)+" 2013 - "+t(:Sep)+" 2014"
                 %tr
-                  %td.font-weight-m Post
-                  %td Software Developer
-              %p For over a year I have collaborated for developing an enterprise software, using Delphi programming language and PL/SQL for database queries.
+                  %td.font-weight-m= t(:Post)
+                  %td= t(:Software_Developer)
+              %p= t(:For_over_a_year_I_have_collaborated_for_developing_an_enterprise_software)
             .item
               %table
                 %tr
-                  %td.font-weight-m.width-td1 Company Name
+                  %td.font-weight-m.width-td1= t(:Company_Name)
                   %td I.S.T.C. - C.N.R.
                 %tr
-                  %td.font-weight-m Address
-                  %td Via S. Martino della Battaglia 44, 00185, Rome, Italy
+                  %td.font-weight-m= t(:Address)
+                  %td= t(:Via_S_Martino_della_Battaglia_44_00185_Rome_Italy)
                 %tr
-                  %td.font-weight-m Period
-                  %td Apr 2013 - Jul 2013
+                  %td.font-weight-m= t(:Period)
+                  %td= t(:Apr)+" 2013 - "+t(:Jul)+" 2013"
                 %tr
-                  %td.font-weight-m Post
-                  %td Intern
-              %p For my internship I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and working closely with the Kinect sensor for tracking posture.
+                  %td.font-weight-m= t(:Post)
+                  %td= t(:Intern)
+              %p= t(:For_my_internship_I_developed_a_desktop_application_to_a_robotic_platform_with_the_aim_of_analyzing)
 / Start Skills section
 %section.skills.border-bottom.padding-block
   / start container
@@ -141,7 +139,7 @@
     / start row
     .row
       .col-xs-12.col-sm-12.col-lg-6
-        %h3.title.title-skills Professional skills
+        %h3.title.title-skills= t(:Professional_skills)
         %label.progress-bar-label Java
         .progress
           .progress-bar{ role: "progressbar", "aria-valuenow"=>"90", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
@@ -183,23 +181,23 @@
           .progress-bar{ role: "progressbar", "aria-valuenow"=>"30", "aria-valuemin"=>"0", "aria-valuemax"=>"100" }
             %span 30%
       .col-xs-12.col-sm-12.col-lg-6
-        %h3.title.title-skills Additional skills
+        %h3.title.title-skills= t(:Additional_skills)
         .circle-progress-block
           .circle-progress
             %input{ type: "text", class: "dial", value: "90", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
-          %label.circle-progress-label Software Development
+          %label.circle-progress-label= t(:Software_Development)
         .circle-progress-block
           .circle-progress
             %input{ type: "text", class: "dial", value: "90", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
-          %label.circle-progress-label Problem Solving
+          %label.circle-progress-label= t(:Problem_Solving)
         .circle-progress-block
           .circle-progress
             %input{ type: "text", class: "dial", value: "70", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
-          %label.circle-progress-label Team Work
+          %label.circle-progress-label= t(:Team_Work)
         .circle-progress-block
           .circle-progress
             %input{ type: "text", class: "dial", value: "60", "data-color"=>"#00b6f9", "data-from"=>"0", "data-to"=>"99"}
-          %label.circle-progress-label English
+          %label.circle-progress-label= t(:English)
 / Start Info section
 %section.info.border-bottom.padding-block.text-center
   / start container
@@ -207,29 +205,29 @@
     / start row
     .row
       .col-xs-12.col-sm-12.col-lg-12
-        %h3.title Hobbies &amp; Interest
+        %h3.title= t(:Hobbies_Interest_html)
     .row
       .col-xs-12.col-sm-12.col-lg-12
         .circle-block
           %span.icon.hover-animate
             %i.fa.fa-futbol-o
-          %span.name.hover-animate Football
+          %span.name.hover-animate= t(:Football)
         .circle-block
           %span.icon.hover-animate
             %i.fa.fa-headphones
-          %span.name.hover-animate Music
+          %span.name.hover-animate= t(:Music)
         .circle-block
           %span.icon.hover-animate
             %i.fa.fa-rocket
-          %span.name.hover-animate Travelling
+          %span.name.hover-animate= t(:Travelling)
         .circle-block
           %span.icon.hover-animate
             %i.fa.fa-car
-          %span.name.hover-animate Cars
+          %span.name.hover-animate= t(:Cars)
         .circle-block
           %span.icon.hover-animate
             %i.fa.fa-gamepad
-          %span.name.hover-animate Video games
+          %span.name.hover-animate= t(:Video_games)
     %p
       / <a href="contact.html" class="btn hover-animate">Hire me Now</a>
-      = link_to "Download Resume", "assets/resume.pdf", download: "Andrea_Olivieri_Resume", class: "btn btn-color hover-animate"
+      = link_to t(:Download_Resume), "assets/#{t(:Andrea_Olivieri_Resume)}.pdf", download: t(:Andrea_Olivieri_Resume), class: "btn btn-color hover-animate"

@@ -1,4 +1,4 @@
-- provide(:title, 'Profile')
+- provide(:title, t(:Profile))
 - provide(:page_class, 'profile_page')
 / Start Head section
 %header.head
@@ -7,11 +7,9 @@
     / start row
     .row
       .col-xs-8.col-sm-11.col-lg-11
-        = image_tag "profile_l.png", class:"logo-page", alt:"About Me"
+        = image_tag "profile_l.png", class:"logo-page", alt: t(:About_Me)
         / Title Page
-        %h2.title Profile
-        / Description Page
-        %h4.sub-title A Brief About Me
+        %h2.title= t(:Profile)
       .col-xs-4.col-sm-1.col-lg-1.text-right
         = link_to "", root_path, class: "btn-close hover-animate"
 / Start Content section
@@ -21,45 +19,30 @@
     / start row
     .row
       .col-xs-12.col-sm-12.col-lg-7
-        %h3.title Let Me Introduce Myself
-        %p Hello everyone! I'm Andrea, 24 years old and graduated in computer engineering and I'm studying for my master's degree at Roma Tre university. My biggest passion is the computer, with whom I spend most of the time, it’s the main reason of my studies and my work. I am a developer specializing in object-oriented programming with Java language using agile methodologies for software development and the MVC pattern for its structure, I also know other languages such as Delphi and C#. In addition I deal with the front-end part of websites development because I know HTML, CSS/SASS, Javascript, jQuery and AngularJS as a framework for the pages realization. In the past I've done a bit of experience working together with a developers team and I learned how to use the software systems for version control as GIT or Borland StarTeam, so we can write code together without any problems. In my free time, I follow online courses on different sites (Udemy, School Code) to update my knowledge or learn new ones such as the development of Android applications, the use of photoshop or new scripting languages.
-        %h3.title My Story
-        %p Since I was a little boy I feel a strong interest for the computers that led me to follow an informatic career. I've moved my first steps at G. Armellini technical institute of Rome where I’ve started to program using Java. Among many experiences in that high school, the most important was participating in an european project for information security in conjunction with a turkish and spanish high school. In 2010 I obtained the ECDL and then I graduated with 88/100. After high school, I enrolled at Roma Tre university in the faculty of computer engineering. After passing all exams, I decided to do an internship at ISTC-CNR where I developed a desktop application to a robotic platform with the aim of analyzing the person's posture and balance through three simple exercises engines. The application was developed in C# and worked closely with the Kinect sensor for tracking posture. In the summer of 2013, less than three years after enrollment, I achieved my bachelor's degree in computer engineering with 104/110L. As recent graduate I decided to do my first working experience at H.S.C. company where I learned Delphi programming language in order to develop its enterprise software and PL-SQL to query Oracle databases. After one year I left the company to start studying full-time again for the master degree in computer engineering. Meanwhile I entered in the startup's world participating at ‘startup weekend 2014’ of Rome within ‘Showay’ team and then ‘InnovAction Lab 2015’.
+        %h3.title= t(:Let_Me_Introduce_Myself)
+        %p= t(:Hello_everyone_I_m_Andrea_24_years_old_and_graduated_in, age: @age)
+        %h3.title= t(:My_Story)
+        %p= t(:Since_I_was_a_little_boy_I_feel_a)
       .col-xs-12.col-sm-12.col-lg-5
         .block-grey
           %table
             %tr
-              %td.font-weight-m Name
-              %td.text-right{ itemprop: :name } Andrea Olivieri</td>
+              %td.font-weight-m= t(:Name)
+              %td.text-right{ itemprop: :name } Andrea Olivieri
             %tr
-              %td.font-weight-m Age
-              %td.text-right#age
+              %td.font-weight-m= t(:Age)
+              %td.text-right= t(:n_age, age: @age)
             %tr
-              %td.font-weight-m Date of birth
-              %td.text-right{ itemprop: :birthDate } 13 June 1991
+              %td.font-weight-m= t(:Date_of_birth)
+              %td.text-right{ itemprop: :birthDate }= t(:June_1991)
             %tr
-              %td.font-weight-m Hometown
-              %td.text-right{ itemprop: :birthPlace } Rome - Italy
+              %td.font-weight-m= t(:Hometown)
+              %td.text-right{ itemprop: :birthPlace }= t(:Rome_Italy)
             %tr
-              %td.font-weight-m Height
-              %td.text-right{ itemprop: :height } 1.70 meters
+              %td.font-weight-m= t(:Height)
+              %td.text-right{ itemprop: :height }= t(:n_meters, n: '1.70')
             %tr
-              %td.font-weight-m Grade
-              %td.text-right Bachelor in Computer Engineering
+              %td.font-weight-m= t(:Grade)
+              %td.text-right= t(:Bachelor_in_Computer_Engineering)
         .block-image
           = image_tag "andrea_laurea.png"
-/ Start Info section
-%section.info.border-bottom.padding-block.text-center
-  / start container
-  .container
-    / start row
-    .row
-      .col-xs-12.col-sm-12.col-lg-12
-        %h3.title What i’m doing
-    / start row
-    .row
-      .col-xs-12.col-sm-12.col-lg-12
-        .circle-block
-          %span.icon.hover-animate
-            %i.fa.fa-desktop
-          %span.name.hover-animate Web developer

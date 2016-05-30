@@ -2,17 +2,6 @@ $(document).ready(function(){
 
     "use strict";
 
-    function getAge(){
-        var birthday = new Date("1991-06-13");
-        var ageDifMs = Date.now() - birthday;
-        var ageDate = new Date(ageDifMs);
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    };
-
-    if ($("#age") != null) {
-        $("#age").html(getAge() + " years");
-    }
-
     /*
      ----------------------------------------------------------------------
      Preloader

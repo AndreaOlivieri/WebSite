@@ -1,0 +1,76 @@
+it:
+  A_Brief_About_Me: 'Descrizione su di me'
+  Additional_skills: 'Altre qualità'
+  Andrea_Olivieri_Resume: 'Andrea_Olivieri_CV'
+  As_part_time_job_I_worked_for_a_real_estate_agency: "Lavorando part-time nell’azienda immobiliare The City ho sviluppato il loro sito web [www.thecity.im] utilizzando Html5, SCSS, Javascript con l’ausilio di JQuery, Bootstrap per la parte front-end. Il back-end è stato interamente sviluppato in Ruby on Rails."
+  About_Me: 'Su di me'
+  Address: 'Indirizzo'
+  Age: "Età"
+  Apr: 'Apr'
+  Bachelor_in_Computer_Engineering: 'Laureato in ingegneria informatica'
+  Bachelor_s_Degree_in_Computer_Engineering: "Laurea in ingegneria informatica (104/110)"
+  Cars: 'Auto'
+  Co_founder_and_CTO_at_Fashape: 'Co-founder e CTO in Fashape'
+  Company_Name: 'Azienda'
+  Contact: 'Contatti'
+  Contact_info: 'Informazioni per contattarmi'
+  Date_of_birth: 'Data di nascita'
+  Diploma_of_Computer_Science: 'Diploma di perito informatico (88/100)'
+  Download_Resume: 'Scarica il CV'
+  E_mail: 'E-mail'
+  Education: 'Istruzione'
+  English: 'Inglese'
+  Experience_Name: "Nome dell'esperienza"
+  Feb: 'Feb'
+  Football: 'Calcio'
+  For_over_a_year_I_have_collaborated_for_developing_an_enterprise_software: "Per oltre un anno ho collaborato allo sviluppo del software aziendale in qualità di programmatore informatico, utilizzando il linguaggio di programmazione Delphi e PL/SQL per le interrogazioni ai database."
+  For_my_internship_I_developed_a_desktop_application_to_a_robotic_platform_with_the_aim_of_analyzing: "Per il tirocinio della laurea triennale in ingegneria informatica ho sviluppato un' applicazione desktop per una piattaforma robotica con lo scopo di analisi della postura e dell'equilibrio di una persona attraverso tre semplici esercizi motori. L'applicativo è stato sviluppato in C# e lavorando a stretto contatto con il sensore Kinect per il tracciamento della postura."
+  Get_in_touch_with_me: 'Per mettersi in contatto con me'
+  Grade: 'Laurea'
+  Height: 'Altezza'
+  Hello_everyone_I_m_Andrea_24_years_old_and_graduated_in: "Ciao a tutti! Sono Andrea, %{age} anni, laureato in ingegneria informatica e studio per il master all’università Roma Tre. La mia più grande passione sono i computer, con cui spendo molto del mio tempo, è la ragione principale dei miei studi e del mio lavoro. Sono uno sviluppatore specializzato nella programmazione orientata agli oggetti con il linguaggio Java, utilizzo metodologie Agile e il pattern architetturale MVC per lo sviluppo e la struttura del software. Mi occupo anche dello sviluppo di siti web, per il front-end conosco molto bene HTML, CSS/SASS, Javascript e alcune librerie/frameworks come JQuery, AngularJS, Bootstrap e techiche AJAX. La parte beck-end la sviluppo con Ruby on Rails. In passato ho fatto qualche esperienza lavorando in team con altri sviluppatori ed ho imparato qualche tool di versioning del software come Git o Borland StarTeam. Nel mio tempo libero seguo corsi online su diversi siti web (Udemy, School Code) per aggiornarmi o imparare nuove cose come lo sviluppo di applicazioni android, l’uso di photoshop o nuovi linguaggi di scripting."
+  Hobbies_Interest_html: "Hobby &amp; Interessi"
+  Hometown: 'Città natale'
+  Home: 'Casa'
+  InnovAction_Lab_is_a_training_course: "InnovAction Lab è un corso di insegnamento che ti permette di imparare come trasformare la tua idea in una startup. Alla fine del corso sono stato in grado, insieme al mio team, di fondare la nostra startup: Fashape. In qualità di CTO mi sono occupato di sviluppare il sito web utilizzando il framework Javascript Meteor e i servizi cloud di Microsoft Azure"
+  Intern: 'Tirocinio'
+  Jul: 'Lug'
+  Jun: 'Giu'
+  June_1991: '13 Giugno 1991'
+  Largo_B_Placido_Riccardi_13_00146_Rome_Italy: 'Largo B. Placido Riccardi 13, 00146 Roma, Italia'
+  Let_Me_Introduce_Myself: 'Mi presento'
+  Level: 'Livello'
+  Music: 'Musica'
+  My_Academic_Qualifications: 'Le mie qualificazioni accademiche'
+  My_Story: 'La mia storia'
+  n_age: "%{age} anni"
+  n_meters: "%{n} metri"
+  Name: 'Nome'
+  Period: 'Periodo'
+  Phone: 'Cellulare'
+  Post: 'Post'
+  Problem_Solving: 'Problem Solving'
+  Professional_Experience: 'Esperienze professionali'
+  Professional_skills: 'Competenze professionali'
+  Profile: 'Profilo'
+  Resume: 'Curriculum Vitae'
+  Roma_Tre_Computer_Engineer: 'Roma Tre - Ingegneria informatica'
+  Rome_Italy: 'Roma, Italia'
+  Sep: 'Set'
+  Since_I_was_a_little_boy_I_feel_a: "Da quando ero ragazzo che nutro un forte interesse per i computer, questo interesse mi ha portato a intraprendere una carriera informatica. Ho mosso i primi passi all’istituto tecnico di Roma G. Armellini dove ho iniziato a programmare in Java. L’esperienza più importante del liceo è stata la partecipazione ad un progetto europeo di sicurezza informatica insieme a studenti delle scuole di Spagna e Turchia. Nel 2010 ho ottenuto il patentino europeo ECDL e il diploma di perito informatico. Dopo il liceo, mi sono iscritto all’università di ingegneria di Roma tre alla facoltà di ingegneria. Nel 2013, dopo aver passato tutti gli esami, ho fatto il tirocinio presso l’ ISTC-CNR dove ho sviluppato un applicazione desktop per una piattaforma robotica con l’obiettivo di analizzare la postura e l’equilibrio delle persone attraverso tre semplici esercizi motori. L’applicazione è stata sviluppata in C# con l’utilizzo del sensore Kinect. Nell’estate del 2013, a meno di tre anni dall’iscrizione, mi sono laureato in ingegneria informatica. Da neo-laureato ho scelto di fare la mia prima esperienza lavorativa nell’azienda H.S.C. dove ho imparato il linguaggio di programmazione Delphi per lo sviluppo del software aziendale e PL-SQL per le interrogazione ai database. Dopo un anno ho lasciato l’azienda per tornare a studiare a tempo pieno. Nel frattempo ho concentrato la mia attenzione sul mondo delle startup partecipando a due diversi eventi allo scopo di crearne una da zero, la prima grazie allo ‘startup week 2014’ di roma con il team di ‘Showay’ e la seconda all’ InnovAction lab’ con il team di Fashape. Nell’estate del 2015 sono tornato al lavoro come sviluppatore web nell’agenzia immobiliare The City srls dove ho sviluppato il loro sito web. Questa è esperienza lavorativa mi ha dato l’opportunità di imparare Ruby on Rails e di viaggiare a Los Angeles. Tornato a Roma ho deciso di lasciare l’azienda e finire l’università"
+  Skype: 'Skype'
+  Software_Developer: 'Sviluppatore software'
+  Software_Development: 'Sviluppo del software'
+  Studying_for_Master_s_Degree_in_Computer_Engineering: "Studiando per la laurea magistrale in ingegneria informatica"
+  Team_Work: 'Lavoro di squadra'
+  Today: 'Oggi'
+  Travelling: 'Viaggi'
+  Via_Baudelaire_10_Rome: 'Via Baudelaire 10, Roma'
+  Via_Baudelaire_10_00143_Rome_Italy: 'Via Baudelaire 10, 00143, Roma, Italia'
+  Via_Elio_Lampridio_Cerva_103_00143_Rome_Italy: 'Via Elio Lampridio Cerva 103, 00143, Roma, Italia'
+  Via_In_Arcione_98_00187_Rome_Italy: 'Via In Arcione 98, 00187, Roma, Italia'
+  Via_Ostiense_159_00154_Rome_Italy: 'Via Ostiense 159, 00154, Roma, Italia'
+  Via_S_Martino_della_Battaglia_44_00185_Rome_Italy: 'Via S. Martino della Battaglia 44, 00185, Roma, Italia'
+  Video_games: 'Videogiochi'
+  Web_Developer: 'Sviluppatore web'
+  Website: 'Sito web'

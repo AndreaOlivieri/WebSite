@@ -1,4 +1,4 @@
-- provide(:title, 'Home')
+- provide(:title, t(:Home))
 - provide(:page_class, 'home_page')
 / Start Home-header section
 %section.home-header.border-bottom.padding-block{ itemscope: true, itemtype: "http://schema.org/Person" }
@@ -15,7 +15,7 @@
         / Your Name
         %h1.title Andrea Olivieri
         / Your Profession
-        %h3.sub-title{ itemprop: :jobTitle } Web Developer
+        %h3.sub-title{ itemprop: :jobTitle }= t(:Web_Developer)
         / social icon
         = render "shared/social_icons"
 / Start Menu section
@@ -28,12 +28,12 @@
         / start menu block (profile)
         = link_to(:profile, class: "menu-li") do
           %span.foto
-            = image_tag image_path('/assets/images/menu/profile.png'), class:"menu-img", "data-img-name": "profile", alt:"Profile"
-          %span.name Profile
+            = image_tag image_path('/assets/images/menu/profile.png'), class:"menu-img", "data-img-name": "profile", alt: t(:Profile)
+          %span.name= t(:Profile)
         = link_to(:resume, class: "menu-li") do
           %span.foto
-            = image_tag image_path('/assets/images/menu/resume.png'), class:"menu-img", "data-img-name": "resume", alt:"Resume"
-          %span.name Resume
+            = image_tag image_path('/assets/images/menu/resume.png'), class:"menu-img", "data-img-name": "resume", alt: t(:Resume)
+          %span.name= t(:Resume)
         /  start menu block (portfolio)
         /  = link_to(:portfolio, class: "menu-li") do
         /    %span.foto
@@ -52,6 +52,6 @@
         = link_to(:contact, class: "menu-li") do
           / img menu block
           %span.foto
-            = image_tag image_path('/assets/images/menu/contact.png'), class:"menu-img", "data-img-name": "contact", alt:"Contact"
+            = image_tag image_path('/assets/images/menu/contact.png'), class:"menu-img", "data-img-name": "contact", alt: t(:Contact)
           / name menu block
-          %span.name Contact
+          %span.name= t(:Contact)

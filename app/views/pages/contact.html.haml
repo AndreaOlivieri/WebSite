@@ -1,4 +1,4 @@
-- provide(:title, 'Contact')
+- provide(:title, t(:Contact))
 - provide(:page_class, 'contact_page')
 / Start Head section
 %header.head
@@ -7,11 +7,9 @@
     / start row
     .row
       .col-xs-8.col-sm-11.col-lg-11
-        = image_tag "contact_l.png", class:"logo-page", alt:"Contact"
+        = image_tag "contact_l.png", class:"logo-page", alt: t(:Contact)
         / Title Page
-        %h2.title Contact
-        / Description Page
-        %h4.sub-title Get in touch with me
+        %h2.title= t(:Contact)
       .col-xs-4.col-sm-1.col-lg-1.text-right
         = link_to "", root_path, class: "btn-close hover-animate"
 / Start Content section
@@ -21,26 +19,26 @@
     / start row
     .row
       .col-xs-12.col-sm-12.col-lg-6
-        %h3.title.title-contact Contact info
+        %h3.title.title-contact= t(:Contact_info)
         .block-grey
           %table
             %tr
-              %td.font-weight-m.width-td Address
-              %td Via Baudelaire 10, 00143, Rome, Italy
+              %td.font-weight-m.width-td= t(:Address)
+              %td= t(:Via_Baudelaire_10_00143_Rome_Italy)
             %tr
-              %td.font-weight-m Phone
+              %td.font-weight-m= t(:Phone)
               %td
                 = link_to "+39 335-5888093", "tel:00393355888093", class: "btn-close hover-animate"
             %tr
-              %td.font-weight-m E-mail
+              %td.font-weight-m= t(:E_mail)
               %td
                 = link_to "andrea.olivieri1991@gmail.com", "mailto:andrea.olivieri1991+website@gmail.com", class: "btn-close hover-animate"
             %tr
-              %td.font-weight-m Skype
+              %td.font-weight-m= t(:Skype)
               %td
                 = link_to "andrea.olivieri17", "skype:andrea.olivieri17?call", class: "btn-close hover-animate"
             %tr
-              %td.font-weight-m Website
+              %td.font-weight-m= t(:Website)
               %td
                 = link_to "www.andrea-olivieri.com", "http://andrea-olivieri.com", class: "btn-close hover-animate"
           / social icon
