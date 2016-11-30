@@ -59,6 +59,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'letter_opener'
+
+  gem 'dotenv-rails'
 end
 
 group :production, :staging do
